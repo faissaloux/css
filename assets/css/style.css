@@ -65,3 +65,13 @@ a.social:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #ad1616;
 }
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    background-color: #00000080;
+    transform: translate(0 , -50% );
+}

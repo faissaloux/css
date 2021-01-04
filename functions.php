@@ -24,7 +24,6 @@ if ( !defined( 'THEME_URL' ) ) {
 $css                = THEME_URL . '/core/assets/css/';
 $js                 = THEME_URL . '/core/assets/js/';
 $images             = THEME_URL . '/core/assets/images/';
-$iransansFont       = THEME_URL . '/core/assets/arfont/iransans/font.css';
 
 // require Helper class
 require_once 'helpers/Helper.php';
@@ -39,10 +38,10 @@ require_once THEME_DIR. '/core/functions.php';
 // require_once THEME_DIR. '/core/assets.php';
 
 // Load MetaBoxs
-require_once THEME_DIR. '/core/metabox.php';
+//require_once THEME_DIR. '/core/metabox.php';
 
 // Load Shortcodes
-require_once THEME_DIR. '/core/shortcodes.php';
+//require_once THEME_DIR. '/core/shortcodes.php';
 
 // Load security
 require_once THEME_DIR. '/core/security.php';
@@ -51,12 +50,12 @@ require_once THEME_DIR. '/core/security.php';
 require_once THEME_DIR. '/core/widgets.php';
 
 // Arabic Fonts 
-require_once THEME_DIR. '/core/arab-font.php';    
+//require_once THEME_DIR. '/core/arab-font.php';    
 
 // AJAX
 require_once THEME_DIR. '/core/ajax.php';
 
-require_once get_template_directory() .'/widgets.php';
+require_once THEME_DIR .'/widgets.php';
 
 /*
 *   Redux Framework : theme Settings
@@ -77,14 +76,10 @@ require_once THEME_DIR .'/core/codestar/cs-framework.php';
 // Bootstrap Nav Walker 
 require_once THEME_DIR. '/core/class-wp-bootstrap-navwalker.php';
 
-require_once THEME_DIR . '/core/redux-metaboxes/metaboxes_api.php';
 
 // HTML Compressor 
 require_once THEME_DIR. '/core/html-compressor.php';
 
-// portfolio
-//require_once THEME_DIR. '/core/gallery_folio/plugin.php';
-//require_once THEME_DIR. '/core/gallery_video/plugin.php';
 
 /*
  To do , if the Theme is not activated , stop all the down stop to apear , the only thing will apear is activation page
@@ -190,7 +185,7 @@ remove_action('wp_head', 'wp_generator');
 @ini_set('session.use_only_cookies', true);
 
 
-require_once __DIR__ . '/core/cmb2/init.php';
+// require_once __DIR__ . '/core/cmb2/init.php';
 
 
 add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
@@ -244,7 +239,6 @@ function theme_register_styles() {
     wp_enqueue_style( 'lightgallery-style',                 get_template_directory_uri() . '/assets/css/lib/lightgallery.css');
     wp_enqueue_style( 'slicknav-min-style',                 get_template_directory_uri() . '/assets/css/slicknav.min.css');
     wp_enqueue_style( 'slicknav-style',                     get_template_directory_uri() . '/assets/css/slicknav.css');
-
     wp_enqueue_style( 'owl-carousel-style',                 get_template_directory_uri() . '/assets/owlcarousel/assets/owl.carousel.min.css');
     wp_enqueue_style( 'owl-theme-default-style',            get_template_directory_uri() . '/assets/owlcarousel/assets/owl.theme.default.min.css');
 }
@@ -260,6 +254,7 @@ function theme_register_scripts() {
     wp_enqueue_script( 'fullscreen-script',                 get_template_directory_uri() . '/assets/js/lib/lg-fullscreen.js', array(), false, true);
     wp_enqueue_script( 'slicknav-script',                   get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js', array(), false, true);
     wp_enqueue_script( 'owl-carousel-script',               get_template_directory_uri() . '/assets/owlcarousel/owl.carousel.min.js', array(), false, true);
+    wp_enqueue_script( 'butter-script',                     get_template_directory_uri() . '/assets/butter/butter.js', array(), false, true);
     wp_enqueue_script( 'app-script',                        get_template_directory_uri() . '/assets/js/app.js', array(), false, true);
 }
 function admin_register_scripts(){

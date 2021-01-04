@@ -17,11 +17,20 @@ class page_header_widget extends WP_Widget
             $title = $instance[ 'title' ];
         else
             $title = 'Header image';
+        
+        if ( isset( $instance[ 'height' ] ) )
+            $height = $instance[ 'height' ];
+        else
+            $height = 400;
 
         ?>
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo 'Title'; ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'height' ); ?>"><?php echo 'Height'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'height' ); ?>" name="<?php echo $this->get_field_name( 'height' ); ?>" type="number" value="<?php echo esc_attr( $height ); ?>" />
         </p>
         <p class="header-image-container toClone">
             <label for="<?php echo $this->get_field_id('header_image'); ?>">Header image</label><br />
@@ -36,10 +45,9 @@ class page_header_widget extends WP_Widget
     public function widget($args, $instance)
     {
         ?>
-        <div class="carousel-item active">
-            <img class="d-block w-100 d-lg-none d-md-none d-sm-none"
-                src="<?php echo esc_url($instance['header_image']); ?>">
-            <img class="d-block w-100 d-xs-none" src="<?php echo esc_url($instance['header_image']); ?>">
+        <div class="hero-container" style="height: <?php echo $instance['height'].'px' ?>; overflow: hidden; position: relative;">
+            <img src="<?php echo esc_url($instance['header_image']); ?>" style="height: 100%; width: 100%; object-fit: cover;" class='hero-image' />
+            <h1 class='hero-text'><?php echo $instance['title']; ?></h1>
         </div>
         <?php
 

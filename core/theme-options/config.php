@@ -504,10 +504,22 @@ Redux::setSection( $opt_name, array(
 
                 ),
                 array(
+                    'id'       => 'footer-about-title',
+                    'type'     => 'text',
+                    'title'    => __( 'About title', 'caynoon_text' ),
+                    'default'  => 'À propos'
+                ),
+                array(
                     'id'       => 'footer-about',
                     'type'     => 'textarea',
                     'title'    => __( 'About', 'caynoon_text' ),
                     'default'  => 'Caestus Studios vous accompagne et vous propose les meilleurs conseils et solutions pour vos productions cinématographiques et audiovisuelles avec des possibilités de livraison à travers tout le Maroc.'
+                ),
+                array(
+                    'id'       => 'footer-contact-title',
+                    'type'     => 'text',
+                    'title'    => __( 'Contact title', 'caynoon_text' ),
+                    'default'  => 'Nous contacter'
                 ),
                 array(
                     'id'       => 'footer-phone',
@@ -526,6 +538,12 @@ Redux::setSection( $opt_name, array(
                     'type'     => 'text',
                     'title'    => __( 'Address', 'caynoon_text' ),
                     'default'  => 'Angle avenue Moukawama et avenue Kadi Ayad. Résidence Yasmine Bloc A 8ème Etage N°95 80000, Agadir , Maroc'
+                ),
+                array(
+                    'id'       => 'footer-social-media-title',
+                    'type'     => 'text',
+                    'title'    => __( 'Social media title', 'caynoon_text' ),
+                    'default'  => 'Nous suivre'
                 ),
                 
                 array(

@@ -16,14 +16,10 @@
 
 <body>
     <?php require_once('includes/nav.php') ?>
-
-    <div class="coverHeaderWrapper">
-
-
-        <img src="https://i.imgur.com/V56xThW.jpg" class='coverHeaderImg' />
-
-        <h1 class='under_cover'>Packs Production</h1>
-    </div>
+    
+    <?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
+            <?php dynamic_sidebar( 'header-widget' ); ?>
+    <?php endif; ?>
     <!-- Main Content -->
     <main class="main-content">
         <div class="section-pack section bg-gray" style="padding-top:55px;">
