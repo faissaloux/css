@@ -38,10 +38,15 @@ span.over-hidden {
     height: 30px;
     overflow: hidden;
     width: 30px;
+    background-color: #dc3d3d;
+}
+
+div.down{
+    background-color: #FFF;
 }
 
 a.social:hover {
-    transform: translateY(-30px);
+    transform: translateY(-32px);
     transition-duration: .4s;
 }
 
@@ -50,13 +55,13 @@ a.social:hover {
 }
 
 ::-webkit-scrollbar-track {
-background: #f1f1f1;
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #dc3d3d;
+    background: #dc3d3d;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #ad1616;
+    background: #ad1616;
 }
