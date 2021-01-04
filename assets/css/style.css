@@ -21,3 +21,26 @@ transform: rotate(-1deg) translate(-5px, -5px); } }
         display: none; } }
 
 /*# sourceMappingURL=style.css.map */
+
+h1::selection,
+h2::selection,
+strong::selection,
+p::selection,
+li::selection,
+a::selection,
+div::selection {
+    background-color: #dc3d3d;
+}
+
+
+span.over-hidden {
+    display: inline-block;
+    height: 30px;
+    overflow: hidden;
+    width: 30px;
+}
+
+a.social:hover {
+    transform: translateY(-30px);
+    transition-duration: .4s;
+}

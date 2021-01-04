@@ -23,20 +23,36 @@
                 <h6 class="mb-4"><strong><?php echo $theme_setting['footer-social-media-title']; ?></strong></h6>
                 <div class="social text-center text-lg-left">
                 <?php if (!empty($theme_setting['instagram'])): ?>
-                    <a class="social-instagram" href="<?php echo $theme_setting['instagram']; ?>"><i
-                            class="fab fa-instagram"></i></a>
+                    <span class="over-hidden">
+                        <a class="social social-instagram" href="<?php echo $theme_setting['instagram']; ?>">
+                            <div class="up"><i class="fab fa-instagram"></i></div>
+                            <div class="down"><i class="fab fa-instagram"></i></div>
+                        </a>
+                    </span>
                 <?php endif ?>
                 <?php if (!empty($theme_setting['youtube'])): ?>
-                    <a class="social-youtube" href="<?php echo $theme_setting['youtube']; ?>"><i
-                            class="fab fa-youtube"></i></a>
+                    <span class="over-hidden">
+                        <a class="social social-youtube" href="<?php echo $theme_setting['youtube']; ?>">
+                            <div class="up"><i class="fab fa-youtube"></i></div>
+                            <div class="down"><i class="fab fa-youtube"></i></div>
+                        </a>
+                    </span>
                 <?php endif ?>
                 <?php if (!empty($theme_setting['twitter'])): ?>
-                    <a class="social-twitter" href="<?php echo $theme_setting['twitter']; ?>"><i
-                            class="fab fa-twitter"></i></a>
+                    <span class="over-hidden">
+                        <a class="social social-twitter" href="<?php echo $theme_setting['twitter']; ?>">
+                            <div class="up"><i class="fab fa-twitter"></i></div>
+                            <div class="down"><i class="fab fa-twitter"></i></div>
+                        </a>
+                    </span>
                 <?php endif ?>
                 <?php if (!empty($theme_setting['facebook'])): ?>
-                    <a class="social-facebook" href="<?php echo $theme_setting['facebook']; ?>"><i
-                            class="fab fa-facebook"></i></a>
+                    <span class="over-hidden">
+                        <a class="social social-facebook" href="<?php echo $theme_setting['facebook']; ?>">
+                            <div class="up"><i class="fab fa-facebook"></i></div>
+                            <div class="down"><i class="fab fa-facebook"></i></div>
+                        </a>
+                    </span>
                 <?php endif ?>
                 </div>
             </div>
