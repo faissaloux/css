@@ -13,7 +13,7 @@
 <a href="javascript:;" id="button" style="background-color: <?php echo $theme_setting['top-arrow-color'] ?>"></a>
 
 <body>
-    <?php require_once('includes/nav.php') ?>
+    <?php require_once 'includes/nav.php' ?>
     <?php require_once HOME_DIR . '/slider.php'; ?>
     <?php require_once HOME_DIR . '/brands.php'; ?>
     <?php require_once HOME_DIR . '/images.php'; ?>
