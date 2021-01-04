@@ -5,12 +5,12 @@
     <div class="container">
         <div class="row gap-y">
             <div class="col-md-5 col-xl-4">
-                <h6 class="mb-4"><strong>À propos </strong></h6>
+                <h6 class="mb-4"><strong><?php echo $theme_setting['footer-about-title']; ?></strong></h6>
                 <p><?php echo $theme_setting['footer-about']; ?></p>
             </div>
             <div class="col-md-1 col-xl-1"></div>
             <div class=" col-md-4">
-                <h6 class="contact_title_footer"><strong>Nous contacter</strong></h6>
+                <h6 class="contact_title_footer"><strong><?php echo $theme_setting['footer-contact-title']; ?></strong></h6>
                 <div class="nav flex-column">
                     <ul class='footer_more_ul'>
                         <li>Tel: <?php echo $theme_setting['footer-phone']; ?></li>
@@ -20,16 +20,24 @@
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
-                <h6 class="mb-4"><strong>Nous suivre</strong></h6>
+                <h6 class="mb-4"><strong><?php echo $theme_setting['footer-social-media-title']; ?></strong></h6>
                 <div class="social text-center text-lg-left">
-                    <a class="social-instagram" href="http://instagram.com/caestus_studios"><i
+                <?php if (!empty($theme_setting['instagram'])): ?>
+                    <a class="social-instagram" href="<?php echo $theme_setting['instagram']; ?>"><i
                             class="fab fa-instagram"></i></a>
-                    <a class="social-youtube" href="https://www.youtube.com/channel/UCcg0-F6Py_3i4LLn36ugurg"><i
+                <?php endif ?>
+                <?php if (!empty($theme_setting['youtube'])): ?>
+                    <a class="social-youtube" href="<?php echo $theme_setting['youtube']; ?>"><i
                             class="fab fa-youtube"></i></a>
-                    <a class="social-twitter" href="http://twitter.com/caestus_studios"><i
+                <?php endif ?>
+                <?php if (!empty($theme_setting['twitter'])): ?>
+                    <a class="social-twitter" href="<?php echo $theme_setting['twitter']; ?>"><i
                             class="fab fa-twitter"></i></a>
-                    <a class="social-facebook" href="http://fb.com/caestus.studios"><i
+                <?php endif ?>
+                <?php if (!empty($theme_setting['facebook'])): ?>
+                    <a class="social-facebook" href="<?php echo $theme_setting['facebook']; ?>"><i
                             class="fab fa-facebook"></i></a>
+                <?php endif ?>
                 </div>
             </div>
             <div class="col-md-12 text-center">
