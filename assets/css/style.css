@@ -44,3 +44,19 @@ a.social:hover {
     transform: translateY(-30px);
     transition-duration: .4s;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #dc3d3d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #ad1616;
+}
