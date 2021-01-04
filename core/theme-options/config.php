@@ -267,6 +267,20 @@ Redux::setSection( $opt_name, array(
                     'default'  => 'site title',
                 ),    
                 array(
+                    'id'       => 'selector-color',
+                    'type'     => 'color',
+                    'title'    => __( 'Selector color', 'caynoon_text' ),
+                    'desc'     => __( 'Please choose selector color', 'caynoon_text' ),
+                    'default'  => '#dc3d3d',
+                ),    
+                array(
+                    'id'       => 'scroll-color',
+                    'type'     => 'color',
+                    'title'    => __( 'Scroll color', 'caynoon_text' ),
+                    'desc'     => __( 'Please choose scroll color', 'caynoon_text' ),
+                    'default'  => '#dc3d3d',
+                ),    
+                array(
                     'id'       => 'logo-url',
                     'type'     => 'media',
                     'url'      => true,
