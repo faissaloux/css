@@ -22,17 +22,6 @@ transform: rotate(-1deg) translate(-5px, -5px); } }
 
 /*# sourceMappingURL=style.css.map */
 
-h1::selection,
-h2::selection,
-strong::selection,
-p::selection,
-li::selection,
-a::selection,
-div::selection {
-    background-color: #dc3d3d;
-}
-
-
 span.over-hidden {
     display: inline-block;
     height: 30px;
@@ -56,14 +45,6 @@ a.social:hover {
 
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #dc3d3d;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #ad1616;
 }
 
 .hero-text {

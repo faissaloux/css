@@ -1,3 +1,5 @@
+<?php global $theme_setting; ?>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="<?php echo get_bloginfo('description') ;?>">
@@ -16,3 +18,20 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<style>
+    h1::selection,
+    h2::selection,
+    strong::selection,
+    p::selection,
+    li::selection,
+    a::selection,
+    div::selection {
+        background-color: <?php echo $theme_setting['selector-color']; ?>;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: <?php echo $theme_setting['scroll-color'] ?>;
+    }
+
+</style>

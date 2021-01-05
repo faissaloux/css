@@ -184,53 +184,6 @@ remove_action('wp_head', 'wp_generator');
 @ini_set('session.cookie_secure', true);
 @ini_set('session.use_only_cookies', true);
 
-
-// require_once __DIR__ . '/core/cmb2/init.php';
-
-
-add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
-/**
- * Define the metabox and field configurations.
- */
-function cmb2_sample_metaboxes() {
-
-    /**
-     * Initiate the metabox
-     */
-    $cmb = new_cmb2_box( array(
-        'id'            => 'test_metabox',
-        'title'         => __( 'Test Metabox', 'cmb2' ),
-        'object_types'  => array( 'products_cpt', ), // Post type
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-    ) );
-
-       // Email text field
-    $cmb->add_field( array(
-         'name'    => 'fiche technique',
-        'desc'    => 'fiche technique description',
-        'id'      => 'fiche_technique',
-        'type'    => 'wysiwyg',
-        'object_types'  => array( 'products_cpt', ), // Post type
-
-        'options' => array(
-            'wpautop' => true, // use wpautop?
-            'media_buttons' => true, // show insert/upload button(s)
-            'textarea_name' => $editor_id, // set the textarea name to something different, square brackets [] can be used here
-            'textarea_rows' => get_option('default_post_edit_rows', 10), // rows="..."
-            'tabindex' => '',
-            'editor_css' => '', // intended for extra styles for both visual and HTML editors buttons, needs to include the `<style>` tags, can use "scoped".
-            'editor_class' => '', // add extra class(es) to the editor textarea
-            'teeny' => false, // output the minimal editor config used in Press This
-            'dfw' => false, // replace the default fullscreen with DFW (needs specific css)
-            'tinymce' => true, // load TinyMCE, can be used to pass settings directly to TinyMCE using an array()
-            'quicktags' => true // load Quicktags, can be used to pass settings directly to Quicktags using an array()
-    ) ));
-
-
-}
-
 function theme_register_styles() {
     wp_enqueue_style( 'page-style',                         get_template_directory_uri() . '/assets/css/page.min.css');
     wp_enqueue_style( 'style-style',                        get_template_directory_uri() . '/assets/css/style.css');
@@ -343,3 +296,23 @@ function the_logo()
     global $theme_setting;
     return $theme_setting['logo-url']['url'];
 }
+
+$brands     = brands();
+
+
+// sv($brands);
+/*
+    $brands     = brands();
+    $search     = ajax_products_search('jjjjj','json');
+    $menu       = top_header_menu_bootstrap4();
+    $cart_items = caestus_cart_items();
+    $products   = caestus_products();
+    $categries  = products_categories();
+
+    caestus_add_to_cart($id,$image,$title,$quantity,$category);
+    caestus_remove_item($id,$category);
+    caestus_update_item($id,$category,$quantity);
+    caestus_cart_count();
+
+    $product_by_category = caestus_products($cat_id);
+*/

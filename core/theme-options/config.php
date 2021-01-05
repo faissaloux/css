@@ -265,7 +265,24 @@ Redux::setSection( $opt_name, array(
                     'title'    => __( 'site title', 'caynoon_text' ),
                     'desc'     => __( 'Please insert site title', 'caynoon_text' ),
                     'default'  => 'site title',
-                ),    
+                ),  
+                
+                array(
+                    'id'       => 'site-description',
+                    'type'     => 'textarea',
+                    'title'    => __( 'site description', 'caynoon_text' ),
+                    'desc'     => __( 'Please insert site description', 'caynoon_text' ),
+                    'default'  => 'site description',
+                ),  
+
+                array(
+                    'id'       => 'site-keywords',
+                    'type'     => 'textarea',
+                    'title'    => __( 'site keywords', 'caynoon_text' ),
+                    'desc'     => __( 'Please insert site keywords', 'caynoon_text' ),
+                    'default'  => 'site keywords',
+                ),  
+
                 array(
                     'id'       => 'selector-color',
                     'type'     => 'color',
