@@ -13,11 +13,6 @@ class products_listing_widget extends WP_Widget
     
     public function form($instance)
     {
-        if ( isset( $instance[ 'title' ] ) )
-            $title = $instance[ 'title' ];
-        else
-            $title = 'Default Title';
-
         if ( isset( $instance[ 'category' ] ) )
             $category = $instance[ 'category' ];
         else
@@ -28,14 +23,7 @@ class products_listing_widget extends WP_Widget
         else
             $number = 'Default Number';
         ?>
-        <p>
-            <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo 'Title'; ?></label>
-            <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-        </p>
-        <p>
-            <label for="<?php echo $this->get_field_id( 'subtitle' ); ?>"><?php echo 'Subtitle'; ?></label>
-            <input class="widefat" id="<?php echo $this->get_field_id( 'subtitle' ); ?>" name="<?php echo $this->get_field_name( 'subtitle' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
-        </p>
+
         <p>
             <label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php echo 'Products category'; ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>">

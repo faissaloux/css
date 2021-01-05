@@ -33,9 +33,9 @@ define( 'HOME_DIR', get_template_directory(). '/templates/home');
 <body>
     <?php require_once 'includes/nav.php' ?>
 
-<?php if ( is_active_sidebar( $sidebar ) ) : ?>
-    <?php dynamic_sidebar( $sidebar ); ?>
-<?php endif; ?>
+    <?php if ( is_active_sidebar( $sidebar ) ) : ?>
+        <?php dynamic_sidebar( $sidebar ); ?>
+    <?php endif; ?>
 
     
     <?php require_once HOME_DIR . '/products.php'; ?>
