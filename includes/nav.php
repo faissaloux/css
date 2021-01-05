@@ -16,23 +16,23 @@
         <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto py-4 py-md-0">
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo get_home_url().'/materialSection'; ?>" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Packs</a>
-                        <a class="dropdown-item" href="#">Caméras</a>
-                        <a class="dropdown-item" href="#">Optiques</a>
-                        <a class="dropdown-item" href="#">Steadicams / Stabilisateurs</a>
-                        <a class="dropdown-item" href="#">Supports Caméras / Trépieds</a>
-                        <a class="dropdown-item" href="#">Accessoires</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/pack-production' ?>">Packs</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/cameralist' ?>">Caméras</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/optiques' ?>">Optiques</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/Steadicams-Stabilisateurs' ?>">Steadicams / Stabilisateurs</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/Trepieds-SupportsCamera' ?>">Supports Caméras / Trépieds</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/accessoires' ?>">Accessoires</a>
                     </div>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo get_home_url().'/services'; ?>" role="button" aria-haspopup="true" aria-expanded="false">Prestation</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Opérateur Steadicam</a>
-                        <a class="dropdown-item" href="#">Opérateur Dji Ronin 2</a>
-                        <a class="dropdown-item" href="#">Techniciens</a>
-                        <a class="dropdown-item" href="#">Transport</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/prestation/8' ?>">Opérateur Steadicam</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/prestation/7' ?>">Opérateur Dji Ronin 2</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/prestation/6' ?>">Techniciens</a>
+                        <a class="dropdown-item" href="<?php echo get_home_url().'/prestation/5' ?>">Transport</a>
                     </div>
                 </li>
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
