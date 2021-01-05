@@ -11,8 +11,8 @@ function template_widgetsInit() {
     $sidebar = "wpse-{$post->ID}-aside";
 
     register_sidebar( array(
-        'name' => $post->post_title ,
-        'id' => "wpse-{$post->ID}-aside",
+        'name'  => $post->post_title ,
+        'id'    => "wpse-{$post->ID}-aside",
     ) );
 }
 template_widgetsInit();
@@ -37,8 +37,6 @@ define( 'HOME_DIR', get_template_directory(). '/templates/home');
         <?php dynamic_sidebar( $sidebar ); ?>
     <?php endif; ?>
 
-    
-    <?php require_once HOME_DIR . '/products.php'; ?>
 
     <?php require_once('includes/footer.php') ?>
     <?php require_once('includes/scripts.php') ?>

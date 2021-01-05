@@ -40,14 +40,25 @@ class products_listing_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
-        $title = $instance['title'];
-        echo $args['before widget'];
-        if ( ! empty ( $title ) )
-        echo $args['before_title'] . $title . $args['after_title'];
-        if ( ! empty ( $subtitle ) )
-        echo $args['before_title'] . $subtitle . $args['after_title'];
-        echo 'Custom widget';
-        echo $args['after_widget'];
-
+        ?>
+            <div class="products">
+                <div class="col-md-4 col-xl-3 col-lg-3 ">
+                    <div class="product-3 mb-3">
+                    <div class="product-media">
+                        <a href="/product/106/">
+                            <img src="https://caestus.ma/uploads/media/2iiSY9HTtiGk4Y0QBhbK.jpg" alt="product">
+                        </a>
+                    </div>
+                <div class="product-detail">
+                    <h6><a href="/product/106/">Sigma Cine Prime - 14mm T2 FF monture PL</a>
+                    </h6>
+                    <a href="javascript:;" data-category="Optiques" class="btn add-To-Cart-Big smalladdtocart" data-image="https://caestus.ma/uploads/media/2iiSY9HTtiGk4Y0QBhbK.jpg" id="addToCartBtn" data-name="Sigma Cine Prime - 14mm T2 FF monture PL" data-id="106">
+                        AJOUTER AU DEVIS
+                        </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        <?php
     }
 }

@@ -39,7 +39,7 @@ class title_widget extends WP_Widget
     public function widget($args, $instance)
     {
         ?>
-            <div class="container">
+            <div class="container mt-4">
                 <p style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: left;"><?php echo $instance['title']; ?></p>
             </div>
         <?php
