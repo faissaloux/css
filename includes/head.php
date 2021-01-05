@@ -2,15 +2,16 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="<?php echo get_bloginfo('description') ;?>">
+<meta name="description" content="<?php echo $theme_setting['site-description']; ?>">
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-<title><?php echo get_bloginfo(); ?></title>
+<title><?php echo $theme_setting['site-title']; ?></title>
 <meta name="keywords"
-    content="Cameras , Camera , Objectif , Optiques , maroc , morocco, agadir , casablanca , marrakech , ouarzazate , rabat , tanger , location , rent , rental , materiel , audiovisuel , cinema , production , red , arri , sigma , canon , tilta , atomos , dji , ronin 2 , steadycam , steadicam, readyrig , operateur , operator , moniteur , monitor , shoulder rig , support camera , trepied , tripod">
+    content="<?php echo $theme_setting['site-keywords']; ?>">
 <meta name="author" content="Caestus Studios">
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/assets/images/Untitled-1-ConvertImage.ico">
-<link rel="icon" href="<?php echo get_template_directory_uri();?>/assets/images/Untitled-1-ConvertImage.ico">
+<!-- <link rel="icon" href="<?php echo get_template_directory_uri();?>/assets/images/Untitled-1-ConvertImage.ico"> -->
+<link rel="icon" href="<?php echo $theme_setting['favicon-url']['url']; ?>">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
 <link   rel="stylesheet"

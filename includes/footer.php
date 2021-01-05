@@ -1,7 +1,7 @@
 <?php global $theme_setting; ?>
 
 <!-- Footer -->
-<footer class="footer white_color" style="background-color: <?php echo $theme_setting['footer-color']; ?>; margin-top: 60px;">
+<footer class="footer white_color" style="background-color: <?php echo $theme_setting['footer-color']; ?>;">
     <div class="container">
         <div class="row gap-y">
             <div class="col-md-5 col-xl-4">

@@ -697,3 +697,8 @@ product-media a{
 	display: inline-block;
 	text-align: center;
 }
+
+
+.products-container{
+	margin-bottom: 100px;
+}

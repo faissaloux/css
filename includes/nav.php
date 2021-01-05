@@ -1,7 +1,10 @@
-<?php global $theme_setting; ?>
+<?php
+    global $theme_setting; 
+    $menu = top_header_menu_bootstrap4();
+?>
 
 <!-- Navbar -->
-<nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>; position: block;">
+<nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
 
     <div class="container">
         <a class="navbar-brand" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	

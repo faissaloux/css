@@ -6,7 +6,7 @@ class products_listing_widget extends WP_Widget
     {
         $widget_ops = array(
                 'class'         => 'products_listing_widget',
-                'description'   => 'products_listing_widget'
+                'description'   => 'products_listing_widget',
             );
         parent::__construct('products_listing_widget', 'Products listing', $widget_ops);
     }
@@ -23,14 +23,13 @@ class products_listing_widget extends WP_Widget
         else
             $number = 'Default Number';
 
-            $categries  = products_categories();
+            $categories  = products_categories();
         ?>
-
         <p>
             <label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php echo 'Products category'; ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>">
-                <?php foreach($categries as $category): ?>
-                    <option  value="<?php echo $category; ?>">cat</option>
+                <?php foreach($categories as $category): ?>
+                    <option  value="<?php echo $category['term_id']; ?>"><?php echo $category['name']; ?></option>
                 <?php endforeach; ?>
             </select>
         </p>
@@ -44,28 +43,38 @@ class products_listing_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
-        $categries  = products_categories();
+        $cat_id = $instance['category'];
+        $limit = $instance['number'];
+        $number = 0;
+
+        $products  = caestus_products($cat_id);
+
         ?>
-            <div class="products">
-                <div class="col-md-4 col-xl-3 col-lg-3 ">
-                    <?php foreach($categries as $category):?>
-                        <div class="product-3 mb-3">
-                            <div class="product-media">
-                                <a href="/product/106/">
-                                    <img src="<?php echo $category['link']; ?>" alt="product">
-                                </a>
-                            </div>
-                            <div class="product-detail">
-                                <h6><a href="<?php echo $category['image']; ?>">Sigma Cine Prime - 14mm T2 FF monture PL</a>
-                                </h6>
-                                <a href="javascript:;" data-category="Optiques" class="btn add-To-Cart-Big smalladdtocart" data-image="https://caestus.ma/uploads/media/2iiSY9HTtiGk4Y0QBhbK.jpg" id="addToCartBtn" data-name="Sigma Cine Prime - 14mm T2 FF monture PL" data-id="106">
-                                    AJOUTER AU DEVIS
-                                    </a>
-                            </div>
+         <div class="container products-container">
+            <div class="products row">
+                    <?php foreach($products as $product):?>
+                        <div class="col-md-4 col-xl-3 col-lg-3 ">
+                                <div class="product-3 mb-3">
+                                    <div class="product-media">
+                                        <a href="<?php echo $product['link']; ?>">
+                                            <img src="<?php echo esc_url($product['image']); ?>" alt="product">
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <h6><a href="<?php echo $product['link']; ?>"><?php echo $product['title']; ?></a>
+                                        </h6>
+                                        <a href="javascript:;" data-category="<?php echo $product['category']; ?>" class="btn" data-image="<?php echo $product['image']; ?>" data-name="<?php echo $product['title']; ?>" data-id="<?php echo $product['id']; ?>"
+                                            style="background-color: #dc3d3d; color: #FFF">
+                                            AJOUTER AU DEVIS
+                                            </a>
+                                    </div>
+                                </div>
                         </div>
+                        <?php $number++; ?>
+                        <?php if($number == $limit) break; ?>
                     <?php endforeach; ?>
-                </div>
             </div>
+         </div>
         <?php
     }
 }
