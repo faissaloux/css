@@ -254,11 +254,55 @@ function theme_register_scripts() {
     wp_enqueue_script( 'fullscreen-script',                 get_template_directory_uri() . '/assets/js/lib/lg-fullscreen.js', array(), false, true);
     wp_enqueue_script( 'slicknav-script',                   get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js', array(), false, true);
     wp_enqueue_script( 'owl-carousel-script',               get_template_directory_uri() . '/assets/owlcarousel/owl.carousel.min.js', array(), false, true);
-    wp_enqueue_script( 'butter-script',                     get_template_directory_uri() . '/assets/butter/butter.js', array(), false, true);
     wp_enqueue_script( 'app-script',                        get_template_directory_uri() . '/assets/js/app.js', array(), false, true);
+    wp_enqueue_script( 'caestus-script',                       get_template_directory_uri() . '/assets/js/caestus.js', false, true );
+    wp_localize_script( 'ajax-script', 'varjs', array( 'caestus_ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 function admin_register_scripts(){
     wp_enqueue_script( 'lightgallery-script',               get_template_directory_uri() . '/assets/js/admin.js', array(), false, false);
+}
+
+
+add_action( 'wp_ajax_add_to_cart',              'add_to_cart_php' );
+add_action( 'wp_ajax_nopriv_add_to_cart',       'add_to_cart_php' );
+
+
+add_action( 'wp_ajax_remove_from_cart',         'remove_from_cart_php' );
+add_action( 'wp_ajax_nopriv_remove_from_cart',  'remove_from_cart_php' );
+
+add_action( 'wp_ajax_make_order',               'make_order_php' );
+add_action( 'wp_ajax_nopriv_make_order',        'make_order_php' );
+
+add_action( 'wp_ajax_add_to_cart',              'product_quantity_php' );
+add_action( 'wp_ajax_nopriv_add_to_cart',       'product_quantity_php' );
+
+add_action( 'wp_ajax_count_orders',             'count_orders_php' );
+add_action( 'wp_ajax_nopriv_count_orders',      'count_orders_php' );
+
+
+function add_to_cart_php(){
+     sv($_POST);
+     die();
+}
+
+function remove_from_cart_php(){
+    sv($_POST);
+    die();
+}
+
+function make_order_php(){
+    sv($_POST);
+    die();
+}
+
+function product_quantity_php(){
+    sv($_POST);
+    die();
+}
+
+function count_orders_php(){
+    sv($_POST);
+    die();
 }
 
 add_action('wp_enqueue_scripts', 'theme_register_styles');

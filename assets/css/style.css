@@ -675,3 +675,11 @@ li.nav-item a:hover{
 li.nav-item a{
     transition-duration: .4s;
 }
+
+.carter{
+	display: inline-block;
+}
+
+body nav.navbar.nav-custom.navbar-expand-md {
+    position: relative !important;
+}

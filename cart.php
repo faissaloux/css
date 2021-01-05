@@ -32,8 +32,8 @@
                             </div>
         
                             <div class="form-group col-md-12 row pr-0">
-                                <label for="first_name" class="col-md-6 px-0">Nom du Projet *</label>
-                                <input type="text" id="adressLine1" placeholder="Nom du Projet" value="" name="adressLine1" class="form-control col-md-6   required_field" required="">
+                                <label for="project_name" class="col-md-6 px-0">Nom du Projet *</label>
+                                <input type="text" id="project_name" placeholder="Nom du Projet" value="" name="project_name" class="form-control col-md-6   required_field" required="">
                             </div>  
                             
                             <div class="form-group col-md-12 row pr-0">
@@ -76,13 +76,13 @@
                          
                          <div class="form-group col-md-12 row pr-0">
                                 <label for="notes" class="col-md-6 px-0"> Commentaires  </label>
-                                <textarea class="form-control col-md-6" placeholder="Commentaires" name="notes" cols="30" rows="10"></textarea>
+                                <textarea class="form-control col-md-6" id="notes" placeholder="Commentaires" name="notes" cols="30" rows="10"></textarea>
                             </div>
                        
                     </div>
                 
                 <div class="form-group col-md-12 pl-0">
-                    <input type="submit" value="Demande de devis" class="btn-send">
+                    <input type="submit" value="Demande de devis" class="btn-send make_order">
                 </div>		
 
         </form> 

@@ -39,7 +39,7 @@ class divider_widget extends WP_Widget
     public function widget($args, $instance)
     {
         ?>
-            <div class="divider" style="height: <?php echo $instance['height'].'px' ?>"></div>
+            <div class="divider-space" style="height: <?php echo $instance['height'].'px' ?>"></div>
         <?php
 
     }
