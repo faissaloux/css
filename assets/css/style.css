@@ -702,3 +702,7 @@ product-media a{
 .products-container{
 	margin-bottom: 100px;
 }
+
+footer{
+	position: sticky !important;
+}
