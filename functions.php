@@ -299,6 +299,12 @@ function the_logo()
 
 $brands     = brands();
 
+$args = array(
+	'post_type'        => 'post',
+	'post_status'      => 'publish',
+	'suppress_filters' => true 
+);
+$blogPosts = get_posts( $args ); 
 
 // sv($brands);
 /*
