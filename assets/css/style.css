@@ -706,3 +706,24 @@ product-media a{
 footer{
 	position: sticky !important;
 }
+
+.image-cont.mr-4 {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search-result ul li:hover{
+	cursor: pointer;
+	background-color: #EEE;
+}
+
+.search-result ul li a{
+	width: 100%;
+}
