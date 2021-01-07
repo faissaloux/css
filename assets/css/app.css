@@ -1445,12 +1445,12 @@ span.lkqlqlkjsq.active:hover {
 .owl-stage{
     display: flex!important;
     align-items: center;
-    height: 140px;
-    padding-top: 50px;
+    height: 80px;
+    padding-top: 14px;
 }
 
 .owl-item{
-    width: 180px!important;
+    width: 109px!important;
     margin: 0 20px;
 }
 
@@ -1462,14 +1462,14 @@ span.lkqlqlkjsq.active:hover {
 .owl-prev{
     position: absolute;
     height: 100px;
-    top: 0;
+    top: 3px;
     left: 0;
 }
 
 .owl-next{
     position: absolute;
     right: 0;
-    top: 0;
+    top: 3px;
     height: 100px;
 }
 
