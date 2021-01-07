@@ -727,3 +727,8 @@ img {
 .search-result ul li a{
 	width: 100%;
 }
+
+.single-post-img-cont{
+	height: 200px;
+	overflow: hidden;
+}

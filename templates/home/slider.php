@@ -31,68 +31,18 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ti-search mt-1"></i></span>
                             </div>
-                            <input id='searchInput' name='kerkesni' type="text" class="form-control"
+                            <input id='searchInput' name='kerkesni' type="text" class="form-control home_search"
                                 placeholder="Recherche">
                         </div>
-                        <div id='ajaxSearch' class="search" style='display: none;'>
+                        <div id='ajaxSearch' class="search home_search_results" style='display: none;'>
                             <div class="search-loading">
                                 <div class="loadingcopong" style='display:none;'>
-                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/Loading/loading.gif" /> Chargement ...
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/Loading/loading.gif"/> Chargement ...
                                 </div>
                             </div>
                             <div class="search-result">
                                 <div class="no-reuslt" style='display:none;'></div>
                                 <ul>
-                                    <li class="d-flex align-items-center">
-                                        <a href="#" class="d-flex">
-                                            <div class="image-cont mr-4">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NormalVersion/Acceuil/Accueil-Cameras.jpg">
-                                            </div>
-                                            <div class="text-cont">
-                                                <p>dejfkljf  fdrejf</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <a href="#" class="d-flex">
-                                            <div class="image-cont mr-4">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NormalVersion/Acceuil/Accueil-Cameras.jpg">
-                                            </div>
-                                            <div class="text-cont">
-                                                <p>dejfkljf  fdrejf</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <a href="#" class="d-flex">
-                                            <div class="image-cont mr-4">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NormalVersion/Acceuil/Accueil-Packproduction.jpg">
-                                            </div>
-                                            <div class="text-cont">
-                                                <p>dejfkljf  fdrefeferfefj  feferef</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <a href="#" class="d-flex">
-                                            <div class="image-cont mr-4">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NormalVersion/Acceuil/Accueil-Cameras.jpg">
-                                            </div>
-                                            <div class="text-cont">
-                                                <p>dejfkljf  refefrefref ferrferffdrejf</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                        <a href="#" class="d-flex">
-                                            <div class="image-cont mr-4">
-                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/NormalVersion/Acceuil/Accueil-Packproduction.jpg">
-                                            </div>
-                                            <div class="text-cont">
-                                                <p>dejfkljf  fdrejfrefeferferferfef</p>
-                                            </div>
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>

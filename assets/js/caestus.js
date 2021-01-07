@@ -125,7 +125,50 @@ $(document).on('keyup', 'input[name=shoting_days]', function () {
 5 : search Logic
 /***********************************************/
 function caestus_search($query){
-  
+    const query         = $query;
+    const no_result     = $('.home_search_results .no-reuslt');
+    const search_result = $('.home_search_results ul');
+    no_result.html('');
+
+    const formdata      = new FormData();
+    formdata.append('q', query);
+    formdata.append('action', 'search_product');
+
+    jQuery.ajax({
+        url: varjs.caestus_ajax_url,
+        type : 'post',
+        contentType : false,
+        processData : false,
+        dataType : 'json',
+        data : formdata,
+        success: function(response) {
+            $.each( response, function(k, v) {
+                
+                var title = v['title'];
+                var id    = v['id'];
+                var image = v['image'];
+                var link  = v['link'];
+                let error = v['error'];
+                if ( error ) {
+                    search_result.html('<li style="text-align:center;">Non resultat </li>');
+                }else {
+                    const result_item = `<li class='d-flex align-items-center'>
+                                            <a href="${link}" class="d-flex">
+                                                <div class="image-cont mr-4">
+                                                    <img src="${image}" />
+                                                </div>
+                                                <div class="text-cont">
+                                                    <p>${title}</p>
+                                                </div>
+                                            </a>
+                                        </li>`;
+                    
+                    search_result.html('');
+                    search_result.append(result_item);
+                }
+            });
+        },
+    });
 }
 
 
@@ -134,38 +177,15 @@ function caestus_search($query){
 /***********************************************
 6 : home header search Logic
 /***********************************************/
-$("body .home_search").bind("keyup", function(e) {
-  
-  var search_query = $(this).val();
-  if( search_query ) {
-      var count = search_query.length;
-      if ( count > 1 ) {
-          
-          var search_wrapper = $('.home_search .home_search_results');
-          var no_result = $('.home_search .home_search_results .no-reuslt');
-          var search_result = $('.home_search .home_search_results ul');
-          
+$("body .home_search").bind("keyup", async function(e) {
+    var search_query = $(this).val();
+    var search_wrapper = $('.home_search_results');
+    
+    if( search_query ) {
+        var count = search_query.length;
+        if ( count > 1 ) {
           search_wrapper.show();
-          no_result.html('');
-          search_result.html('');
-          
-          var result = caestus_search(search_query);
-          var json_result = JSON.parse(result);
-          
-          $.each( json_result, function(k, v) {
-              
-              var name  = v['name'];
-              var id    = v['id'];
-              var image = v['image'];
-              var link  = v['link'];
-
-              if ( k == 'error' ) {
-                  search_result.html('<li style="text-align:center;">Non resultat </li>');
-              }else {
-                  var result_item = '<li><img src="'+image+'" /><a href="'+link+'">'+name+'</a></li>';
-                  search_result.append(result_item);
-              }
-          });
+          caestus_search(search_query);
       }
       return false;
   }

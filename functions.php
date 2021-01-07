@@ -226,11 +226,14 @@ add_action( 'wp_ajax_nopriv_remove_from_cart',  'remove_from_cart_php' );
 add_action( 'wp_ajax_make_order',               'make_order_php' );
 add_action( 'wp_ajax_nopriv_make_order',        'make_order_php' );
 
-add_action( 'wp_ajax_add_to_cart',              'product_quantity_php' );
-add_action( 'wp_ajax_nopriv_add_to_cart',       'product_quantity_php' );
+add_action( 'wp_ajax_product_quantity',         'product_quantity_php' );
+add_action( 'wp_ajax_nopriv_product_quantity',  'product_quantity_php' );
 
 add_action( 'wp_ajax_count_orders',             'count_orders_php' );
 add_action( 'wp_ajax_nopriv_count_orders',      'count_orders_php' );
+
+add_action( 'wp_ajax_search_product',           'search_product_php' );
+add_action( 'wp_ajax_nopriv_search_product',    'search_product_php' );
 
 
 function add_to_cart_php(){
@@ -255,6 +258,11 @@ function product_quantity_php(){
 
 function count_orders_php(){
     sv($_POST);
+    die();
+}
+
+function search_product_php(){
+    echo ajax_products_search($_POST['q'], 'json');
     die();
 }
 

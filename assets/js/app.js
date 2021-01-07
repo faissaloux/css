@@ -15,9 +15,9 @@ $(document).ready(function () {
 });
 
 
-$("body #searchInput").bind("keyup", function (e) {
-    checkAndGetChars();
-})
+// $("body #searchInput").bind("keyup", function (e) {
+//     checkAndGetChars();
+// })
 
 
 function checkAndGetChars() {
