@@ -478,6 +478,31 @@ nav.navbar.navbar-expand-lg.navbar-dark {
     background-size: cover;
 }
 
+.card-body.px-5.small_box_done1:before {
+    content: '';
+    right: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.small_box_done_1 .overflow{
+    background-color: #FFFFFF90;
+    padding: 26px 32px;
+    border: 5px solid #FFF;
+    transition: 1s;
+}
+
+
+.small_box_done_1 .overflow:hover{
+    border: 5px solid #000;
+    transition: 1s;
+}
+
 .card-body.px-5.small_box_done .row, .card-body.px-5.small_box_done p {
     z-index: 545454554;
     position: relative;

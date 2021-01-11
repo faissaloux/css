@@ -269,7 +269,14 @@ function search_product_php(){
 add_action('wp_enqueue_scripts', 'theme_register_styles');
 add_action('wp_enqueue_scripts', 'theme_register_scripts');
 add_action('admin_enqueue_scripts', 'admin_register_scripts');
+ 
+function add_my_post_types_to_query( $query ) {
+    if ( is_home() && $query->is_main_query() )
+        $query->set( 'post_type', array( 'post', 'movies' ) );
+    return $query;
+}
 
+add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
 function nav_bar()
 {

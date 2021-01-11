@@ -1,9 +1,12 @@
 <?php
-/*
-    Template Name: pack-production
-*/
+    /*
+        Template Name: pack-production
+    */
 
+    $args = array( 'post_type' => 'pack_cpt', 'posts_per_page' => 10 );
+    $the_query = new WP_Query( $args ); 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -319,6 +322,39 @@
             </div>
         </div>
     </main>
+    <?php if ( $the_query->have_posts() ) : ?>
+    <div class="section-pack section bg-gray">
+        <div class="container">
+            <div class="row">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <div class="col-md-6">
+                <a href="/packs/8">
+                    <div class="p-5" style="width: 100%; display: inline-block;">
+                        <div class="card border hover-shadow-6">
+                            <div class="card-body small_box_done_1 p-0"
+                                style="background: url(<?php echo get_the_post_thumbnail_url();?>)">
+                                <div class="overflow">
+                                    <div class="row">
+                                        <div class="col-auto mr-auto">
+                                            <h6><strong><?php the_title(); ?></strong></h6>
+                                        </div>
+                                        <div class="col-auto">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex px-4" style="background-color: #1a1918db; color: #FFF; width: fit-content">
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <?php endwhile; ?>
+            </div>
+        </div>
+    </div>
+    <?php endif; ?>
 
     <?php require_once('includes/footer.php') ?>
     <?php require_once('includes/scripts.php') ?>
