@@ -22,8 +22,24 @@
             <div class="col-md-6 col-xl-3">
                 <h6 class="mb-4"><strong><?php echo $theme_setting['footer-social-media-title']; ?></strong></h6>
                 <div class="social text-center text-lg-left">
+                <?php if (!empty($theme_setting['facebook'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-facebook" href="<?php echo $theme_setting['facebook']; ?>">
+                            <div class="up"><i class="fab fa-facebook"></i></div>
+                            <div class="down"><i class="fab fa-facebook"></i></div>
+                        </a>
+                    </span>
+                <?php endif ?>
+                <?php if (!empty($theme_setting['twitter'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-twitter" href="<?php echo $theme_setting['twitter']; ?>">
+                            <div class="up"><i class="fab fa-twitter"></i></div>
+                            <div class="down"><i class="fab fa-twitter"></i></div>
+                        </a>
+                    </span>
+                <?php endif ?>
                 <?php if (!empty($theme_setting['instagram'])): ?>
-                    <span class="over-hidden">
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
                         <a class="social social-instagram" href="<?php echo $theme_setting['instagram']; ?>">
                             <div class="up"><i class="fab fa-instagram"></i></div>
                             <div class="down"><i class="fab fa-instagram"></i></div>
@@ -31,26 +47,42 @@
                     </span>
                 <?php endif ?>
                 <?php if (!empty($theme_setting['youtube'])): ?>
-                    <span class="over-hidden">
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
                         <a class="social social-youtube" href="<?php echo $theme_setting['youtube']; ?>">
                             <div class="up"><i class="fab fa-youtube"></i></div>
                             <div class="down"><i class="fab fa-youtube"></i></div>
                         </a>
                     </span>
                 <?php endif ?>
-                <?php if (!empty($theme_setting['twitter'])): ?>
-                    <span class="over-hidden">
-                        <a class="social social-twitter" href="<?php echo $theme_setting['twitter']; ?>">
-                            <div class="up"><i class="fab fa-twitter"></i></div>
-                            <div class="down"><i class="fab fa-twitter"></i></div>
+                <?php if (!empty($theme_setting['linkedin'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-linkedin" href="<?php echo $theme_setting['linkedin']; ?>">
+                            <div class="up"><i class="fab fa-linkedin"></i></div>
+                            <div class="down"><i class="fab fa-linkedin"></i></div>
                         </a>
                     </span>
                 <?php endif ?>
-                <?php if (!empty($theme_setting['facebook'])): ?>
-                    <span class="over-hidden">
-                        <a class="social social-facebook" href="<?php echo $theme_setting['facebook']; ?>">
-                            <div class="up"><i class="fab fa-facebook"></i></div>
-                            <div class="down"><i class="fab fa-facebook"></i></div>
+                <?php if (!empty($theme_setting['pinterest'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-pinterest" href="<?php echo $theme_setting['pinterest']; ?>">
+                            <div class="up"><i class="fab fa-pinterest"></i></div>
+                            <div class="down"><i class="fab fa-pinterest"></i></div>
+                        </a>
+                    </span>
+                <?php endif ?>
+                <?php if (!empty($theme_setting['googleplus'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-googleplus" href="<?php echo $theme_setting['googleplus']; ?>">
+                            <div class="up"><i class="fab fa-google"></i></div>
+                            <div class="down"><i class="fab fa-google"></i></div>
+                        </a>
+                    </span>
+                <?php endif ?>
+                <?php if (!empty($theme_setting['soundcloud'])): ?>
+                    <span class="over-hidden" style="background-color: <?php echo $theme_setting['social-media-background']; ?>;">
+                        <a class="social social-soundcloud" href="<?php echo $theme_setting['soundcloud']; ?>">
+                            <div class="up"><i class="fab fa-soundcloud"></i></div>
+                            <div class="down"><i class="fab fa-soundcloud"></i></div>
                         </a>
                     </span>
                 <?php endif ?>

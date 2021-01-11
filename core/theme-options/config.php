@@ -532,7 +532,12 @@ Redux::setSection( $opt_name, array(
                     'type'     => 'color',
                     'title'    => __( 'Go top arrow', 'caynoon_text' ),
                     'default'  => '#dc3d3d'
-
+                ),
+                array(
+                    'id'       => 'social-media-background',
+                    'type'     => 'color',
+                    'title'    => __( 'Social media background', 'caynoon_text' ),
+                    'default'  => '#dc3d3d'
                 ),
                 array(
                     'id'       => 'footer-about-title',
@@ -542,7 +547,7 @@ Redux::setSection( $opt_name, array(
                 ),
                 array(
                     'id'       => 'footer-about',
-                    'type'     => 'textarea',
+                    'type'     => 'editor',
                     'title'    => __( 'About', 'caynoon_text' ),
                     'default'  => 'Caestus Studios vous accompagne et vous propose les meilleurs conseils et solutions pour vos productions cinématographiques et audiovisuelles avec des possibilités de livraison à travers tout le Maroc.'
                 ),
