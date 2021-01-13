@@ -266,12 +266,12 @@ $("body").on("click", ".searchclick", function () {
     window.location.href = $(this).data('open');
 });
 
-$('body .quantityPicker').change(function () {
-    var qu = $(this).val();
-    var id = $(this).data('cartitem');
-    saveQuantity(id, qu);
-    return false;
-});
+// $('body .quantityPicker').change(function () {
+//     var qu = $(this).val();
+//     var id = $(this).data('cartitem');
+//     saveQuantity(id, qu);
+//     return false;
+// });
 
 function saveQuantity(CartItem, quantity) {
 

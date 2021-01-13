@@ -82,13 +82,13 @@ $('body .remove-from-cart').click(function(){
 $('body .product_quantity').change(function(){
   var quantity  = $(this).val();
   var id        = $(this).data('id');
-  var category  = $(this).data('category')
-
+  var category  = $(this).data('category');
   var formdata   = new FormData();
+
   formdata.append('id',id);
   formdata.append('quantity',quantity);
   formdata.append('category',category);
-  formData.append('action', 'product_quantity'); 
+  formdata.append('action', 'product_quantity'); 
 
   jQuery.ajax({
     url: varjs.caestus_ajax_url,
@@ -96,7 +96,7 @@ $('body .product_quantity').change(function(){
     contentType : false,
     processData : false,
     dataType : 'html',
-    data : formdata,
+    data : formdata
   });
 
   return false;

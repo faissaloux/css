@@ -259,7 +259,10 @@ function make_order_php(){
 }
 
 function product_quantity_php(){
-    sv($_POST);
+    $id         = $_POST['id'];
+    $quantity   = $_POST['quantity'];
+    $category   = $_POST['category'];
+    wp_send_json_success(caestus_update_item($id,$category,$quantity));
     die();
 }
 
@@ -352,8 +355,8 @@ $categries  = products_categories();
     $categries  = products_categories();
 
     caestus_add_to_cart($id,$image,$title,$quantity,$category);
-    caestus_remove_item($id,$category);             <------------ /cart
-    caestus_update_item($id,$category,$quantity);   <--------------------- /cart
+    caestus_remove_item($id,$category);
+    caestus_update_item($id,$category,$quantity);
     caestus_cart_count();
 
     $product_by_category = caestus_products($cat_id);

@@ -91,7 +91,7 @@
                                                     <?php echo $itm['title']; ?>
                                                 </td>
                                                 <td class="text-left">
-                                                    <input type="number" min="1" max="20" id="dldklklll" class="quantityPicker form-control" data-cartitem="7" value="<?php echo $itm['quantity']; ?>">
+                                                    <input type="number" min="1" max="20" id="dldklklll" class="quantityPicker product_quantity form-control" data-id="<?php echo $itm['id']; ?>" data-category="<?php echo $itm['category']; ?>" data-cartitem="7" value="<?php echo $itm['quantity']; ?>">
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>       
