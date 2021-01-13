@@ -216,24 +216,27 @@ function admin_register_scripts(){
 }
 
 
-add_action( 'wp_ajax_add_to_cart',              'add_to_cart_php' );
-add_action( 'wp_ajax_nopriv_add_to_cart',       'add_to_cart_php' );
+add_action( 'wp_ajax_add_to_cart',                      'add_to_cart_php' );
+add_action( 'wp_ajax_nopriv_add_to_cart',               'add_to_cart_php' );
 
 
-add_action( 'wp_ajax_remove_from_cart',         'remove_from_cart_php' );
-add_action( 'wp_ajax_nopriv_remove_from_cart',  'remove_from_cart_php' );
+add_action( 'wp_ajax_remove_from_cart',                 'remove_from_cart_php' );
+add_action( 'wp_ajax_nopriv_remove_from_cart',          'remove_from_cart_php' );
 
-add_action( 'wp_ajax_make_order',               'make_order_php' );
-add_action( 'wp_ajax_nopriv_make_order',        'make_order_php' );
+add_action( 'wp_ajax_make_order',                       'make_order_php' );
+add_action( 'wp_ajax_nopriv_make_order',                'make_order_php' );
 
-add_action( 'wp_ajax_product_quantity',         'product_quantity_php' );
-add_action( 'wp_ajax_nopriv_product_quantity',  'product_quantity_php' );
+add_action( 'wp_ajax_product_quantity',                 'product_quantity_php' );
+add_action( 'wp_ajax_nopriv_product_quantity',          'product_quantity_php' );
 
-add_action( 'wp_ajax_count_orders',             'count_orders_php' );
-add_action( 'wp_ajax_nopriv_count_orders',      'count_orders_php' );
+add_action( 'wp_ajax_count_orders',                     'count_orders_php' );
+add_action( 'wp_ajax_nopriv_count_orders',              'count_orders_php' );
 
-add_action( 'wp_ajax_search_product',           'search_product_php' );
-add_action( 'wp_ajax_nopriv_search_product',    'search_product_php' );
+add_action( 'wp_ajax_search_product',                   'search_product_php' );
+add_action( 'wp_ajax_nopriv_search_product',            'search_product_php' );
+
+add_action( 'wp_ajax_search_mobile_product',            'search_mobile_product_php' );
+add_action( 'wp_ajax_nopriv_search_mobile_product',     'search_mobile_product_php' );
 
 
 function add_to_cart_php(){
@@ -273,6 +276,11 @@ function count_orders_php(){
 
 function search_product_php(){
     echo ajax_products_search($_POST['q'], 'json');
+    die();
+}
+
+function search_mobile_product_php(){
+    wp_send_json_success(ajax_products_search($_POST['q']));
     die();
 }
 
@@ -348,7 +356,7 @@ $categries  = products_categories();
 
 /*
     $brands     = brands();
-    $search     = ajax_products_search('jjjjj','json'); <----------- Same as www.8sinn.com mobile search !json
+    $search     = ajax_products_search('jjjjj','json');
     $menu       = top_header_menu_bootstrap4();
     $cart_items = caestus_cart_items();
     $products   = caestus_products();

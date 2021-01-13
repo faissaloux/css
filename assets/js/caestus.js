@@ -8,10 +8,12 @@ compenets :
 3 : update cart item
 4 : remove cart item
 5 : search Logic
-6 : home header search Logic
-7 : Make order
-8 : order logic
-9 : Count orders
+6 : Mobile search Logic
+7 : Search mobile Logic
+8 : home header search Logic
+9 : Make order
+10 : order logic
+11 : Count orders
 */
 
 
@@ -171,13 +173,51 @@ function caestus_search($query){
     });
 }
 
+/***********************************************
+6: Mobile search Logic
+/***********************************************/
+$("body button.searchMobile").click(function() {
+    const search_query = $("input.searchMobile").val();
+    
+    if( search_query ) {
+        const count = search_query.length;
+        if ( count > 1 ) {
+          search_mobile(search_query);
+      }
+      return false;
+  }
+});
+
+/***********************************************
+7 : Search mobile Logic
+/***********************************************/
+function search_mobile($query){
+    const query         = $query;
+
+    const formdata      = new FormData();
+    formdata.append('q', query);
+    formdata.append('action', 'search_mobile_product');
+
+    jQuery.ajax({
+        url: varjs.caestus_ajax_url,
+        type : 'post',
+        contentType : false,
+        processData : false,
+        dataType : 'json',
+        data : formdata,
+        success: function(data){
+            console.log(data);
+        }
+    });
+}
+
 
 
 
 /***********************************************
-6 : home header search Logic
+8: home header search Logic
 /***********************************************/
-$("body .home_search").bind("keyup", async function(e) {
+$("body .home_search").bind("keyup", function(e) {
     var search_query = $(this).val();
     var search_wrapper = $('.home_search_results');
     
@@ -192,7 +232,7 @@ $("body .home_search").bind("keyup", async function(e) {
 });
 
 /***********************************************
-7: Make order
+9: Make order
 /***********************************************/
 $('body .make_order').click(function(e){
 
@@ -236,7 +276,7 @@ $('body .make_order').click(function(e){
 });
 
 /***********************************************
-8 : order logic
+10: order logic
 /***********************************************/
 function order(){
   
@@ -247,7 +287,7 @@ function order(){
 }
 
 /***********************************************
-9 : Count orders
+11: Count orders
 /***********************************************/
 function count(){
     var formData     = new FormData();
