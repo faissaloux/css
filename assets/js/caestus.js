@@ -50,7 +50,7 @@ $('body .caestus_add_to_cart').click(function(){
 /***********************************************
 2 : Remove from cart
 /***********************************************/
-$('body .remove_from_cart').click(function(){
+$('body .remove-from-cart').click(function(){
     
     var productID    = $(this).data('id');  
     var category     = $(this).data('category'); 
@@ -70,7 +70,7 @@ $('body .remove_from_cart').click(function(){
         cache:false,
         dataType: "JSON",
         success: function(data) {
-           window.location.href = "";
+            window.location.href = "";
         }
      });
 });

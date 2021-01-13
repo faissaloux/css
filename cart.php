@@ -84,7 +84,7 @@
                                         <?php foreach($item as $itm): ?>
                                             <tr>
                                                 <td>
-                                                    <a class="item-remove" href="/remove/<?php echo $itm['id']; ?>"><i class="ti-close"></i></a>
+                                                    <a class="item-remove remove-from-cart" data-id="<?php echo $itm['id']; ?>" data-category="<?php echo $itm['category']; ?>"><i class="ti-close"></i></a>
                                                 </td>
                                                 <td>
                                                     <img class="rounded" src="<?php echo $itm['image']; ?>">

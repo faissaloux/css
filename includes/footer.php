@@ -95,11 +95,6 @@
     </div>
 </footer>
 <!-- /.footer -->
-<span class='lkqlqlkjsq'>
-    <a>
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/white cross.png" alt="">
-    </a>
-</span>
 <span class='searjhcj' style='display:none;'>
     <input type="text" class='SearchBarPhone sidbarPhoneSearch' placeholder='Recherche' />
     <ul class="list-group searchPhoneSidbarResutls" style='display:none;'>

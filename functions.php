@@ -247,7 +247,9 @@ function add_to_cart_php(){
 }
 
 function remove_from_cart_php(){
-    sv($_POST);
+    $id         = $_POST['id'];
+    $category   = $_POST['category'];
+    wp_send_json_success(caestus_remove_item($id,$category));
     die();
 }
 
