@@ -235,9 +235,6 @@ add_action( 'wp_ajax_nopriv_count_orders',              'count_orders_php' );
 add_action( 'wp_ajax_search_product',                   'search_product_php' );
 add_action( 'wp_ajax_nopriv_search_product',            'search_product_php' );
 
-add_action( 'wp_ajax_search_mobile_product',            'search_mobile_product_php' );
-add_action( 'wp_ajax_nopriv_search_mobile_product',     'search_mobile_product_php' );
-
 
 function add_to_cart_php(){
     $id         = $_POST['id'];
@@ -276,11 +273,6 @@ function count_orders_php(){
 
 function search_product_php(){
     echo ajax_products_search($_POST['q'], 'json');
-    die();
-}
-
-function search_mobile_product_php(){
-    wp_send_json_success(ajax_products_search($_POST['q']));
     die();
 }
 
@@ -350,6 +342,10 @@ function disable_wp_auto_p( $content ) {
     return $content;
 }
 add_filter( 'the_content', 'disable_wp_auto_p', 0 );
+
+if($_GET['q']){
+    $search_result = ajax_products_search($_GET['q']);
+}
 
 $cart_items = caestus_cart_items();
 $categries  = products_categories();

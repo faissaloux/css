@@ -46,7 +46,7 @@
             <div class="block block-content block-content-slideout ui-dialog-content ui-widget-content ox-modal-content" data-move-mobile="search.slideout" data-move-sticky="search.slideout" style="display: block;" data-role="OXmodal" id="ui-id-1">
 		<div class="header__search-wrapper ox-move-item ox-move-item-search.slideout">
 			<div class="ox-overlay-close-btn"><span></span></div>
-            <form class="form minisearch" id="search_mini_form">
+            <form class="form minisearch" id="search_mini_form" action="/search" method="get">
                 <div class="field search">
                     <div class="control">
                         <div class="flashing-cursor"></div>

@@ -1,70 +1,51 @@
-<!-- جلب الهيدر -->
-<?php  get_header();  ?>
+<?php
+    /**
+     * Template Name: search
+     */
+    define( 'HOME_DIR', get_template_directory(). '/templates/home');
+    global $theme_setting;
 
-<!-- جلب اعدادات القالب من ريداكس فريمورك -->
-<?php global $theme_setting;  ?>
+?>
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- جلب محتوى الهيدر -->
-<?php get_main_header(); ?>  
+<head>
+    <?php require_once('includes/head.php') ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/app.css">
+</head>
+<a href="javascript:;" id="button" style="background-color: <?php echo $theme_setting['top-arrow-color'] ?>"></a>
 
-<!-- جلب معلومات البحث -->
-<?php global $wp_query; $curtag = $wp_query->get_queried_object();  ?>
+<body>
+    <?php require_once 'includes/nav.php' ?>
+    <div class="container">
+        <div class="search-result-page py-5">
+            <h2>SEARCH RESULTS FOR: <span><?php echo '\''.strtoupper($_GET['q']).'\''; ?></span></h2>
+            <div class="row">
+                <?php if( !isset(($search_result[0]['error']))): ?>
+                    <?php foreach($search_result as $result): ?>
+                        <div class="col-3">
+                            <div class="img-container">
+                                <a href="<?php echo $result['link']; ?>">
+                                    <img src="<?php echo $result['image']; ?>"/>
+                                </a>
+                            </div>
+                            <div class="title">
+                                <p><?php echo $result['title']; ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <div class="col-4">
+                        <div class="error">
+                            <p><?php echo $search_result[0]['error']; ?></p>
+                        </div>
+                    </div>
+                <?php endif ?>
+            </div>
+        </div>
+    </div>
+    <?php require_once 'includes/footer.php'; ?>
+    <?php require_once 'includes/scripts.php'; ?>
+</body>
 
-<!-- مسار الصفحة -->
-<?php the_breadcrumb(); ?>
-
-<!-- كلمة البحث -->
-<?php echo get_search_query() ?>
-
-<!-- المقالة -->
-<?php if ( have_posts() ) { while ( have_posts() ) { the_post();  ?>
-
-<!-- صورة الموضوع -->
-<?php the_post_thumbnail(get_the_ID(),'large'); ?> 
-
-<!-- العنوان -->
-<?php the_title(); ?>
-
-<!-- رابط الموضوع -->
-<?php  the_permalink();  ?>
-
-<!-- المحتوى -->
-<?php the_content(); ?>
-
-<!-- التاريخ -->
-<?php the_time('F j, Y'); ?>
-
-<!-- الكاتب-->
-<?php the_author(); ?>
-
-<!-- الرابط للكاتب -->
-<?php the_author_posts_link(); ?>
-
-<!-- صورة الكاتب -->
-<?php echo get_avatar(get_the_author_email(), 60, "","avatar",array("class"=>"img-responsive img-circle"));?>
-
-<!-- نبذة صغيرة من المقالة -->
-<?php echo wp_trim_words( get_the_content(), 15, '...' ); ?>
-
-<!-- عدد التعليقات -->
-<?php comments_number(); ?>
-
-<?php  }   } ?>
-
-<!-- لا توجد نتائج لكلمة البحث -->
-<?php if (!have_posts()): ?>
-لا توجد نتائج لكلمة البحث : <?php echo get_search_query() ?>
-<?php endif; ?>
-<!--// لا توجد نتائج لكلمة البحث -->
-
-<!-- ترقيم الصفحات -->
-<?php theme_pagination($wp_query->max_num_pages); ?>
-<!--// ترقيم الصفحات -->
-
-<?php wp_reset_postdata(); ?>
-
-<!-- جلب محتوى الفوتر -->
-<?php get_main_footer(); ?>
-
-<!-- جلب الفوتر -->
-<?php get_footer(); ?>
+</html>
