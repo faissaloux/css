@@ -42,13 +42,30 @@
         </div>
 
         <div class="col-4 col-lg-3 text-right lbotonat">
-            <div class="search-For-Top-Header">
-                <input type="text" class='searchStuf' style='display:none;' placeholder="Recherche">
-                <ul class='mlsqfkkfmkmlklm' style='display:none;'>
-                    <li class='no-reuslt'>Aucun Resultat</li>
-                </ul>
-            </div>
-            <a class="btn btn-xs ssfsqzgzagez" href='javascript:;' data-toggle="offcanvas"
+            <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-top active ox-slideout-active" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;">
+            <div class="block block-content block-content-slideout ui-dialog-content ui-widget-content ox-modal-content" data-move-mobile="search.slideout" data-move-sticky="search.slideout" style="display: block;" data-role="OXmodal" id="ui-id-1">
+		<div class="header__search-wrapper ox-move-item ox-move-item-search.slideout">
+			<div class="ox-overlay-close-btn"><span></span></div>
+						<form class="form minisearch" id="search_mini_form" action="https://www.8sinn.com/catalogsearch/result/" method="get">
+				<div class="field search">
+					<div class="control">
+						<div class="flashing-cursor"></div>
+						<input id="search" type="text" name="q" value="" class="input-text js-input-focus searchStuf" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false">
+						<div class="label animated-text--masked" for="search" data-role="minisearch-label">
+							<div class="wrap">
+								<span class="inner">Search</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="actions">
+					<button type="submit" title="Go" class="action search" aria-label="Search" disabled="">
+						<span class="search-icon-wrapper"><svg data-name="search-icon-small 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><rect x="11.73223" y="10.52513" width="2" height="4.41421" transform="translate(-5.27386 12.73223) rotate(-45)"></rect><path d="M7,0a7,7,0,1,0,7,7A7,7,0,0,0,7,0ZM7,12a5,5,0,1,1,5-5A5,5,0,0,1,7,12Z"></path></svg></span><span>GO</span>
+					</button>
+				</div>
+			</form>
+		</div></div></div>
+            <a class="btn btn-xs ssfsqzgzagez down-search" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">
                 <span class="ti-search"></span></a>
             <div class="carter">

@@ -23,10 +23,10 @@
     <div class="row align-items-center h-100">
         <div class="col-md-12 mx-auto text-center">
         </div>
-        <div class="col-md-5 mx-auto text-center">
+        <div class="col-md-5 mx-auto text-center search-desktop">
             <form class="rounded ">
-                <div class="row">
-                    <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-12">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ti-search mt-1"></i></span>

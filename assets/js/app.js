@@ -633,3 +633,27 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 	});  
 	
   })(jQuery); 
+
+
+  $("#search").focus(()=>{
+      $(".minisearch .field.search .control").addClass("input-focused");
+      $(".flashing-cursor").hide();
+  })
+
+  $("#search").focusout(()=>{
+    if($("#search").val().length == 0){
+        $(".minisearch .field.search .control").removeClass("input-focused");
+        $(".flashing-cursor").show();
+    }
+  })
+
+  $(".down-search").click(()=>{
+    $(".ox-slideout-top").slideDown(300);
+    $(".animated-text--masked:after").css("background-color", "red");
+    $("body").css("overflow", "hidden");
+  })
+
+  $(".ox-overlay-close-btn").click(()=>{
+    $(".ox-slideout-top").slideUp(300);
+    $("body").css("overflow", "scroll");
+  })
