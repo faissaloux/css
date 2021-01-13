@@ -63,8 +63,13 @@ class products_listing_widget extends WP_Widget
                                     <div class="product-detail">
                                         <h6><a href="<?php echo $product['link']; ?>"><?php echo $product['title']; ?></a>
                                         </h6>
-                                        <a href="javascript:;" data-category="<?php echo $product['category']; ?>" class="btn" data-image="<?php echo $product['image']; ?>" data-name="<?php echo $product['title']; ?>" data-id="<?php echo $product['id']; ?>"
-                                            style="background-color: #dc3d3d; color: #FFF">
+                                        <a  href="javascript:;"
+                                            data-category="<?php echo $product['category']; ?>"
+                                            class="btn caestus_add_to_cart" data-image="<?php echo $product['image']; ?>"
+                                            data-name="<?php echo $product['title']; ?>" 
+                                            data-id="<?php echo $product['id']; ?>"
+                                            style="background-color: #dc3d3d; color: #FFF"
+                                        >
                                             AJOUTER AU DEVIS
                                             </a>
                                     </div>

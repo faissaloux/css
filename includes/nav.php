@@ -51,8 +51,11 @@
             <a class="btn btn-xs ssfsqzgzagez" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">
                 <span class="ti-search"></span></a>
-            <div class="carter"><a class="btn btn-xs" id="cart" style="background-color: <?php echo $theme_setting['header-cart-background'] ?>" href="<?php echo get_home_url().'/cart'; ?>"> 0 <span
-                        class="icon-document"></span></a>
+            <div class="carter">
+                <a class="btn btn-xs" id="cart" style="background-color: <?php echo $theme_setting['header-cart-background'] ?>" href="<?php echo get_home_url().'/cart'; ?>">
+                    <span id="products-in-cart">0</span>
+                    <span class="icon-document"></span>
+                </a>
             </div>
             <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
                     class="ti-location-pin"></span></a>

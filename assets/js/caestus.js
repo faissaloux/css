@@ -19,7 +19,6 @@ compenets :
 1 : add to cart
 /***********************************************/
 $('body .caestus_add_to_cart').click(function(){
-  
     var productname  = $(this).data('name');  
     var productID    = $(this).data('id');  
     var productImage = $(this).data('image'); 
@@ -40,10 +39,11 @@ $('body .caestus_add_to_cart').click(function(){
         data: formData,
         cache:false,
         dataType: "JSON",
-        success: function(data) {
-           window.location.href = "";
+        success: function(data){ 
+            count();
         }
-     });
+    });
+
 });
 
 
@@ -249,20 +249,22 @@ function order(){
 /***********************************************
 9 : Count orders
 /***********************************************/
-$('body #cart').click(function(){
-        var formData     = new FormData();
-        formData.append('action', 'count_orders');  
-          
-        $.ajax({
-            url: varjs.caestus_ajax_url,
-            type: 'POST',
-            processData: false,
-            contentType: false, 
-            data: formData,
-            cache:false,
-            dataType: "JSON"
-         });
-    
+function count(){
+    var formData     = new FormData();
+    formData.append('action', 'count_orders');  
+        
+    $.ajax({
+        url: varjs.caestus_ajax_url,
+        type: 'POST',
+        processData: false,
+        contentType: false, 
+        data: formData,
+        cache:false,
+        dataType: "JSON",
+        success : function(data){
+            $("a#cart span#products-in-cart").html(data.data);
+        }
     });
-
+}
+    count();
 });

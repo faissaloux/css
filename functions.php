@@ -237,8 +237,13 @@ add_action( 'wp_ajax_nopriv_search_product',    'search_product_php' );
 
 
 function add_to_cart_php(){
-     sv($_POST);
-     die();
+    $id         = $_POST['id'];
+    $image      = $_POST['image'];
+    $title      = $_POST['name'];
+    $quantity   = 1;
+    $category   = $_POST['category'];
+    wp_send_json_success(caestus_add_to_cart($id,$image,$title,$quantity,$category));
+    die();
 }
 
 function remove_from_cart_php(){
@@ -257,7 +262,7 @@ function product_quantity_php(){
 }
 
 function count_orders_php(){
-    sv($_POST);
+    wp_send_json_success(caestus_cart_count());
     die();
 }
 
