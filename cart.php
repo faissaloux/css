@@ -73,6 +73,31 @@
                               <label for="shoting_days" class="col-md-6 px-0"> Jours de tournage </label>
                               <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays">
                             </div>
+                            <?php foreach($cart_items as $key => $item): ?>
+                                <table class="table table-cart">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="3" class="title"><?php echo $key; ?></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody valign="middle">
+                                        <?php foreach($item as $itm): ?>
+                                            <tr>
+                                                <td>
+                                                    <a class="item-remove" href="/remove/<?php echo $itm['id']; ?>"><i class="ti-close"></i></a>
+                                                </td>
+                                                <td>
+                                                    <img class="rounded" src="<?php echo $itm['image']; ?>">
+                                                    <?php echo $itm['title']; ?>
+                                                </td>
+                                                <td class="text-left">
+                                                    <input type="number" min="1" max="20" id="dldklklll" class="quantityPicker form-control" data-cartitem="7" value="<?php echo $itm['quantity']; ?>">
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>       
+                                    </tbody>
+                                </table>
+                            <?php endforeach; ?>
                          
                          <div class="form-group col-md-12 row pr-0">
                                 <label for="notes" class="col-md-6 px-0"> Commentaires  </label>

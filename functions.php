@@ -338,18 +338,21 @@ function disable_wp_auto_p( $content ) {
 }
 add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
+$cart_items = caestus_cart_items();
+$categries  = products_categories();
+
 /*
     $brands     = brands();
     $search     = ajax_products_search('jjjjj','json'); <----------- Same as www.8sinn.com mobile search !json
     $menu       = top_header_menu_bootstrap4();
-    $cart_items = caestus_cart_items();                 <---------------- show products in cart
+    $cart_items = caestus_cart_items();
     $products   = caestus_products();
     $categries  = products_categories();
 
-    caestus_add_to_cart($id,$image,$title,$quantity,$category);    <------------ quantity = 1
+    caestus_add_to_cart($id,$image,$title,$quantity,$category);
     caestus_remove_item($id,$category);             <------------ /cart
     caestus_update_item($id,$category,$quantity);   <--------------------- /cart
-    caestus_cart_count();          <-----------------------
+    caestus_cart_count();
 
     $product_by_category = caestus_products($cat_id);
 */
