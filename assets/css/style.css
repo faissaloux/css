@@ -732,3 +732,39 @@ img {
 	height: 200px;
 	overflow: hidden;
 }
+
+
+.table-cart{
+    border: 1px solid #eaeff4;
+    border-top: none;
+}
+
+.table-cart thead{
+    background-color: #f7f7f7;
+    border-top: 1px solid #c3c3c345;
+}
+
+.table-cart thead th.title{
+    font-weight: 100;
+}
+
+.table-cart td {
+    vertical-align: middle;
+    border-top-color: #eaeff4;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.table-cart tr td:first-child {
+    width: 15px;
+    padding-left: 30px;
+}
+
+.table-cart img {
+    max-height: 80px;
+	max-width: 100px;
+	margin-right: 40px;
+}
+
+table.table.table-cart tr td:last-child {
+    width: 135px;
+}
