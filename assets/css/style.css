@@ -1199,3 +1199,22 @@ button.action.search:hover:after{
     font-weight: 600;
     padding-top: 0;
 }
+
+@media(max-width: 800px){
+    .search-desktop{
+        display: none;
+    }
+    section.les_partenaies {
+        margin-top: 0!important;
+    }
+}
+
+@media(min-width: 800px){
+    a.down-search{
+        display: none;
+    }
+}
+
+a{
+    color: #FFF !important;
+}

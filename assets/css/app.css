@@ -135,18 +135,6 @@ span.slicknav_arrow {
         left: 20px;
     }
 
-    a#cart {
-        position: relative;
-        top: 17px;
-        left: -45px;
-    }
-
-    a.btn.btn-xs {
-        top: -17px;
-        position: relative;
-    }
-
-
     ul.nav.nav-tabs {
         margin-top: 65px !important;
     }

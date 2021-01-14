@@ -41,7 +41,7 @@
             </ul>
         </div>
 
-        <div class="col-4 col-lg-3 text-right lbotonat">
+        <div class="col-6 col-md-4 col-lg-3 text-right lbotonat">
             <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-top active ox-slideout-active" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;">
             <div class="block block-content block-content-slideout ui-dialog-content ui-widget-content ox-modal-content" data-move-mobile="search.slideout" data-move-sticky="search.slideout" style="display: block;" data-role="OXmodal" id="ui-id-1">
 		<div class="header__search-wrapper ox-move-item ox-move-item-search.slideout">
@@ -65,7 +65,7 @@
                 </div>
             </form>
 		</div></div></div>
-            <a class="btn btn-xs ssfsqzgzagez down-search" href='javascript:;' data-toggle="offcanvas"
+            <a class="btn btn-xs down-search" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">
                 <span class="ti-search"></span></a>
             <div class="carter">
