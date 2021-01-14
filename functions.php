@@ -240,8 +240,8 @@ function add_to_cart_php(){
     $id         = $_POST['id'];
     $image      = $_POST['image'];
     $title      = $_POST['name'];
-    $quantity   = 1;
     $category   = $_POST['category'];
+    $quantity   = !empty($_SESSION['cart_caestus'][$category][$id]) ? $_SESSION['cart_caestus'][$category][$id]['quantity']+1:1;
     wp_send_json_success(caestus_add_to_cart($id,$image,$title,$quantity,$category));
     die();
 }
