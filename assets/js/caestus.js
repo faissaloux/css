@@ -96,7 +96,10 @@ $('body .product_quantity').change(function(){
     contentType : false,
     processData : false,
     dataType : 'html',
-    data : formdata
+    data : formdata,
+    success: function(){
+        count();
+    }
   });
 
   return false;

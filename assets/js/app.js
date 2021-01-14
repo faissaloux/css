@@ -155,16 +155,6 @@ $('body .datePicker').datepicker({
 });
 $('.carousel').carousel();
 
-
-$('body #dldklklll').on('touchstart', function () {
-    $(this).attr('type', 'number');
-});
-
-$('body #dldklklll').on('keydown blur', function () {
-    $(this).attr('type', 'text');
-});
-
-
 (function () {
 
     $("#cart").on("click", function () {
