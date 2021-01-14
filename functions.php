@@ -349,7 +349,8 @@ if($_GET['q']){
 
 $cart_items = caestus_cart_items();
 $categries  = products_categories();
-
+$menu       = top_header_menu_bootstrap4();
+$brands     = brands();
 /*
     $brands     = brands();
     $search     = ajax_products_search('jjjjj','json');
