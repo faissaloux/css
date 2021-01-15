@@ -22,7 +22,7 @@
             </div>
             <span>4</span>
         </div>
-        <p class="page-not-found-text">Page not found!</p>
+        <p class="page-not-found-text">Page non trouvée!</p>
     </div>
     <?php require_once 'includes/footer.php'; ?>
     <?php require_once 'includes/scripts.php'; ?>
