@@ -651,6 +651,11 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
     document.addEventListener(
         "DOMContentLoaded", () => {
-            new Mmenu( "#my-menu");
+            new Mmenu( "#my-menu", {
+                "extensions": [
+                   "pagedim-black",
+                   "shadow-page",
+                ]
+             });
         }
     );

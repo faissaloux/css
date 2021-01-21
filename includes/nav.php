@@ -1,6 +1,5 @@
 <?php
-    global $theme_setting; 
-    $menu = top_header_menu_bootstrap4();
+    global $theme_setting;
 ?>
 
 <!-- Navbar -->
@@ -11,10 +10,10 @@
         <a class="navbar-brand col-sm-2 col-md-2 px-0" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
         
         <div class="collapse navbar-collapse col col-lg-6" id="navbarSupportedContent">
-            <?php top_header_menu_bootstrap4(); ?>
+        <?php top_header_menu_bootstrap4(); ?>
         </div>
 
-        <div class="col-4 col-md-3 col-lg-3 text-right lbotonat d-flex align-items-center">
+        <div class="col-4 col-md-3 col-lg-3 text-right lbotonat d-flex justify-content-end align-items-center">
             <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-top active ox-slideout-active" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;">
             <div class="block block-content block-content-slideout ui-dialog-content ui-widget-content ox-modal-content" data-move-mobile="search.slideout" data-move-sticky="search.slideout" style="display: block;" data-role="OXmodal" id="ui-id-1">
 		<div class="header__search-wrapper ox-move-item ox-move-item-search.slideout">
