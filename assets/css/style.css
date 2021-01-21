@@ -1313,3 +1313,37 @@ img {
 .owl-item img{
     object-fit: contain;
 }
+
+.dropdown-item.active{
+    background-color: #CCC !important;
+}
+
+a.mm-btn.mm-btn_next.mm-listitem__btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: none;
+}
+
+.mm-btn_next:after, .mm-btn_prev:before{
+    top: -23px !important;
+}
+
+@media(max-width: 600px){
+    .show-menu{
+        flex: 0 0 15% !important;
+    }
+    a#cart {
+        position: initial !important;
+    }
+    .col-sm-2{
+        width: auto !important;
+    }
+    .navbar-brand{
+        margin-right: -40px !important;
+    }
+}
+
+a.btn.btn-xs.down-search {
+    position: initial;
+}
