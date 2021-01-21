@@ -754,9 +754,6 @@ li.nav-item a{
 	display: inline-block;
 }
 
-body nav.navbar.nav-custom.navbar-expand-md {
-    position: relative !important;
-}
 
 .slicknav_menu{
 	display: none;
@@ -1222,8 +1219,8 @@ button.action.search:hover:after{
 }
 
 .page-not-found {
-    height: 355px;
-    padding: 40px 0;
+    height: 434px;
+    padding: 123px 0;
 }
 
 .page-not-found-text {
@@ -1249,7 +1246,7 @@ img {
     }
     
     .page-not-found {
-        padding: 80px 0;
+        padding: 160px 0;
     }
     
     .page-not-found-text {
@@ -1261,4 +1258,28 @@ img {
         height: 100px;
         width: 100px;
     }
+}
+
+@media(max-width: 779px){
+    .show-mobile{
+        display: block !important;
+    }
+    .show-desktop{
+        display: none !important;
+    }
+}
+
+@media(min-width: 780px){
+    .show-mobile{
+        display: none !important;
+    }
+}
+
+.mm-menu_offcanvas{
+    z-index: 9999 !important;
+}
+
+.show-menu i {
+    font-size: 24px;
+    color: #FFF;
 }

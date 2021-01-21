@@ -7,14 +7,11 @@
 <nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
 
     <div class="container">
-        <a class="navbar-brand" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <a href="#my-menu" class="show-mobile show-menu col-4"><i class="fas fa-bars"></i></a> 
+        <a class="navbar-brand col-3" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
         
         <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto py-4 py-md-0">
+            <ul class="navbar-nav mx-auto py-4 py-md-0">
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo get_home_url().'/materialSection'; ?>" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
                     <div class="dropdown-menu">
@@ -41,7 +38,7 @@
             </ul>
         </div>
 
-        <div class="col-6 col-md-4 col-lg-3 text-right lbotonat">
+        <div class="col-4 col-md-4 col-lg-3 text-right lbotonat">
             <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-top active ox-slideout-active" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;">
             <div class="block block-content block-content-slideout ui-dialog-content ui-widget-content ox-modal-content" data-move-mobile="search.slideout" data-move-sticky="search.slideout" style="display: block;" data-role="OXmodal" id="ui-id-1">
 		<div class="header__search-wrapper ox-move-item ox-move-item-search.slideout">
@@ -74,13 +71,32 @@
                     <span class="icon-document"></span>
                 </a>
             </div>
-            <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
+            <a class="btn btn-xs show-desktop" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
                     class="ti-location-pin"></span></a>
         </div>
     
     </div>
 </nav>		
-			
+            
+<div id="my-header" class="show-mobile">
+    <nav id="my-menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About us</a>
+                <ul>
+                    <li><a href="/about/history/">History</a></li>
+                    <li><a href="/about/team/">The team</a></li>
+                    <li><a href="/about/address/">Our address</a></li>
+                </ul>
+            </li>
+            <li><a href="/contact/">Contact</a></li>
+            <li>
+                <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
+                    class="ti-location-pin"></span></a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 
 <div class="container">

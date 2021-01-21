@@ -647,3 +647,10 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
     $(".ox-slideout-top").slideUp(300);
     $("body").css("overflow", "scroll");
   })
+
+
+    document.addEventListener(
+        "DOMContentLoaded", () => {
+            new Mmenu( "#my-menu");
+        }
+    );
