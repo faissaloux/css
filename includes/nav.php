@@ -81,22 +81,9 @@
             
 <div id="my-header" class="show-mobile">
     <nav id="my-menu">
-        <!-- <?php top_header_menu_bootstrap4(); ?> -->
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About us</a>
-                <ul>
-                    <li><a href="/about/history/">History</a></li>
-                    <li><a href="/about/team/">The team</a></li>
-                    <li><a href="/about/address/">Our address</a></li>
-                </ul>
-            </li>
-            <li><a href="/contact/">Contact</a></li>
-            <li>
-                <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
+        <?php top_header_menu_bootstrap4(); ?>
+        <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
                     class="ti-location-pin"></span></a>
-            </li>
-        </ul>
     </nav>
 </div>
 
