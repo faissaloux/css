@@ -11,7 +11,8 @@
         <a class="navbar-brand col-3" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
         
         <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto py-4 py-md-0">
+        <?php top_header_menu_bootstrap4(); ?>
+            <!-- <ul class="navbar-nav mx-auto py-4 py-md-0">
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="<?php echo get_home_url().'/materialSection'; ?>" role="button" aria-haspopup="true" aria-expanded="false">Location</a>
                     <div class="dropdown-menu">
@@ -35,7 +36,7 @@
                 <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a class="nav-link" href="<?php echo get_home_url().'/a-propos'; ?>">À PROPOS</a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
 
         <div class="col-4 col-md-4 col-lg-3 text-right lbotonat">
@@ -80,6 +81,7 @@
             
 <div id="my-header" class="show-mobile">
     <nav id="my-menu">
+        <!-- <?php top_header_menu_bootstrap4(); ?> -->
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about/">About us</a>
