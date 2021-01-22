@@ -7,6 +7,7 @@
 
     <div class="container">
         <a href="#my-menu" class="show-mobile show-menu col-3"><i class="fas fa-bars"></i></a>
+        <a class="navbar-brand col-sm-2 col-md-2 px-0" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
         
         <div class="collapse navbar-collapse col col-lg-6" id="navbarSupportedContent">
             <?php top_header_menu_bootstrap4(); ?>
@@ -45,10 +46,10 @@
                     <span class="icon-document"></span>
                 </a>
             </div>
-            <a class="btn btn-xs show-desktop" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9"> <span
-                    class="ti-location-pin"></span></a>
+            <a class="btn btn-xs show-desktop" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9">
+                <span class="ti-location-pin"></span>
+            </a>
         </div>
-    
     </div>
 </nav>		
             
@@ -57,7 +58,7 @@
         <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9">
             <span class="ti-location-pin"></span>
         </a>
-        <?php echo $html; ?>
+        <?php echo get_mobile_menu($menus); ?>
     </nav>
 </div>
 

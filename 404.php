@@ -14,8 +14,8 @@
 
 <body>
     <div id="my-page">
-        <?php require_once 'includes/navToDelete.php' ?>
-        <!-- <div class="page-not-found">
+        <?php require_once 'includes/nav.php' ?>
+        <div class="page-not-found">
             <div class="page-not-found-code d-flex justify-content-center align-items-center">
                 <span>4</span>
                 <div class="img-container">
@@ -24,8 +24,8 @@
                 <span>4</span>
             </div>
             <p class="page-not-found-text">Page non trouvée!</p>
-        </div> -->
-        
+        </div>
+        <?php require_once 'includes/footer.php'; ?>
         <?php require_once 'includes/scripts.php'; ?>
     </div>
 </body>
