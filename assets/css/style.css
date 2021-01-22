@@ -1355,3 +1355,31 @@ a.btn.btn-xs.down-search {
 .down {
     height: 100%;
 }
+
+@media(min-width: 780px){
+	.nav-link-child {
+		width: 100%;
+	}
+
+	.nav-1 {
+		left: 250px;
+		top: 0;
+	}
+
+	.nav-2 {
+		left: 180px;
+		top: 0;
+	}
+}
+
+@media(max-width: 780px){
+    .nav-link{
+        color: #000 !important;
+    }
+}
+
+@media(min-width: 781px){
+    li.nav-item a:hover{
+        background-color: #CCC !important;
+    }
+}

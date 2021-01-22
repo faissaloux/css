@@ -659,3 +659,19 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
              });
         }
     );
+
+    // nav nav-0 dropdown-menu mm-panel mm-panel_opened // mmenu
+    // nav nav-1 dropdown-menu
+
+    if($(window).width() > 780){
+        $("div.dropdown-menu").hide(300);
+        $("a.nav-link").hover(function(){
+            $(this).next('div').show(300);
+        });
+        $("a.nav-link-child").mouseout(function(){
+            $(this).next('div').hide(300);
+        });
+        $(".nav.dropdown-menu").hover(function(){
+            $(this).show(300);
+        });
+    };

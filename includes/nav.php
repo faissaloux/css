@@ -6,8 +6,7 @@
 <nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
 
     <div class="container">
-        <a href="#my-menu" class="show-mobile show-menu col-3"><i class="fas fa-bars"></i></a> 
-        <a class="navbar-brand col-sm-2 col-md-2 px-0" href="<?php echo get_home_url() ?>" target="_blank"><img src="<?php echo the_logo(); ?>" alt=""></a>	
+        <a href="#my-menu" class="show-mobile show-menu col-3"><i class="fas fa-bars"></i></a>
         
         <div class="collapse navbar-collapse col col-lg-6" id="navbarSupportedContent">
         <?php top_header_menu_bootstrap4(); ?>
