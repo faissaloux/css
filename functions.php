@@ -455,5 +455,45 @@ function get($nav_menu_items){
     return $menus;
 }
 
-
-// sv(get($nav_menu_items));
+$menus = get($nav_menu_items);
+$html = "<ul>";
+foreach($menus as $menu){
+    $html .= "<li>";
+    if(!empty($menu['children'])){
+        $html .= "<span>".$menu['title']."</span>";
+        $html .= "<ul>";
+        foreach($menu['children'] as $child){
+            $html .= "<li>";
+            if(!empty($menu['children'])){
+                $html .= "<span>".$child['title']."</span>";
+                $html .= "<ul>";
+                foreach($child['children'] as $ch){
+                    $html .= "<li>";
+                        if(!empty($ch['children'])){
+                            $html .= "<span>".$ch['title']."</span>";
+                            $html .= "<ul>";
+                            foreach($ch['children'] as $c){
+                                $html .= "<li>";
+                                $html .= "<a href=".$c['url'].">".$c['title']."</a>";
+                                $html .= "</li>";
+                            }
+                            $html .= "</ul>";
+                        }else{
+                            $html .= "<a href=".$ch['url'].">".$ch['title']."</a>";
+                        }
+                    $html .= "</li>";
+                }
+                $html .= "</ul>";
+            }else{
+                $html .= "<a href=".$menu['url'].">".$menu['title']."</a>";
+            }
+            $html .= "</li>";
+        }
+        $html .= "</ul>";
+    }else{
+        $html .= "<a href=".$menu['url'].">".$menu['title']."</a>";
+    }
+    
+    $html .= "</li>";
+}
+$html .= "</ul>";

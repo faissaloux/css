@@ -14,7 +14,7 @@
 
 <body>
     <div id="my-page">
-        <?php require_once 'includes/nav.php' ?>
+        <?php require_once 'includes/navToDelete.php' ?>
         <!-- <div class="page-not-found">
             <div class="page-not-found-code d-flex justify-content-center align-items-center">
                 <span>4</span>
