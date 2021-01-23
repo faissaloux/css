@@ -761,7 +761,8 @@ li.nav-item a{
 
 .product-media{
 	font-family: "Open Sans",sans-serif;
-	height: 200px;
+	height: 249px;
+	margin-top: 10px;
 	font-size: .9375rem;
 	font-weight: 300;
 	line-height: 1.9;
@@ -1219,8 +1220,8 @@ button.action.search:hover:after{
 }
 
 .page-not-found {
-    height: 434px;
-    padding: 123px 0;
+	height: 720px;
+    padding: 240px 0;
 }
 
 .page-not-found-text {
@@ -1246,7 +1247,7 @@ img {
     }
     
     .page-not-found {
-        padding: 160px 0;
+		padding: 270px 0;
     }
     
     .page-not-found-text {
@@ -1399,4 +1400,16 @@ a.btn.btn-xs.down-search {
 .dropdown-menu-2 {
     top: 0;
     left: 230px;
+}
+
+.search-desktop .input-group{
+    border: none !important;
+}
+
+input#searchInput {
+    border-radius: 0 4px 4px 0;
+}
+
+span.input-group-text {
+    border-radius: 2px 0 0 2px;
 }

@@ -48,7 +48,7 @@
                                     <img src="https://caestus.ma/uploads/media/2iiSY9HTtiGk4Y0QBhbK.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end d-flex flex-column justify-content-end">
                                 <h6><a href="/product/106/">Sigma Cine Prime - 14mm T2 FF monture PL</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -68,7 +68,7 @@
                                     <img src="https://caestus.ma/uploads/media/8UZuGzsO7ViXpdEyI9E2.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/107/">Sigma Cine Prime - 20MM T1.5 monture PL</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -87,7 +87,7 @@
                                     <img src="https://caestus.ma/uploads/media/R1ewc0FCdiBaSjxMZKYN.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/109/">Sigma Cine Prime - 24MM T1.5</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -106,7 +106,7 @@
                                     <img src="http://caestus.ma/uploads/media/DSZ22sV3c9o8RHG0y7Jt.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/110/">Sigma Cine Prime - 35MM T1.5</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -125,7 +125,7 @@
                                     <img src="http://caestus.ma/uploads/media/zMrHDFSrP1ebXvoZStxe.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/111/">Sigma Cine Prime - 50MM T1.5</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -144,7 +144,7 @@
                                     <img src="http://caestus.ma/uploads/media/h9v4GpsJUEVql3OjFOOz.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/113/">Sigma Cine Prime - 85MM T1.5</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -163,7 +163,7 @@
                                     <img src="http://caestus.ma/uploads/media/EBrSy3PgMzi6iUZqDe3C.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/114/">Sigma Cine Prime - 135MM T2 monture PL</a>
                                 </h6>
                                 <a href='javascript:;' data-category="Optiques"
@@ -182,7 +182,7 @@
                                     <img src="http://caestus.ma/uploads/media/D49eOSI6WNaG7iU4lHU1.jpg" alt="product">
                                 </a>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/117/">Kit Objectifs Sigma Cine Prime 14-20-24-35-50-85-135 Monture
                                         PL</a>
                                 </h6>
@@ -226,7 +226,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/124/">SIGMA High Speed Zoom LINE 18-35mm T2</a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -248,7 +248,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/125/">SIGMA High Speed Zoom LINE 50-100mm T2</a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -270,7 +270,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/126/">Kit Objectifs Sigma High Speed Zoom Line 18-35mm 50-100mm
                                         Monture PL </a>
                                 </h6>
@@ -314,7 +314,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/115/">SIGMA ART 18-35mm F1.8 DC HSM </a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -336,7 +336,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/116/">SIGMA ART 50-100mm F1.8 DC HSM</a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -376,7 +376,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/118/">CANON EF 16-35mm f/2.8L II USM </a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -398,7 +398,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/119/">CANON EF 24-70mm f/2.8L II USM </a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
@@ -420,7 +420,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="product-detail">
+                            <div class="product-detail d-flex flex-column justify-content-end">
                                 <h6><a href="/product/120/">CANON EF 70-200mm f/2.8L IS II USM </a>
                                 </h6>
                                 <a href='javascript:;' class="btn add-To-Cart-Big smalladdtocart"
