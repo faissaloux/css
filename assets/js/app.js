@@ -127,15 +127,22 @@ date.setDate(date.getDate());
 var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 
 $('body #firstDate').datepicker({
-    format: "dd-M-yy",
+    format: "yyyy-mm-dd",
     startDate: date,
     todayHighlight: true,
     startDate: today,
+}).on('changeDate', function (ev) {
+    var start = $("#firstDate").val();
+    var startD = new Date(start);
+    var end = $("#secondDate").val();
+    var endD = new Date(end);
+    var diff = parseInt((endD.getTime() - startD.getTime()) / (24 * 3600 * 1000));
+    $("#restDays").val(diff);
 });
 
 
 $('body #secondDate').datepicker({
-    format: "dd-M-yy",
+    format: "yyyy-mm-dd",
     startDate: date,
     todayHighlight: true,
     startDate: today,
@@ -662,12 +669,15 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
 
     if($(window).width() > 780){
         $("div.dropdown-menu-child").css('display', 'none');
+
         $("a.dropdown-item").hover(function(){
             $(this).next('div').show(300);
         });
+
         $("a.dropdown-item").mouseout(function(){
             $(this).next('div').hide(600);
         });
+
         $(".dropdown-menu").hover(function(){
             $(this).show(300);
         });

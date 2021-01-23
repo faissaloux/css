@@ -55,7 +55,6 @@
                                 <div class="col-md-6 mb-sm">
                                   <div class="form-group">
                                     <label for="from" class="from"> Du </label>
-                                    
                                     <input type="text" readonly="true" placeholder="" class="form-control" name="from" id="firstDate">
                                 </div>
                                 </div>
@@ -71,7 +70,7 @@
                          
                             <div class="form-group col-md-12 row pr-0">
                               <label for="shoting_days" class="col-md-6 px-0"> Jours de tournage </label>
-                              <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays">
+                              <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays" disabled>
                             </div>
                             <?php foreach($cart_items as $key => $item): ?>
                                 <table class="table table-cart">
