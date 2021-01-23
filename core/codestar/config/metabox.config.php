@@ -61,7 +61,7 @@ $options[]    = array(
 
         array(
           'title'     => 'choisir les images de gallery',
-          'id'        => 'gallery',
+          'id'        => 'gallery_product',
           'type'      => 'gallery',
         ),
 

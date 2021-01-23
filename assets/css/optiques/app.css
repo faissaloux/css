@@ -736,11 +736,7 @@ main.main-content {
 }
 
 .coverHeaderWrapper {
-    top: 33px;
-}
-
-main.main-content {
-    margin-top: 115px;
+    top: 80px;
 }
 
 
@@ -1120,3 +1116,10 @@ span.lkqlqlkjsq.active:hover {
     background: #b4cbe5;
 }
 
+.product-media {
+    overflow: hidden;
+}
+
+.product-detail {
+    height: 155px;
+}

@@ -25,9 +25,10 @@
                </div>
             </div>
             <ul class="list-of-products-img" id="underlightgallery">
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
+            
+            <?php foreach(system::product_gallery(get_the_ID()) as $image): ?>
+               <a href="<?php echo $image; ?>" class="kj"> <img src="<?php echo $image; ?>"></a>
+            <?php endforeach; ?>
             </ul>
             <style>
                .product-3 {
