@@ -19,7 +19,7 @@
 
 <body>
     <div id="my-page">
-        <?php require_once('includes/nav.php') ?>
+        <?php require_once('includes/nav.php'); ?>
         
         <?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
                 <?php dynamic_sidebar( 'header-widget' ); ?>
@@ -48,7 +48,7 @@
                             <div class="row">
                                 <?php while (have_posts()) : the_post(); ?>
                                     <div class="col-md-6">
-                                        <a href="/packs/5">
+                                        <a href="<?php echo get_permalink(); ?>">
                                             <div class="p-5" style="width: 100%; display: inline-block;">
                                                 <div class="card border hover-shadow-6">
                                                     <div class="card-body px-5 small_box_done">

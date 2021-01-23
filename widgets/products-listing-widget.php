@@ -71,7 +71,7 @@ class products_listing_widget extends WP_Widget
                                             style="background-color: #dc3d3d; color: #FFF"
                                         >
                                             AJOUTER AU DEVIS
-                                            </a>
+                                        </a>
                                     </div>
                                 </div>
                         </div>

@@ -1419,11 +1419,33 @@ span.input-group-text {
 }
 
 section.articles,
-section.article {
+section.article,
+section.category-items,
+section.product,
+section.pack {
     margin-top: 80px;
 }
 
 section.articles .container,
-section.article .container {
+section.article .container,
+section.category-items .container,
+section.product .container,
+section.pack .container {
     padding: 25px 0;
+}
+
+.product .row,
+.pack .row {
+    margin-top: 94px;
+}
+
+
+.product .row img,
+.pack .row img {
+    object-fit: contain;
+}
+
+.product .nav-item .nav-link,
+.pack .nav-item .nav-link {
+    color: #000 !important;
 }

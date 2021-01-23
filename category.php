@@ -18,7 +18,7 @@
 
 <body>
     <?php require_once 'includes/nav.php' ?>
-    <?php require_once 'includes/article.php'; ?>
+    <?php require_once 'includes/category-items.php' ?>
     <?php require_once 'includes/footer.php'; ?>
     <?php require_once 'includes/scripts.php'; ?>
 </body>

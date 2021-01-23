@@ -339,6 +339,12 @@ $categories = get_terms( array(
     'order'     => 'DESC'
 )); 
 
+$optiques = get_terms( array(
+    'taxonomy'  => 'category', 
+    'order'     => 'DESC',
+    'name'      => 'Optiques'
+)); 
+
 function disable_wp_auto_p( $content ) {
     remove_filter( 'the_content', 'wpautop' );
     remove_filter( 'the_excerpt', 'wpautop' );

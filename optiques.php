@@ -27,7 +27,65 @@
     <!-- Main Content -->
     <main class="main-content">
 
+        <div class="from-db">
+            <!-- Main Content -->
+            <main class="main-content">
+                <?php foreach ($optiques as $optique): ?>
+                    <?php
+                        query_posts( array(
+                            'post_type' => 'products_cpt',
+                            'tax_query' => array( 
+                                array( 
+                                    'taxonomy'  => 'category',
+                                    'field'     => 'slug',
+                                    'terms'     => $optique->slug
+                                ) 
+                            ) 
+                        ));
+                    ?>
+                    <?php if (have_posts()) : ?>
+                        <div class="section-pack section bg-gray" style="padding-top:55px;">
+                            <div class="section-title container">
+                                <h2>
+                                    <?php echo $optique->name; ?>
+                                </h2>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <?php while (have_posts()) : the_post(); ?>
+                                    <div class="col-md-4 col-xl-3 col-lg-3 ">
+                                        <div class="product-3 mb-3">
+                                            <div class="product-media">
+                                                <a href="<?php echo get_permalink(); ?>">
+                                                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="product">
+                                                </a>
+                                            </div>
+                                            <div class="product-detail d-flex flex-column justify-content-end d-flex flex-column justify-content-end">
+                                                <h6><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                                                </h6>
+                                                <a  href="javascript:;"
+                                                    data-category="<?php echo $optique->name; ?>"
+                                                    class="btn caestus_add_to_cart"
+                                                    data-image="<?php echo get_the_post_thumbnail_url(); ?>"
+                                                    data-name="<?php the_title(); ?>" 
+                                                    data-id="<?php echo get_the_ID(); ?>"
+                                                    style="background-color: #dc3d3d; color: #FFF"
+                                                >
+                                                    AJOUTER AU DEVIS
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php endwhile; ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </main>
 
+        </div>
+<!-- 
         <div class="section-pack section bg-gray" id='sigma' style="padding-top:55px;">
             <div class="section-title container">
 
@@ -436,7 +494,7 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <?php require_once('includes/footer.php') ?>
     <?php require_once('includes/scripts.php') ?>
