@@ -1417,3 +1417,13 @@ span.input-group-text {
 .owl-stage-outer {
     top: 21px;
 }
+
+section.articles,
+section.article {
+    margin-top: 80px;
+}
+
+section.articles .container,
+section.article .container {
+    padding: 25px 0;
+}

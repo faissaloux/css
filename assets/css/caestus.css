@@ -94,9 +94,6 @@ img.logo-dark {
     margin-left: 0;
 }
 
-.row div[class^="col-md"], .row.secondRow div[class^="col-md"] {
-    padding: 0;
-}
 
 .row.secondRow {
     padding-top: 0;

@@ -590,7 +590,7 @@ input#searchInput {
 }
 
 div#carouselExampleIndicators {
-    margin-top: -25px !important;
+    margin-top: 80px !important;
 }
 
 @media all and (min-width: 0px) and (max-width: 600px) {
@@ -938,10 +938,6 @@ ul.list-group.searchPhoneHeaderResutls {
     overflow: hidden;
 }
 
-div#carouselExampleIndicators {
-    /* margin-top: 33px !important; */
-}
-
 
 @media all and (min-width: 0px) and (max-width: 600px) {
     .row.qkj .boxImageCamera img {
@@ -999,6 +995,7 @@ div#carouselExampleIndicators {
 
     div#carouselExampleIndicators {
         height: initial;
+        margin-top: 80px !important;
     }
 
     .carousel-indicators {
@@ -1059,11 +1056,6 @@ div#carouselExampleIndicators {
     section.section.perternso-flkfkl {
         margin-top: -75px;
     }
-
-    /*div#carouselExampleIndicators {*/
-    /*    top: 86px;*/
-    /*}*/
-
 
 }
 

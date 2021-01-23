@@ -8,7 +8,7 @@
     }
 
     @media(max-width: 600px){
-        .carousel-item.active,{
+        .carousel-item.active{
             height: <?php echo $theme_setting['slider-mobile-height'].'px'; ?> !important;
         }
     }
