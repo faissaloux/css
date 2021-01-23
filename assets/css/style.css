@@ -1413,3 +1413,7 @@ input#searchInput {
 span.input-group-text {
     border-radius: 2px 0 0 2px;
 }
+
+.owl-stage-outer {
+    top: 21px;
+}

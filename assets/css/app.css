@@ -755,7 +755,7 @@ section.partners-section {
 }
 
 section.les_partenaies {
-    margin-top: -50px;
+    margin-top: -57px;
 }
 
 section.les_partenaies img {
@@ -1449,14 +1449,14 @@ span.lkqlqlkjsq.active:hover {
 .owl-prev{
     position: absolute;
     height: 100px;
-    top: -14px;
+    top: 14px;
     left: 10px;
 }
 
 .owl-next{
     position: absolute;
     right: 10px;
-    top: -14px;
+    top: 14px;
     height: 100px;
 }
 
@@ -1470,4 +1470,5 @@ span.lkqlqlkjsq.active:hover {
 
 .owl-carousel .owl-stage-outer {
     overflow: inherit;
+    margin: 10px 0;
 }
