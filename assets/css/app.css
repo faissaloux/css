@@ -802,14 +802,13 @@ section.les_partenaies img:hover {
         top: 15px;
     }
 
-
-    .dklzl
-    section.les_partenaies {
-        display: none;
+    .owl-carousel .owl-stage-outer {
+        margin: 0 !important;
     }
-
-    section.les_partenaies {
-        display: none;
+    
+    .owl-prev span,
+    .owl-next span{
+        font-size: 40px !important;
     }
 
 
@@ -826,7 +825,7 @@ section.les_partenaies img:hover {
 }
 
 .carousel-item.active {
-    height: 508px !important;
+    height: 508px;
 }
 
 .dklzl {
@@ -973,7 +972,7 @@ div#carouselExampleIndicators {
     }
 
     .carousel-item img {
-        height: auto !important;
+        height: 100% !important;
     }
 
     section.section.perternso-flkfkl {

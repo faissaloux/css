@@ -78,11 +78,6 @@ img.logo-dark {
     padding: 17px 0;
 }
 
-
-.carousel-item.active {
-    height: 400px;
-}
-
 .carousel .item {
     height: 400px;
 }

@@ -1,3 +1,19 @@
+<?php
+    global $theme_setting;
+?>
+
+<style>
+    .carousel-item.active {
+        height: <?php echo $theme_setting['slider-desktop-height'].'px'; ?> !important;
+    }
+
+    @media(max-width: 600px){
+        .carousel-item.active,{
+            height: <?php echo $theme_setting['slider-mobile-height'].'px'; ?> !important;
+        }
+    }
+</style>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <?php $i = 0; foreach(the_slider() as $slider){ ?>

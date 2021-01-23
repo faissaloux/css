@@ -363,6 +363,20 @@ Redux::setSection( $opt_name, array(
                 'default'  => '',
             ),
             array(
+                'id'       => 'slider-desktop-height',
+                'type'     => 'text',
+                'title'    => __( 'Slider desktop height', 'caynoon_text' ),
+                'desc'     => __( 'Please insert slider desktop height', 'caynoon_text' ),
+                'default'  => 400,
+            ),
+            array(
+                'id'       => 'slider-mobile-height',
+                'type'     => 'text',
+                'title'    => __( 'Slider mobile height', 'caynoon_text' ),
+                'desc'     => __( 'Please insert slider mobile height', 'caynoon_text' ),
+                'default'  => 200,
+            ),
+            array(
                 'id'       => 'image1',
                 'type'     => 'media',
                 'url'      => true,
