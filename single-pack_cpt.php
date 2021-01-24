@@ -14,15 +14,10 @@
 
 <body>
     <div id="my-page">
-        <?php ##require_once 'includes/nav.php'; ?>
-        
-        <?php $id =  get_the_ID();?>
-        <?php print_r(System::pack_header_image($id)); ?>
-
-        <?php print_r(System::pack_subtitle($id)); ?>
-        <?php ##require_once 'includes/pack.php'; ?>
-        <?php ##require_once 'includes/footer.php'; ?>
-        <?php ##require_once 'includes/scripts.php'; ?>
+        <?php require_once 'includes/nav.php'; ?>
+        <?php require_once 'includes/pack.php'; ?>
+        <?php require_once 'includes/footer.php'; ?>
+        <?php require_once 'includes/scripts.php'; ?>
     </div>
 </body>
 

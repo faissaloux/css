@@ -5,6 +5,12 @@
     global $theme_setting;
     $args = array( 'post_type' => 'pack_cpt', 'posts_per_page' => 10 );
     $the_query = new WP_Query( $args ); 
+
+    $id =  get_the_ID();
+    $packsCategories = get_terms( array(
+        'taxonomy'  => 'pack_categories', 
+        'order'     => 'DESC'
+    ));
 ?>
 
 
@@ -26,7 +32,6 @@
         </div>
         <!-- Main Content -->
         <main class="main-content">
-        <?php print_r($packsCategories); ?>
             <?php foreach ($packsCategories as $category): ?>
                 <?php
                     query_posts( array(
@@ -52,15 +57,20 @@
                                         <a href="<?php echo get_permalink(); ?>">
                                             <div class="p-5" style="width: 100%; display: inline-block;">
                                                 <div class="card border hover-shadow-6">
-                                                    <div class="card-body px-5 small_box_done">
+                                                    <div class="card-body px-5 small_box_done"
+                                                            style="background: url(<?php echo get_the_post_thumbnail_url(); ?>);
+                                                                    background-repeat: no-repeat;
+                                                                    background-size: cover;
+                                                                "
+                                                    >
                                                         <div class="row">
                                                             <div class="col-auto mr-auto">
-                                                                <h6><strong><?php the_title(); ?></strong></h6>
+                                                                <h6><strong><?php echo System::pack_subtitle($id); ?></strong></h6>
                                                             </div>
                                                             <div class="col-auto">
                                                             </div>
                                                         </div>
-                                                        <p><?php the_content(); ?></p>
+                                                        <p><?php the_title(); ?></p>
                                                     </div>
                                                 </div>
                                             </div>

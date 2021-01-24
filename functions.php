@@ -343,7 +343,10 @@ $packsCategories = get_terms( array(
     'taxonomy'  => 'pack_categories', 
     'order'     => 'DESC'
 ));
-// print_r($packsCategories); exit;
+
+
+// print_r( $packsCategories ); exit;
+// print_r(get_object_taxonomies( array( 'post_type' => 'pack_cpt' ) ));
 
 $optiques = get_terms( array(
     'taxonomy'  => 'category', 
