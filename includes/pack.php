@@ -1,4 +1,8 @@
-<?php global $theme_setting; ?>
+<?php
+   global $theme_setting;
+   $id            =  get_the_ID();
+   $first_image   = System::pack_gallery($id)[0];
+?>
 
 <section class="pack">
    <div class="container">
@@ -16,8 +20,8 @@
                             style="width: 380px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
                     >
                         <div>
-                            <a href="<?php echo get_the_post_thumbnail_url(); ?>" style="width: 100%; display: inline-block;" tabindex="0">
-                                <img src="<?php echo get_the_post_thumbnail_url(); ?>">
+                            <a href="<?php echo $first_image; ?>" style="width: 100%; display: inline-block;" tabindex="0">
+                                <img src="<?php echo $first_image; ?>">
                             </a>
                         </div>
                     </div>
@@ -25,7 +29,11 @@
                </div>
             </div>
             <ul class="list-of-products-img" id="underlightgallery">
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
+               <?php foreach( System::pack_gallery($id) as $image ): ?>
+                  <a href="<?php echo $image; ?>" class="kj">
+                     <img src="<?php echo $image; ?>">
+                  </a>
+               <?php endforeach; ?>
             </ul>
             <style>
                .product-3 {
@@ -72,7 +80,7 @@
                <div class="container">
                   <div class="row text-center">
                     <a  href="javascript:;"
-                        data-category="<?php echo get_the_category()[0]->name; ?>"
+                        data-category="pack"
                         class="btn caestus_add_to_cart" data-image="<?php echo get_the_post_thumbnail_url(); ?>"
                         data-name="<?php the_title(); ?>" 
                         data-id="<?php echo get_the_ID(); ?>"

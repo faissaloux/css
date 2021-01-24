@@ -1470,3 +1470,17 @@ section.pack .container {
 .product-detail {
     height: 155px;
 }
+
+.main-content-packs {
+    margin-top: 20px !important;
+}
+
+.category-title {
+    font-weight: 600;
+}
+
+.pack-title {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 300;
+    font-size: .9375rem;
+}

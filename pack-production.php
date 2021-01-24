@@ -28,10 +28,10 @@
         <?php require_once('includes/nav.php'); ?>
         <div class="hero-container" style="height: <?php echo $theme_setting['packs-header-picture-height'].'px' ?>; margin-top: 80px; overflow: hidden; position: relative;">
             <img src="<?php print_r($theme_setting['packs-header-picture']['url']); ?>"" style="height: 100%; width: 100%; object-fit: cover;" class='hero-image' />
-            <h1 class='hero-text'>Packs Production</h1>
+            <h1 class='hero-text'><?php the_title(); ?></h1>
         </div>
         <!-- Main Content -->
-        <main class="main-content">
+        <main class="main-content main-content-packs">
             <?php foreach ($packsCategories as $category): ?>
                 <?php
                     query_posts( array(
@@ -40,7 +40,7 @@
                             array( 
                                 'taxonomy'  => 'pack_categories',
                                 'field'     => 'slug',
-                                'terms'     => $category->slug
+                                'terms'     => $category->slug,
                             ) 
                         ) 
                     ));
@@ -48,7 +48,7 @@
                 <?php if (have_posts()) : ?>
                     <div class="section-pack section bg-gray" style="padding-top:55px;">
                         <div class="section-title container">
-                            <h2><?php echo $category->name; ?></h2>
+                            <h2 class="category-title"><?php echo $category->name; ?></h2>
                         </div>
                         <div class="container">
                             <div class="row">
@@ -70,7 +70,7 @@
                                                             <div class="col-auto">
                                                             </div>
                                                         </div>
-                                                        <p><?php the_title(); ?></p>
+                                                        <p class="pack-title"><?php the_title(); ?></p>
                                                     </div>
                                                 </div>
                                             </div>

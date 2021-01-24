@@ -257,6 +257,7 @@ function remove_from_cart_php(){
 }
 
 function make_order_php(){
+    $_POST['products'] = caestus_cart_items();
     sv($_POST);
     die();
 }
@@ -344,9 +345,6 @@ $packsCategories = get_terms( array(
     'order'     => 'DESC'
 ));
 
-
-// print_r( $packsCategories ); exit;
-// print_r(get_object_taxonomies( array( 'post_type' => 'pack_cpt' ) ));
 
 $optiques = get_terms( array(
     'taxonomy'  => 'category', 

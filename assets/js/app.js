@@ -565,7 +565,7 @@ $('#ajaxSearch').css('width', $('#searchInput').closest('.rounded').width());
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        nav     : true,
+        nav     : false,
         center  : true,
         items   : 4,
         loop    : false,

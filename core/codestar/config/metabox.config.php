@@ -60,11 +60,15 @@ $options[]    = array(
       'name'   => 'section_3',
       'fields' => array(
         array(
+          'title'     => 'choisir les images de gallery',
+          'id'        => 'gallery_pack',
+          'type'      => 'gallery',
+        ),
+        array(
           'title'     => "sub title",
           'id'        => 'sub_title_pack',
           'type'      => 'text',
         ),
-
        
 
       ),

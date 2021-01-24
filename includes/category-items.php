@@ -40,7 +40,7 @@
                                     </h6>
                                 </div>
                                 <a  href="javascript:;"
-                                    data-category="<?php echo $category->name; ?>"
+                                    data-category="<?php echo single_cat_title( '', false ); ?>"
                                     class="btn caestus_add_to_cart"
                                     data-image="<?php echo get_the_post_thumbnail_url($postID); ?>"
                                     data-name="<?php echo get_the_title($postID); ?>" 
