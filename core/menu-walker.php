@@ -138,3 +138,36 @@ function get_mobile_menu($menus){
 
     return $html;
 }
+
+function get_desktop_menu($menus){
+    $html = "<nav class='nav nav-navbar mx-auto'>";
+    foreach($menus as $menu){
+        $html .= "<li class='nav-item'>";
+        if(!empty($menu['children'])){
+            $html .= "<a class='nav-link ksksks' href=".$menu['url']."><span>".$menu['title']."</span><span class='arrow'></span></a>";
+            $html .= "<ul class='nav'>";
+            foreach($menu['children'] as $child){
+                $html .= "<li class='nav-item'>";
+                if(!empty($menu['children'])){
+                    $html .= "<a href=".$child['url']." class='nav-link'>".$child['title']."<span class='arrow'></span></a>";
+                    $html .= "<nav class='nav'>";
+                    foreach($child['children'] as $ch){
+                        $html .= "<a href=". $ch['url'] ." class='nav-link'>".$ch['title']."</a>";
+                    }
+                    $html .= "</nav>";
+                }else{
+                    $html .= "<a href=".$child['url']." class='nav-link'>".$child['title']."</a>";
+                }
+                $html .= "</li>";
+            }
+            $html .= "</ul>";
+        }else{
+            $html .= "<a href=".$menu['url']." class='nav-link ksksks'><span>".$menu['title']."</span></a>";
+        }
+        
+        $html .= "</li>";
+    }
+    $html .= "</nav>";
+
+    return $html;
+}

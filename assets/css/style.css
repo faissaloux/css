@@ -1511,3 +1511,7 @@ span.arrow {
 .nav-item .nav .nav-link:hover{
     color: #777 !important;
 }
+
+span.arrow {
+    margin-left: 6px;
+}
