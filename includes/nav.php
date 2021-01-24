@@ -9,9 +9,72 @@
         <a href="#my-menu" class="show-mobile show-menu col-3"><i class="fas fa-bars"></i></a>
         <a class="navbar-brand col-sm-2 col-md-2 px-0" href="<?php echo get_home_url() ?>"><img src="<?php echo the_logo(); ?>" alt=""></a>	
         
-        <div class="collapse navbar-collapse col col-lg-6" id="navbarSupportedContent">
-            <?php top_header_menu_bootstrap4(); ?>
-        </div>
+        <!-- <div class="collapse navbar-collapse col col-lg-6" id="navbarSupportedContent">
+            <?php ##top_header_menu_bootstrap4(); ?>
+        </div> -->
+        
+        <section class="col-lg-6 navbar-mobile monstriat">
+            <nav class="nav nav-navbar mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link ksksks" href="/#materialSection"> Location <span class="arrow"></span></a>
+                    <ul class="nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="/pack-production">Packs Production</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/cameralist">Caméras  <span class="arrow"></span>  </a>
+                        <nav class="nav">
+                            <a class="nav-link" href="/red"> RED  </a>
+                        </nav>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/optiques">Optiques <span class="arrow"></span> </a>
+                        <nav class="nav">
+                            <a class="nav-link" href="/optiques#sigma"> SIGMA  </a>
+                            <a class="nav-link" href="/optiques#canoon"> CANON   </a>
+                        </nav>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/Steadicams-Stabilisateurs">Steadicams / Stabilisateurs <span class="arrow"></span></a>
+                        <nav class="nav">
+                            <a class="nav-link" href="/category/25"> Steadicams  </a>
+                            <a class="nav-link" href="/category/24">Stabilisateurs   </a>
+                        </nav>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/Trepieds-SupportsCamera">Supports Caméras / Trépieds<span class="arrow"></span></a>
+                        <nav class="nav">
+                            <a class="nav-link" href="/category/26"> Supports Caméra   </a>
+                            <a class="nav-link" href="/category/27"> Trépieds   </a>
+                        </nav>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/accessoires">Accessoires <span class="arrow"></span></a>
+                        <nav class="nav">
+                            <a class="nav-link" href="/category/14"> Accessoires RED </a>
+                            <a class="nav-link" href="/category/13"> Accessoires Camera </a>
+                            <a class="nav-link" href="/category/19"> Moniteurs Enregistreurs </a>
+                            <a class="nav-link" href="/category/17"> Follow Focus </a>
+                            <a class="nav-link" href="/category/15"> Alimentation Et Batteries  </a>
+                            <a class="nav-link" href="/category/18"> Media Cartes Mémoires </a>
+                            <a class="nav-link" href="/category/16">Filtres</a>
+                            <a class="nav-link" href="/category/20">Roulante ADICAM MAX  </a>
+                        </nav>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ksksks" href="https://caestus.ma//services"> <span>Prestation</span> <span class="arrow"></span>   </a>
+                    <ul class="nav">
+                        <a class="nav-link" href="/prestation/8">Opérateur Steadicam</a>
+                        <a class="nav-link" href="/prestation/7">Opérateur Dji Ronin 2</a>
+                        <a class="nav-link" href="/prestation/6">Techniciens</a>
+                        <a class="nav-link" href="/prestation/5">Transport</a>
+                    </ul>
+                </li>
+                <li class="nav-item"> <a class="nav-link ksksks" href="https://caestus.ma//a-propos"> <span>À propos</span>  </a> </li>
+            </nav>
+        </section>
 
         <div class="col-4 col-md-3 col-lg-3 text-right lbotonat d-flex justify-content-end align-items-center">
             <div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front ox-dialog ox-slideout ox-slideout-top active ox-slideout-active" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;">
