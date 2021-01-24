@@ -377,6 +377,18 @@ Redux::setSection( $opt_name, array(
                 'default'  => 200,
             ),
             array(
+                'id'       => 'packs-header-picture',
+                'type'     => 'media',
+                'title'    => __( 'Packs header picture', 'caynoon_text' ),
+                'desc'     => __( 'Please select packs header picture', 'caynoon_text' )
+            ),
+            array(
+                'id'       => 'packs-header-picture-height',
+                'type'     => 'text',
+                'title'    => __( 'Packs header picture height', 'caynoon_text' ),
+                'desc'     => __( 'Please insert packs header picture height', 'caynoon_text' )
+            ),
+            array(
                 'id'       => 'image1',
                 'type'     => 'media',
                 'url'      => true,

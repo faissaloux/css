@@ -337,7 +337,13 @@ $blogPosts = get_posts( $args );
 $categories = get_terms( array(
     'taxonomy'  => 'category', 
     'order'     => 'DESC'
-)); 
+));
+
+$packsCategories = get_terms( array(
+    'taxonomy'  => 'pack_categories', 
+    'order'     => 'DESC'
+));
+// print_r($packsCategories); exit;
 
 $optiques = get_terms( array(
     'taxonomy'  => 'category', 

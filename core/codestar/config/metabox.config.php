@@ -47,6 +47,34 @@ $options[]    = array(
 
 
 
+
+$options[]    = array(
+  'id'        => 'pack_settings',
+  'title'     => 'pack elements',
+  'post_type' => 'pack_cpt',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'section_3',
+      'fields' => array(
+        array(
+          'title'     => "sub title",
+          'id'        => 'sub_title_pack',
+          'type'      => 'text',
+        ),
+
+       
+
+      ),
+    ),
+
+  ),
+);
+
+
+
 $options[]    = array(
   'id'        => 'product_settings',
   'title'     => 'gallery de produit',

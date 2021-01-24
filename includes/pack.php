@@ -26,8 +26,6 @@
             </div>
             <ul class="list-of-products-img" id="underlightgallery">
                <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
-               <a href="<?php echo get_the_post_thumbnail_url(); ?>" class="kj"> <img src="<?php echo get_the_post_thumbnail_url(); ?>"></a>
             </ul>
             <style>
                .product-3 {

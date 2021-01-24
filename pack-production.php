@@ -2,7 +2,7 @@
     /*
         Template Name: pack-production
     */
-
+    global $theme_setting;
     $args = array( 'post_type' => 'pack_cpt', 'posts_per_page' => 10 );
     $the_query = new WP_Query( $args ); 
 ?>
@@ -20,19 +20,20 @@
 <body>
     <div id="my-page">
         <?php require_once('includes/nav.php'); ?>
-        
-        <?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
-                <?php dynamic_sidebar( 'header-widget' ); ?>
-        <?php endif; ?>
+        <div class="hero-container" style="height: <?php echo $theme_setting['packs-header-picture-height'].'px' ?>; margin-top: 80px; overflow: hidden; position: relative;">
+            <img src="<?php print_r($theme_setting['packs-header-picture']['url']); ?>"" style="height: 100%; width: 100%; object-fit: cover;" class='hero-image' />
+            <h1 class='hero-text'>Packs Production</h1>
+        </div>
         <!-- Main Content -->
         <main class="main-content">
-            <?php foreach ($categories as $category): ?>
+        <?php print_r($packsCategories); ?>
+            <?php foreach ($packsCategories as $category): ?>
                 <?php
                     query_posts( array(
                         'post_type' => 'pack_cpt',
                         'tax_query' => array( 
                             array( 
-                                'taxonomy'  => 'category',
+                                'taxonomy'  => 'pack_categories',
                                 'field'     => 'slug',
                                 'terms'     => $category->slug
                             ) 
