@@ -73,7 +73,7 @@
 
         <div class="row secondRow">
             <div class="col-md-6">
-                <a href="/category/26">
+                <a href="/category/location/supports-camera-trepieds/supports-camera">
                     <div class="boxImageCamera"><img src="<?php echo get_template_directory_uri();?>/assets/images/materials/SupportsCamera.jpg?v=1" />
                         <div class="ghakteb">Supports Caméra</div>
 
@@ -82,7 +82,7 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <a href="/category/27">
+                <a href="/category/location/supports-camera-trepieds/trepieds">
 
 
                     <div class="boxImageCamera">

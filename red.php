@@ -35,10 +35,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="/cameras/2">
+                        <a href="/category/location/cameras/cameras-cinema/red-helium-8k-dsmc2">
                             <img class="rounded-md" src="<?php echo get_template_directory_uri();?>/assets/images/uploads/nacLCf94E95EV6ZxzVcB.png" alt="...">
                         </a>
-                        <a href="/cameras/2">
+                        <a href="/category/location/cameras/cameras-cinema/red-helium-8k-dsmc2/">
                             <h3 class="fw-500">RED HELIUM 8K S35</h3>
                         </a>
                         <ul class='zbalbola'>
@@ -47,13 +47,13 @@
                             <li>Taille du capteur : 29,90 mm x 15,77 mm (diagonale: 33,80 mm)</li>
                             <li>Dynamique d’image : 16,5 stops</li>
                         </ul>
-                        <a href="/cameras/2" class='reddl'>Lire la suite</a>
+                        <a href="/category/location/cameras/cameras-cinema/red-helium-8k-dsmc2/" class='reddl'>Lire la suite</a>
                     </div>
                     <div class="col-md-6 dkdkdkdkd">
-                        <a href="/cameras/3">
+                        <a href="/category/location/cameras/cameras-cinema/red-gemini-5k-dsmc2">
                             <img class="rounded-md" src="<?php echo get_template_directory_uri();?>/assets/images/uploads/GSiEkkOtOes6Ij4sHDwF.png" alt="...">
                         </a>
-                        <a href="/cameras/3">
+                        <a href="/category/location/cameras/cameras-cinema/red-gemini-5k-dsmc2/">
                             <h3 class="fw-500">RED gemini 5k s35</h3>
                         </a>
                         <ul class='zbalbola'>
@@ -62,7 +62,7 @@
                             <li>Taille du capteur : 29,90 mm x 15,77 mm (diagonale: 33,80 mm)</li>
                             <li>Dynamique d’image : 16,5 stops</li>
                         </ul>
-                        <a href="/cameras/3" class='reddl'>Lire la suite</a>
+                        <a href="/category/location/cameras/cameras-cinema/red-gemini-5k-dsmc2/" class='reddl'>Lire la suite</a>
                     </div>
                 </div>
             </div>

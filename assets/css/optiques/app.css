@@ -732,7 +732,7 @@ body h1.under_cover {
 }
 
 main.main-content {
-    margin-top: 65px;
+    margin-top: 130px;
 }
 
 .coverHeaderWrapper {
@@ -1122,4 +1122,8 @@ span.lkqlqlkjsq.active:hover {
 
 .product-detail {
     height: 155px;
+}
+
+main.main-content.main-content-optique {
+    margin-top: 0px !important;
 }

@@ -1449,3 +1449,24 @@ section.pack .container {
 .pack .nav-item .nav-link {
     color: #000 !important;
 }
+
+.category-title.text-center {
+    padding: 20px 0;
+}
+
+.category-title.text-center h2 {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.row.secondRow {
+    min-height: 400px;
+}
+
+.product-media {
+    overflow: hidden;
+}
+
+.product-detail {
+    height: 155px;
+}
