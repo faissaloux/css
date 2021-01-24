@@ -1484,3 +1484,21 @@ section.pack .container {
     font-weight: 300;
     font-size: .9375rem;
 }
+
+section.brands-section {
+    margin-top: -50px;
+    height: 120px;
+}
+
+.brand-item {
+    height: 60px;
+    width: 150px;
+}
+
+.brand-item img{
+	opacity: .5;
+}
+
+.brand-item img:hover{
+	opacity: 1;
+}

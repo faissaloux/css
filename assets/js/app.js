@@ -565,11 +565,7 @@ $('#ajaxSearch').css('width', $('#searchInput').closest('.rounded').width());
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        nav     : false,
-        center  : true,
-        items   : 4,
-        loop    : false,
-        margin  : 10
+        center  : true
     });
 });
 

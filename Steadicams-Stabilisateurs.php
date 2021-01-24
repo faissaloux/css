@@ -26,7 +26,7 @@
 
         <div class="row secondRow">
             <div class="col-md-6">
-                <a href="/category/25">
+                <a href="/category/location/stabilisateurs-steadicam/steadicam">
                     <div class="boxImageCamera">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/PhoneVersion/Steadicams-Stabilisateurs/Steadicams-PhoneVersion.jpg"
                             class="d-lg-none d-md-none d-sm-none" />
@@ -36,7 +36,7 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <a href="/category/24">
+                <a href="/category/location/stabilisateurs-steadicam">
                     <div class="boxImageCamera">
                         <img src="<?php echo get_template_directory_uri();?>/assets/images/PhoneVersion/Steadicams-Stabilisateurs/Stabilisateurs-PhoneVersion.jpg"
                             class="d-lg-none d-md-none d-sm-none" />
