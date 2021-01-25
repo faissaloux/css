@@ -120,7 +120,7 @@ footer.footer {
 .row.secondRow img {
     height: 195px;
     margin-top: 45px;
-    width: auto;
+    width: 100%;
 }
 
 .fll_full {
@@ -623,5 +623,21 @@ button.btn.btn-lg.btn-primary.searchBtn {
 @media(max-width: 500px){
     .row.qkj .ghakteb{
         width: 100% !important;
+    }
+}
+
+.accessories-secondRow .boxImageCamera img{
+    margin-top: 0!important;
+}
+
+.accessories-secondRow .boxImageCamera .ghakteb{
+    top: 0 !important;
+    width: 100%;
+    font-size: 16px;
+}
+
+@media(max-width: 500px){
+    section.pack{
+        padding: 10px;
     }
 }

@@ -1,6 +1,6 @@
 <?php
     /*
-        Template Name: accessoires
+        Template Name: accessoires1
     */
     global $theme_setting;
 ?>
@@ -25,22 +25,33 @@
     <?php endif; ?>
     <!-- Main Content -->
     <main class="main-content">
-        <div>
-            <div class="row secondRow accessories-secondRow">
+    <section class="category-items bg-gray">
+        <div class="container">
+            <div class="row">
                 <?php foreach($accessories as $accessory): ?>
                     <?php if( !empty( $accessory['image'] ) ): ?>
-                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4 products-item">
-                            <a href="<?php echo $accessory['url']; ?>">
-                                <div class="boxImageCamera">
-                                    <img src="<?php echo $accessory['image']; ?>" />
-                                    <div class="ghakteb product-title"><?php echo $accessory['title']; ?></div>
+                        <div class="col-md-4 col-xl-3 col-lg-3 products-item">
+                            <div class="product-3 mb-3">
+                                <div class="product-media">
+                                    <a href="<?php echo $accessory['url']; ?>">
+                                        <img src="<?php echo $accessory['image']; ?>" alt="product">
+                                    </a>
                                 </div>
-                            </a>
+                                <div    class="product-detail d-flex flex-column justify-content-between"
+                                        style="height: 70px; border-top: 1px #CCC solid;">
+                                    <div class="product-title">
+                                        <h6>
+                                            <a href="<?php echo $accessory['url']; ?>"><?php echo $accessory['title']; ?></a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>
         </div>
+    </section>
     </main>
     
     <?php require_once('includes/footer.php') ?>
