@@ -44,7 +44,38 @@ $options[]    = array(
 );
 
 
+$options[]    = array(
+  'id'        => 'accessory_settings',
+  'title'     => 'accessory settings',
+  'post_type' => 'accessories_cpt',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
 
+    array(
+      'name'   => 'section_6',
+      'fields' => array(
+
+        array(
+          'title'     => 'choisir l\'image d\'accessoire',
+          'id'        => 'accessory',
+          'type'      => 'image',
+        ),
+
+        array(
+          'id'            => 'accessory_link',
+          'type'          => 'text',
+          'title'         => 'lien d\'accessoire',
+          'attributes'    => array(
+            'placeholder' => 'le lien d\'accessoire'
+          )
+        ),
+
+      ),
+    ),
+
+  ),
+);
 
 
 

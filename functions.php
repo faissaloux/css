@@ -363,9 +363,10 @@ if($_GET['q']){
     $search_result = ajax_products_search($_GET['q']);
 }
 
-$cart_items = caestus_cart_items();
-$categries  = products_categories();
-$brands     = brands();
+$cart_items     = caestus_cart_items();
+$categries      = products_categories();
+$brands         = brands();
+$accessories    = accessories();
 /*
     $brands     = brands();
     $search     = ajax_products_search('jjjjj','json');
