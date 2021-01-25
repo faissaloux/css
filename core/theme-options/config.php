@@ -540,6 +540,100 @@ Redux::setSection( $opt_name, array(
  ),
 ) );
 
+Redux::setSection( $opt_name, array(
+        'title'     => __( 'Stabilisateurs - Steadicams', 'caynoon_text' ),
+        'id'        => 'stabilisateurs-steadicams',
+        'icon'      => 'el el-lines',
+        'fields'    => array(
+                array(
+                    'id'       => 'stab-stead-header-image',
+                    'type'     => 'media',
+                    'title'    => __( 'Header image', 'caynoon_text' )
+                ), 
+                array(
+                    'id'       => 'stab-stead-header-text',
+                    'type'     => 'text',
+                    'title'    => __( 'Header text', 'caynoon_text' ),
+                    'default'  => 'Steadicams / Stabilisateurs'
+                ),
+                array(
+                    'id'       => 'stab-stead-first-category-image',
+                    'type'     => 'media',
+                    'title'    => __( 'First category image', 'caynoon_text' ),
+                ),
+                array(
+                    'id'       => 'stab-stead-first-category-title',
+                    'type'     => 'text',
+                    'title'    => __( 'First category title', 'caynoon_text' ),
+                    'default'  => 'Steadicams'
+                ),
+                array(
+                    'id'       => 'stab-stead-first-category-link',
+                    'type'     => 'text',
+                    'title'    => __( 'First category link', 'caynoon_text' ),
+                    'default'  => '/category/location/stabilisateurs-steadicam/steadicam'
+                ),
+                array(
+                    'id'       => 'stab-stead-second-category-image',
+                    'type'     => 'media',
+                    'title'    => __( 'second category image', 'caynoon_text' ),
+                ),
+                array(
+                    'id'       => 'stab-stead-second-category-title',
+                    'type'     => 'text',
+                    'title'    => __( 'second category title', 'caynoon_text' ),
+                    'default'  => 'Stabilisateurs'
+                ),
+                array(
+                    'id'       => 'stab-stead-second-category-link',
+                    'type'     => 'text',
+                    'title'    => __( 'Second category link', 'caynoon_text' ),
+                    'default'  => '/category/location/stabilisateurs-steadicam'
+                ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
+        'title'     => __( 'Supports camera - trepieds', 'caynoon_text' ),
+        'id'        => 'supports-camera-trepieds',
+        'icon'      => 'el el-lines',
+        'fields'    => array(
+                array(
+                    'id'       => 'supcam-trep-header-image',
+                    'type'     => 'media',
+                    'title'    => __( 'Header image', 'caynoon_text' )
+                ), 
+                array(
+                    'id'       => 'supcam-trep-header-text',
+                    'type'     => 'text',
+                    'title'    => __( 'Header text', 'caynoon_text' ),
+                    'default'  => 'Steadicams / Stabilisateurs'
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-image',
+                    'type'     => 'media',
+                    'title'    => __( 'First category image', 'caynoon_text' ),
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-title',
+                    'type'     => 'text',
+                    'title'    => __( 'First category title', 'caynoon_text' ),
+                    'default'  => 'Steadicams'
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-image',
+                    'type'     => 'media',
+                    'title'    => __( 'second category image', 'caynoon_text' ),
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-title',
+                    'type'     => 'text',
+                    'title'    => __( 'second category title', 'caynoon_text' ),
+                    'default'  => 'Stabilisateurs'
+                ),
+        )
+    ) );
+
     Redux::setSection( $opt_name, array(
         'title'     => __( 'Footer Section', 'caynoon_text' ),
         'id'        => 'footer-section',

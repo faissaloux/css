@@ -2,7 +2,11 @@
 /*
     Template Name: Steadicams-Stabilisateurs
 */
-
+    global $theme_setting;
+    $firstCategoryClass = empty($theme_setting['stab-stead-second-category-image']['url'])
+                            ?  'col-md-12' : 'col-md-6';
+    $secondCategoryClass = empty($theme_setting['stab-stead-first-category-image']['url'])
+                            ?  'col-md-12' : 'col-md-6';
 ?>
 
 <!DOCTYPE html>
@@ -18,33 +22,37 @@
     <?php require_once('includes/nav.php') ?>
 
     <div class="coverHeaderWrapper">
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/cover/cover-stabilisateur-steadicams.jpg" class='cover_img coverHeaderImg' />
-        <h1 class='under_cover'>Steadicams / Stabilisateurs</h1>
+        <img src="<?php echo $theme_setting['stab-stead-header-image']['url']; ?>" class='cover_img coverHeaderImg' />
+        <h1 class='under_cover'><?php echo $theme_setting['stab-stead-header-text']; ?></h1>
     </div>
     <!-- Main Content -->
     <main class="main-content">
 
         <div class="row secondRow">
-            <div class="col-md-6">
-                <a href="/category/location/stabilisateurs-steadicam/steadicam">
-                    <div class="boxImageCamera">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/PhoneVersion/Steadicams-Stabilisateurs/Steadicams-PhoneVersion.jpg"
-                            class="d-lg-none d-md-none d-sm-none" />
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/materials/Steadicams.jpg?v=1" class="d-xs-none" />
-                        <div class="ghakteb">Steadicams</div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="/category/location/stabilisateurs-steadicam">
-                    <div class="boxImageCamera">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/PhoneVersion/Steadicams-Stabilisateurs/Stabilisateurs-PhoneVersion.jpg"
-                            class="d-lg-none d-md-none d-sm-none" />
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/materials/Stabilisateurs.jpg?v=1" class="d-xs-none" />
-                        <div class="ghakteb">Stabilisateurs</div>
-                    </div>
-                </a>
-            </div>
+            <?php if( !empty($theme_setting['stab-stead-first-category-image']['url']) ): ?>
+                <div class="<?php echo $firstCategoryClass; ?>">
+                    <a href="<?php echo $theme_setting['stab-stead-first-category-link']; ?>">
+                        <div class="boxImageCamera">
+                            <img src="<?php echo $theme_setting['stab-stead-first-category-image']['url']; ?>"
+                                class="d-lg-none d-md-none d-sm-none" />
+                            <img src="<?php echo $theme_setting['stab-stead-first-category-image']['url']; ?>" class="d-xs-none" />
+                            <div class="ghakteb"><?php echo $theme_setting['stab-stead-first-category-title']; ?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if( !empty($theme_setting['stab-stead-second-category-image']['url']) ): ?>
+                <div class="<?php echo $secondCategoryClass; ?>">
+                    <a href="<?php echo $theme_setting['stab-stead-second-category-link']; ?>">
+                        <div class="boxImageCamera">
+                            <img src="<?php echo $theme_setting['stab-stead-second-category-image']['url']; ?>"
+                                class="d-lg-none d-md-none d-sm-none" />
+                            <img src="<?php echo $theme_setting['stab-stead-second-category-image']['url']; ?>" class="d-xs-none" />
+                            <div class="ghakteb"><?php echo $theme_setting['stab-stead-second-category-title']; ?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
         </div>
     </main>
     <?php require_once('includes/footer.php') ?>
