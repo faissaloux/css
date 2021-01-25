@@ -55,9 +55,6 @@
             
 <div id="my-header" class="show-mobile">
     <nav id="my-menu">
-        <a class="btn btn-xs" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9">
-            <span class="ti-location-pin"></span>
-        </a>
         <?php echo get_mobile_menu($menus); ?>
     </nav>
 </div>

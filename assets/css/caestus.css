@@ -641,3 +641,12 @@ button.btn.btn-lg.btn-primary.searchBtn {
         padding: 10px;
     }
 }
+
+span.ti-search {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.carousel-item.carousel-item-next.carousel-item-left{
+    height: 100% !important;
+}
