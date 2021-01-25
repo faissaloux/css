@@ -1,8 +1,8 @@
 <?php
-/*
-    Template Name: accessoires
-*/
-
+    /*
+        Template Name: accessoires
+    */
+    global $theme_setting;
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +17,15 @@
 <body>
     <?php require_once('includes/nav.php') ?>
 
-    <div class="coverHeaderWrapper">
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/cover/cover_accessoires.jpg" class='slmsqfqsqs coverHeaderImg' />
-        <h1 class='under_cover'>Accessoires</h1>
-    </div>
+    <?php if( !empty($theme_setting['accessories-header-image']) ): ?>
+        <div class="coverHeaderWrapper">
+            <img src="<?php echo $theme_setting['accessories-header-image']['url']; ?>" class='slmsqfqsqs coverHeaderImg' />
+            <h1 class='under_cover'><?php echo $theme_setting['accessories-header-text']; ?></h1>
+        </div>
+    <?php endif; ?>
     <!-- Main Content -->
     <main class="main-content">
-        <div class="row secondRow">
+        <div class="row secondRow accessories-secondRow">
 
             <?php foreach($accessories as $accessory): ?>
                 <?php if( !empty( $accessory['image'] ) ): ?>

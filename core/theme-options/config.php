@@ -647,6 +647,25 @@ Redux::setSection( $opt_name, array(
     ) );
 
     Redux::setSection( $opt_name, array(
+        'title'     => __( 'Accessories', 'caynoon_text' ),
+        'id'        => 'accessories',
+        'icon'      => 'el el-lines',
+        'fields'    => array(
+                array(
+                    'id'       => 'accessories-header-image',
+                    'type'     => 'media',
+                    'title'    => __( 'Header image', 'caynoon_text' )
+                ), 
+                array(
+                    'id'       => 'accessories-header-text',
+                    'type'     => 'text',
+                    'title'    => __( 'Header text', 'caynoon_text' ),
+                    'default'  => 'Accessoires'
+                ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
         'title'     => __( 'Footer Section', 'caynoon_text' ),
         'id'        => 'footer-section',
         'icon'      => 'el el-lines',
