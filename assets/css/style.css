@@ -1479,7 +1479,13 @@ section.brands-section {
 
 .brand-item {
     height: 60px;
-    width: 150px;
+    width: 13%;
+}
+
+@media(max-width: 800px){
+    section.brands-section {
+        margin-top: 0;
+    }
 }
 
 .brand-item img{
