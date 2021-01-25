@@ -296,7 +296,13 @@ Redux::setSection( $opt_name, array(
                     'title'    => __( 'Scroll color', 'caynoon_text' ),
                     'desc'     => __( 'Please choose scroll color', 'caynoon_text' ),
                     'default'  => '#dc3d3d',
-                ),    
+                ),
+                array(
+                    'id'       => 'product-title-hover-color',
+                    'type'     => 'color',
+                    'title'    => __( 'Product title hover color', 'caynoon_text' ),
+                    'default'  => '#000',
+                ),
                 array(
                     'id'       => 'logo-url',
                     'type'     => 'media',

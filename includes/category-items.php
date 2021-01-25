@@ -6,6 +6,11 @@
         'name'      => single_cat_title( '', false )
     )); 
 ?>
+<style>
+    .products-item .product-title h6:after{
+        background-color: <?php echo $theme_setting['product-title-hover-color'] ?> !important;
+    }
+</style>
 
 <section class="category-items bg-gray">
     <div class="container">

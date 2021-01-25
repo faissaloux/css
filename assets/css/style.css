@@ -1281,7 +1281,6 @@ img {
 .mm-listview .mm-listitem{
 	padding: 10px !important;
 	width: 100% !important;
-	border-bottom: 1px #CCC solid;
 }
 .mm-listview .mm-listitem:before{
 	height: 0;

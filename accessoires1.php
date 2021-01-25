@@ -4,6 +4,11 @@
     */
     global $theme_setting;
 ?>
+<style>
+    .products-item .product-title h6:after{
+        background-color: <?php echo $theme_setting['product-title-hover-color'] ?> !important;
+    }
+</style>
 
 <!DOCTYPE html>
 <html lang="en">
