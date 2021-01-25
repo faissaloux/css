@@ -355,6 +355,51 @@ Redux::setSection( $opt_name, array(
  ),
 ) );
 
+Redux::setSection( $opt_name, array(
+    'title'      => __( 'Mobile menu Section', 'caynoon_text' ),
+    'id'         => 'mobile-menu-section',
+    'icon'      => 'el el-lines',
+    'subsection' => false,
+    'fields'     => array(
+            array(
+                'id'       => 'mobile-menu-header-background',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu header background', 'caynoon_text' ),
+                'default'  => '#f3f3f3',
+            ), 
+            array(
+                'id'       => 'mobile-menu-header-text-color',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu header text color', 'caynoon_text' ),
+                'default'  => '#000000',
+            ), 
+            array(
+                'id'       => 'mobile-menu-header-arrow-color',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu header arrow color', 'caynoon_text' ),
+                'default'  => '#000000',
+            ), 
+            array(
+                'id'       => 'mobile-menu-panel-background',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu panel background', 'caynoon_text' ),
+                'default'  => '#f3f3f3',
+            ), 
+            array(
+                'id'       => 'mobile-menu-panel-text-color',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu panel text color', 'caynoon_text' ),
+                'default'  => '#777',
+            ), 
+            array(
+                'id'       => 'mobile-menu-panel-arrow-color',
+                'type'     => 'color',
+                'title'    => __( 'Mobile menu panel arrow color', 'caynoon_text' ),
+                'default'  => '#000000',
+            ), 
+ ),
+) );
+
  Redux::setSection( $opt_name, array(
     'title'      => __( 'Home page', 'caynoon_text' ),
     'id'         => 'home-page',

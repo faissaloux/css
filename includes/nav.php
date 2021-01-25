@@ -2,6 +2,22 @@
     global $theme_setting;
 ?>
 
+<style>
+    .mm-navbar {
+        --mm-color-background: <?php echo $theme_setting['mobile-menu-header-background']; ?>;
+        --mm-color-text-dimmed: <?php echo $theme_setting['mobile-menu-header-text-color']; ?>;
+        --mm-color-button: <?php echo $theme_setting['mobile-menu-header-arrow-color']; ?>;
+    }
+        
+    .mm-panel {
+        --mm-color-background: <?php echo $theme_setting['mobile-menu-panel-background']; ?>;
+        --mm-color-button: <?php echo $theme_setting['mobile-menu-panel-arrow-color']; ?>;
+    }
+    .mm-listview .mm-listitem a{
+        color: <?php echo $theme_setting['mobile-menu-panel-text-color']; ?>;
+    }
+</style>
+
 <!-- Navbar -->
 <nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
 

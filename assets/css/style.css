@@ -1291,7 +1291,7 @@ img {
 	width: 0;
 }
 .mm-listview .mm-listitem a{
-	color: #777 !important;
+	color: #777 ;
 }
 .mm-listview .mm-listitem a:hover{
 	color: #777 !important;
