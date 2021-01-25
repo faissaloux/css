@@ -607,7 +607,7 @@ Redux::setSection( $opt_name, array(
                     'id'       => 'supcam-trep-header-text',
                     'type'     => 'text',
                     'title'    => __( 'Header text', 'caynoon_text' ),
-                    'default'  => 'Steadicams / Stabilisateurs'
+                    'default'  => 'Support Caméra / Trépieds'
                 ),
                 array(
                     'id'       => 'supcam-trep-first-category-image',
@@ -618,7 +618,13 @@ Redux::setSection( $opt_name, array(
                     'id'       => 'supcam-trep-first-category-title',
                     'type'     => 'text',
                     'title'    => __( 'First category title', 'caynoon_text' ),
-                    'default'  => 'Steadicams'
+                    'default'  => 'Supports Caméra'
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-link',
+                    'type'     => 'text',
+                    'title'    => __( 'First category link', 'caynoon_text' ),
+                    'default'  => '/category/location/supports-camera-trepieds/supports-camera'
                 ),
                 array(
                     'id'       => 'supcam-trep-second-category-image',
@@ -629,7 +635,13 @@ Redux::setSection( $opt_name, array(
                     'id'       => 'supcam-trep-second-category-title',
                     'type'     => 'text',
                     'title'    => __( 'second category title', 'caynoon_text' ),
-                    'default'  => 'Stabilisateurs'
+                    'default'  => 'Trépieds'
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-link',
+                    'type'     => 'text',
+                    'title'    => __( 'Second category link', 'caynoon_text' ),
+                    'default'  => '/category/location/supports-camera-trepieds/trepieds'
                 ),
         )
     ) );

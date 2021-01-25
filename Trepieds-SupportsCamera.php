@@ -1,8 +1,13 @@
 <?php
-/*
-    Template Name: Trepieds-SupportsCamera
-*/
+    /*
+        Template Name: Trepieds-SupportsCamera
+    */
 
+    global $theme_setting;
+    $firstCategoryClass = empty($theme_setting['supcam-trep-second-category-image']['url'])
+                            ?  'col-md-12' : 'col-md-6';
+    $secondCategoryClass = empty($theme_setting['supcam-trep-first-category-image']['url'])
+                            ?  'col-md-12' : 'col-md-6';
 ?>
 
 <!DOCTYPE html>
@@ -61,41 +66,38 @@
     </div>
     </div>
 
-    <div class="coverHeaderWrapper">
-
-        <img src="<?php echo get_template_directory_uri();?>/assets/images/cover/coversupportscamera-trepieds.jpg" class='cover_img coverHeaderImg' />
-        <h1 class='under_cover'>Support Caméra / Trépieds</h1>
-    </div>
-
+    <?php if( !empty( $theme_setting['supcam-trep-header-image']['url'] ) ): ?>
+        <div class="coverHeaderWrapper">
+            <img src="<?php echo $theme_setting['supcam-trep-header-image']['url']; ?>" class='cover_img coverHeaderImg' />
+            <h1 class='under_cover'><?php echo $theme_setting['supcam-trep-header-text']; ?></h1>
+        </div>
+    <?php endif; ?>
 
     <!-- Main Content -->
     <main class="main-content">
 
         <div class="row secondRow">
-            <div class="col-md-6">
-                <a href="/category/location/supports-camera-trepieds/supports-camera">
-                    <div class="boxImageCamera"><img src="<?php echo get_template_directory_uri();?>/assets/images/materials/SupportsCamera.jpg?v=1" />
-                        <div class="ghakteb">Supports Caméra</div>
-
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="/category/location/supports-camera-trepieds/trepieds">
-
-
-                    <div class="boxImageCamera">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/PhoneVersion/Trepieds-Suppots Camera/Trepieds-PhoneVersion.jpg"
-                            class="d-lg-none d-md-none d-sm-none" />
-
-                        <img src="<?php echo get_template_directory_uri();?>/assets/images/materials/Trepieds.jpg?v=1" class="d-xs-none" />
-
-                        <div class="ghakteb">Trépieds</div>
-
-                    </div>
-                </a>
-            </div>
+            <?php if( !empty($theme_setting['supcam-trep-first-category-image']['url']) ): ?>
+                <div class="<?php echo $firstCategoryClass ?>">
+                    <a href="/category/location/supports-camera-trepieds/supports-camera">
+                        <div class="boxImageCamera"><img src="<?php echo $theme_setting['supcam-trep-first-category-image']['url']; ?>" />
+                            <div class="ghakteb"><?php echo $theme_setting['supcam-trep-first-category-title'];?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if( !empty($theme_setting['supcam-trep-second-category-image']['url']) ): ?>
+                <div class="<?php echo $secondCategoryClass ?>">
+                    <a href="/category/location/supports-camera-trepieds/trepieds">
+                        <div class="boxImageCamera">
+                            <img src="<?php echo $theme_setting['supcam-trep-second-category-image']['url']; ?>"
+                                class="d-lg-none d-md-none d-sm-none" />
+                            <img src="<?php echo $theme_setting['supcam-trep-second-category-image']['url']; ?>" class="d-xs-none" />
+                            <div class="ghakteb"><?php echo $theme_setting['supcam-trep-second-category-title'];?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
 
         </div>
 
