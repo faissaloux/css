@@ -1515,3 +1515,16 @@ span.arrow {
 span.arrow {
     margin-left: 6px;
 }
+
+div#tab-home-1 {
+    font-family: "Open Sans",sans-serif;
+    font-size: .9375rem;
+    font-weight: 300;
+    line-height: 1.9;
+    color: #757575;
+    text-align: left;
+}
+
+section.pack{
+    margin-top: 120px;
+}
