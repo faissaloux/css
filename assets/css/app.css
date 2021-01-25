@@ -941,12 +941,17 @@ ul.list-group.searchPhoneHeaderResutls {
 
 @media all and (min-width: 0px) and (max-width: 600px) {
     .row.qkj .boxImageCamera img {
-        height: auto !important;
+        height: 100% !important;
+    }
+
+
+    .home-image {
+        height: 280px;
     }
 
 
     .row.qkj .boxImageCamera {
-        height: initial !important;
+        height: 100% !important;
     }
 
     .row.qkj .boxImageCamera img:nth-child(2) {
