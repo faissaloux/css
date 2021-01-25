@@ -28,7 +28,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row qkj">
                 <div class="col-md-31">
                     <a href="<?php echo get_home_url().$theme_setting['image3-url']; ?>">
                         <div class="boxImageCamera"><img class="images-img" src="<?php print_r($theme_setting['image3']['url']); ?>" />

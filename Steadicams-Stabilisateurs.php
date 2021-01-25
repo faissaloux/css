@@ -22,7 +22,7 @@
     <?php require_once('includes/nav.php') ?>
 
     <?php if( !empty( $theme_setting['stab-stead-header-image']['url'] ) ): ?>
-        <div class="coverHeaderWrapper">
+        <div class="coverHeaderWrapper mb-5">
             <img src="<?php echo $theme_setting['stab-stead-header-image']['url']; ?>" class='cover_img coverHeaderImg' />
             <h1 class='under_cover'><?php echo $theme_setting['stab-stead-header-text']; ?></h1>
         </div>

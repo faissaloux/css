@@ -11,7 +11,7 @@
 
 
 <section class="brands-section d-flex justify-content-center align-items-center">
-    <div class="col-10">
+    <div class="col-md-10 col-sm-12">
         <div class="d-flex justify-content-between">
             <?php foreach($brands as $brand): ?>
                 <div class="brand-item">

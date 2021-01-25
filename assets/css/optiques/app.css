@@ -120,6 +120,8 @@ ul.list-of-products-img a img {
 .product-detail a {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 h2.text-center.big-t-title {
@@ -498,7 +500,6 @@ body {
 .product-3.mb-3 {
     border: 1px solid #e2e2e2;
     border-radius: 4px;
-    margin: 15px !important;
     padding: 0px !important;
 }
 
@@ -739,13 +740,20 @@ main.main-content {
     top: 80px;
 }
 
+@media(max-width: 570px){
+    .coverHeaderWrapper{
+        height: 140px;
+    }
+}
+
 
 @media all and (min-width: 0px) and (max-width: 600px) {
     body h1.under_cover {
-        position: relative !important;
-        top: 60px !important;
-        color: black !important;
-        background: none !important;
+        position: absolute !important;
+        top: 50% !important;
+        color: #FFF !important;
+        background: #00000080 !important;
+        color: #FFF;
         font-size: 24px;
     }
 
@@ -1126,4 +1134,49 @@ span.lkqlqlkjsq.active:hover {
 
 main.main-content.main-content-optique {
     margin-top: 0px !important;
+}
+
+.product-3.mb-3 {
+    z-index: 0;
+}
+
+.products-item .product-title h6{
+    position: relative;
+    padding: 6px;
+}
+
+.products-item .product-title h6:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    height: 100%;
+    background: #000000;
+    transition-property: width;
+    pointer-events:none;
+    -moz-transition-property: width;
+    -webkit-transition-property: width;
+    -o-transition-property: width;
+    -webkit-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    -moz-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    -o-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    transition-delay: 0ms;
+}
+
+.products-item:hover .product-title h6 a{
+    color: #FFF;
+    font-weight: 600;
+}
+
+.products-item:hover .product-title h6:after {
+    width: 100%;
+}
+
+@media(max-width: 770px){
+    .boxImageCamera{
+        margin-bottom: 20px !important;
+    }
 }

@@ -19,14 +19,13 @@
 
     <?php if( !empty($theme_setting['accessories-header-image']) ): ?>
         <div class="coverHeaderWrapper">
-            <img src="<?php echo $theme_setting['accessories-header-image']['url']; ?>" class='slmsqfqsqs coverHeaderImg' />
+            <img src="<?php echo $theme_setting['accessories-header-image']['url']; ?>" class='coverHeaderImg' />
             <h1 class='under_cover'><?php echo $theme_setting['accessories-header-text']; ?></h1>
         </div>
     <?php endif; ?>
     <!-- Main Content -->
     <main class="main-content">
         <div class="row secondRow accessories-secondRow">
-
             <?php foreach($accessories as $accessory): ?>
                 <?php if( !empty( $accessory['image'] ) ): ?>
                     <div class="col-md-3">

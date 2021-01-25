@@ -79,7 +79,7 @@
                         class="btn caestus_add_to_cart" data-image="<?php echo get_the_post_thumbnail_url(); ?>"
                         data-name="<?php the_title(); ?>" 
                         data-id="<?php echo get_the_ID(); ?>"
-                        style="background-color: #dc3d3d; color: #FFF"
+                        style="background-color: red; color: #FFF"
                     >
                         AJOUTER AU DEVIS
                     </a>

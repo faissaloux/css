@@ -669,10 +669,10 @@ body h1.under_cover {
 @media all and (min-width: 0px) and (max-width: 600px) {
 
     body h1.under_cover {
-        position: relative !important;
-        top: 30px !important;
-        color: black !important;
-        background: none !important;
+        position: absolute !important;
+        top: 50% !important;
+        color: #FFF !important;
+        background: #00000080 !important;
         font-size: 24px;
     }
 
@@ -1044,4 +1044,14 @@ span.lkqlqlkjsq.active:hover {
 
 .ui-datepicker-buttonpane .ui-datepicker-close:hover, .ui-datepicker-buttonpane .ui-datepicker-current:hover {
     background: #b4cbe5;
+}
+
+@media(max-width: 570px){
+    .coverHeaderWrapper{
+        height: 140px;
+    }
+}
+
+.coverHeaderWrapper img{
+    height: 100% !important;
 }

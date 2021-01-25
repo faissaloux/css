@@ -1535,3 +1535,59 @@ div#tab-home-1 {
 section.pack{
     margin-top: 120px;
 }
+
+@media(max-width: 575px){
+    section.product{
+        padding: 0 20px!important;
+    }
+    .bigsection .text-center{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.product-3.mb-3 {
+    z-index: 0;
+}
+
+.products-item .product-title h6{
+    position: relative;
+    padding: 6px;
+}
+
+.products-item .product-title h6:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    z-index: -1;
+    height: 100%;
+    background: #000000;
+    transition-property: width;
+    pointer-events:none;
+    -moz-transition-property: width;
+    -webkit-transition-property: width;
+    -o-transition-property: width;
+    -webkit-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    -moz-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    -o-transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    transition: all 256ms cubic-bezier(.33, .975, .245, .91);
+    transition-delay: 0ms;
+}
+
+.products-item:hover .product-title h6 a{
+    color: #FFF;
+    font-weight: 600;
+}
+
+.products-item:hover .product-title h6:after {
+    width: 100%;
+}
+
+@media(max-width: 770px){
+    .secondRow .boxImageCamera{
+        margin-bottom: 20px !important;
+    }
+}

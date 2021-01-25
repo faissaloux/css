@@ -851,6 +851,12 @@ img.cover_img {
     top: 80px;
 }
 
+@media(max-width: 570px){
+    .coverHeaderWrapper{
+        height: 140px;
+    }
+}
+
 main.main-content {
     margin-top: 85px;
 }
@@ -859,10 +865,10 @@ main.main-content {
 @media all and (min-width: 0px) and (max-width: 600px) {
 
     body h1.under_cover {
-        position: relative !important;
-        top: 30px !important;
-        color: black !important;
-        background: none !important;
+        position: absolute !important;
+        top: 43px !important;
+        color: #FFF !important;
+        background: #00000080 !important;
         font-size: 24px;
     }
 

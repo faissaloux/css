@@ -67,7 +67,7 @@
                                     <?php foreach($subcat_posts as $subcat_post):
                                         $postID = $subcat_post->ID;
                                     ?>
-                                                <div class="col-md-4 col-xl-3 col-lg-3 ">
+                                                <div class="col-md-4 col-xl-3 col-lg-3 products-item">
                                                     <div class="product-3 mb-3">
                                                         <div class="product-media">
                                                             <a href="<?php echo get_permalink($postID); ?>">
@@ -86,7 +86,7 @@
                                                                 data-image="<?php echo get_the_post_thumbnail_url($postID); ?>"
                                                                 data-name="<?php echo get_the_title($postID); ?>" 
                                                                 data-id="<?php echo $postID; ?>"
-                                                                style="background-color: #dc3d3d; color: #FFF"
+                                                                style="background-color: red; color: #FFF"
                                                             >
                                                                 AJOUTER AU DEVIS
                                                         </a>
