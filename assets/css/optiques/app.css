@@ -1180,3 +1180,12 @@ main.main-content.main-content-optique {
         margin-bottom: 20px !important;
     }
 }
+
+@media (max-width: 570px){
+    .hero-container {
+        height: 140px!important;
+    }
+     .hero-container h1{
+        font-size: 24px!important;
+    }
+}
