@@ -23,7 +23,7 @@
             <div class="row">
                 <?php if( !isset(($search_result[0]['error']))): ?>
                     <?php foreach($search_result as $result): ?>
-                        <div class="col-3">
+                        <div class="col-md-3 col-sm-12">
                             <div class="img-container">
                                 <a href="<?php echo $result['link']; ?>">
                                     <img src="<?php echo $result['image']; ?>"/>

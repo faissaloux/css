@@ -1667,3 +1667,16 @@ body{
     display: flex;
     justify-content: space-around !important;
 }
+
+.search-result-page {
+    min-height: 374px !important;
+    margin-top: 60px;
+}
+
+.search-result-page .img-container{
+    width: 100%;
+}
+
+.search-result-page .title p{
+    text-align: left;
+}
