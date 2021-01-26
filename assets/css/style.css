@@ -1731,3 +1731,10 @@ h6.about-title-footer {
     padding-right: 20px;
     padding-left: 20px;
 }
+
+@media(max-width: 600px){
+    .section-pack .container .card .card-body {
+        background-repeat: no-repeat !important;
+        background-size: 100% 100px !important;
+    }
+}
