@@ -1681,9 +1681,21 @@ body{
     text-align: left;
 }
 
+section.article {
+    min-height: 354px;
+}
+
 @media(max-width: 570px){
     .articles .container{
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
 }
+
+@media(max-width: 580px){
+    .article .container{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+

@@ -1123,9 +1123,6 @@ span.lkqlqlkjsq.active:hover {
     height: 155px;
 }
 
-main.main-content.main-content-optique {
-    margin-top: 0px !important;
-}
 
 .product-3.mb-3 {
     z-index: 0;
@@ -1178,5 +1175,21 @@ main.main-content.main-content-optique {
     }
      .hero-container h1{
         font-size: 24px!important;
+    }
+}
+
+@media(max-width: 660px){
+    main.main-content.main-content-optique {
+        margin-top: 45px !important;
+    }
+}
+@media(max-width: 580px){
+    main.main-content.main-content-optique {
+        margin-top: 15px !important;
+    }
+}
+@media(max-width: 400px){
+    main.main-content.main-content-optique {
+        margin-top: -20px !important;
     }
 }
