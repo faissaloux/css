@@ -21,7 +21,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 <link   rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.20/mmenu.min.css" integrity="sha512-gIn3+aW4xrkqoIvXsJ7F3woKfU+KTvEzXm0IXKmWqXZ8oyD9TfzFEdGDMF0egqto86E91yZVPzoa82a/dgSMig=="
+        href="<?php echo get_template_directory_uri();?>/assets/css/mmenu.css"
         crossorigin="anonymous" />
 
 <style>
