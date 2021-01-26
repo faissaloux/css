@@ -15,7 +15,7 @@
 
 <body>
     <?php require_once('includes/nav.php') ?>
-    <section class="section">
+    <section class="section cart-section">
         <div class="container">
         <form action="#" id="checkoutForm" class="cart-form" method="POST">
 		   
@@ -26,40 +26,40 @@
                                  
                              </div>
                               
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                                 <label for="first_name" class="col-md-6 px-0">Nom de demandeur *</label>
                                 <input type="text" id="first_name" placeholder="Nom de demandeur" value="" name="first_name" class="form-control col-md-6 required_field" required="">
                             </div>
         
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                                 <label for="project_name" class="col-md-6 px-0">Nom du Projet *</label>
                                 <input type="text" id="project_name" placeholder="Nom du Projet" value="" name="project_name" class="form-control col-md-6   required_field" required="">
                             </div>  
                             
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                                 <label for="phone" class="col-md-6 px-0">Telephone  *</label>
                                 <input type="number" id="phone" placeholder="Telephone" value="" name="Telephone" class="form-control col-md-6  required_field" required="">
                             </div>
                             
                             
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                                 <label for="Email" class="col-md-6 px-0"> Email *</label>
                                 <input type="text" id="Email" placeholder="Email" value="" name="Email" class="form-control col-md-6  required_field" required="">
                             </div>
                             
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                                  <label for="dates" class="col-md-6 px-0">Dates  *</label>
             
-                                <div class="form-group col-md-6 mb-0" style="padding-right: 5px;">
+                                <div class="form-group col-md-6 mb-0" style="padding-right: 7px;">
                                <div class="row">
-                                <div class="col-md-6 mb-sm">
+                                <div class="col-md-6 mb-sm px-0">
                                   <div class="form-group">
                                     <label for="from" class="from"> Du </label>
                                     <input type="text" readonly="true" placeholder="" class="form-control" name="from" id="firstDate">
                                 </div>
                                 </div>
                               
-                                <div class="col-md-6">
+                                <div class="col-md-6 mb-sm px-0 mx-0">
                                     <label for="to" class="to"> au </label>
                                     <input type="text" readonly="true" placeholder="" class="form-control" name="to" id="secondDate">
                                   </div>       
@@ -68,7 +68,7 @@
                                 </div> 
                             </div>
                          
-                            <div class="form-group col-md-12 row pr-0">
+                            <div class="form-group col-md-12 row px-0 mx-0">
                               <label for="shoting_days" class="col-md-6 px-0"> Jours de tournage </label>
                               <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays" disabled>
                             </div>
@@ -102,7 +102,7 @@
                                 </table>
                             <?php endforeach; ?>
                          
-                         <div class="form-group col-md-12 row pr-0">
+                         <div class="form-group col-md-12 row px-0 mx-0">
                                 <label for="notes" class="col-md-6 px-0"> Commentaires  </label>
                                 <textarea class="form-control col-md-6" id="notes" placeholder="Commentaires" name="notes" cols="30" rows="10"></textarea>
                             </div>
