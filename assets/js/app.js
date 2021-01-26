@@ -554,10 +554,20 @@ function SidbarPhoneSearchFunction(searchQuery) {
 $('#ajaxSearch').css('width', $('#searchInput').closest('.rounded').width());
 
 $(document).ready(function(){
+    console.log($( window ).width());
+    if($( window ).width() > 600){
+        $(".owl-carousel").owlCarousel({
+            margin      : 160,
+            loop        : true,
+            items       : 6,
+            autoplay    : true
+        });
+    }else{
         $(".owl-carousel").owlCarousel({
             loop        : true,
             autoplay    : true
         });
+    }
 });
 
 $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');
