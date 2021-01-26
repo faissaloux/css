@@ -1,4 +1,4 @@
-<section class="les_partenaies " style="display: none">
+<section class="les_partenaies ">
     <div class="owl-carousel" data-dots="false" data-autoplay="true" data-slides-to-show="12">
         <?php foreach($brands as $brand): ?>
             <a href="<?php echo $brand['url']; ?>">
@@ -10,7 +10,7 @@
 
 
 
-<section class="brands-section d-flex justify-content-center align-items-center">
+<section class="brands-section d-flex justify-content-center align-items-center" style="display: none !important">
     <div class="col-md-10 col-sm-12">
         <div class="d-flex justify-content-between">
             <?php foreach($brands as $brand): ?>

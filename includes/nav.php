@@ -53,7 +53,7 @@
                 </div>
             </form>
 		</div></div></div>
-            <a class="btn btn-xs down-search" href='javascript:;' data-toggle="offcanvas"
+            <a class="btn btn-xs down-search d-flex" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">
                 <span class="ti-search"></span></a>
             <div class="carter">

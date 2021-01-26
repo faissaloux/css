@@ -40,7 +40,7 @@
                     <div class="col-md-6">
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tab-home-1">Description</a>
+                                <a class="nav-link active description-tab" data-toggle="tab" href="#tab-home-1">Description</a>
                             </li>
                         </ul>
                         <div class="tab-content p-4">

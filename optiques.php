@@ -26,7 +26,7 @@
     <div class="coverHeaderWrapper">
 
         <img src="<?php echo get_template_directory_uri();?>/assets/images/cover/cover-optiques.jpg" class='slmsqfqsqs coverHeaderImg' />
-        <h1 class='under_cover'>Optiques</h1>
+        <h1 class='under_cover' style="top: 33% !important;">Optiques</h1>
     </div>
 
 
@@ -35,7 +35,7 @@
 
         <div class="from-db">
             <!-- Main Content -->
-            <main class="main-content">
+            <main class="main-content" style="margin-top: 40px;">
                 <?php foreach ($optiques as $optique): ?>
                     <?php
                         query_posts( array(

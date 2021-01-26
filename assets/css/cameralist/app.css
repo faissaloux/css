@@ -1048,3 +1048,9 @@ span.lkqlqlkjsq.active:hover {
 .coverHeaderWrapper img{
     height: 100% !important;
 }
+
+@media(max-width: 770px){
+    .section-cameralist{
+        margin-top: 60px;
+    }
+}

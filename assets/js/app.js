@@ -564,9 +564,10 @@ function SidbarPhoneSearchFunction(searchQuery) {
 $('#ajaxSearch').css('width', $('#searchInput').closest('.rounded').width());
 
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        center  : true
-    });
+        $(".owl-carousel").owlCarousel({
+            loop        : true,
+            autoplay    : true
+        });
 });
 
 $( ".owl-prev").html('<i class="fa fa-chevron-left"></i>');

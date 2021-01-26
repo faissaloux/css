@@ -1658,3 +1658,12 @@ ul.nav{
     background-color: whitesmoke !important;
     font-family: 'Montserrat';
 }
+
+body{
+    overflow-x: hidden !important;
+}
+
+.owl-stage{
+    display: flex;
+    justify-content: space-around !important;
+}
