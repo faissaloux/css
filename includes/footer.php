@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row gap-y">
             <div class="col-md-5 col-xl-4">
-                <h6 class="mb-4"><strong><?php echo $theme_setting['footer-about-title']; ?></strong></h6>
+                <h6 class="mb-4 about-title-footer"><strong><?php echo $theme_setting['footer-about-title']; ?></strong></h6>
                 <p><?php echo $theme_setting['footer-about']; ?></p>
             </div>
             <div class="col-md-1 col-xl-1"></div>

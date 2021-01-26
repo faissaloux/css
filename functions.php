@@ -188,35 +188,36 @@ remove_action('wp_head', 'wp_generator');
 @ini_set('session.use_only_cookies', true);
 
 function theme_register_styles() {
-    wp_enqueue_style( 'page-style',                         get_template_directory_uri() . '/assets/css/page.min.css');
-    wp_enqueue_style( 'style-style',                        get_template_directory_uri() . '/assets/css/style.css');
-    wp_enqueue_style( 'caestus-style',                      get_template_directory_uri() . '/assets/css/caestus.css');
-    wp_enqueue_style( 'bootstrap-datepicker3-style',        get_template_directory_uri() . '/assets/css/lib/bootstrap-datepicker3.min.css');
-    wp_enqueue_style( 'lightgallery-style',                 get_template_directory_uri() . '/assets/css/lib/lightgallery.css');
-    wp_enqueue_style( 'slicknav-min-style',                 get_template_directory_uri() . '/assets/css/slicknav.min.css');
-    wp_enqueue_style( 'slicknav-style',                     get_template_directory_uri() . '/assets/css/slicknav.css');
-    wp_enqueue_style( 'owl-carousel-style',                 get_template_directory_uri() . '/assets/owlcarousel/assets/owl.carousel.min.css');
-    wp_enqueue_style( 'owl-theme-default-style',            get_template_directory_uri() . '/assets/owlcarousel/assets/owl.theme.default.min.css');
+    wp_enqueue_style( 'page-style',                         THEME_URL . '/assets/css/page.min.css');
+    wp_enqueue_style( 'style-style',                        THEME_URL . '/assets/css/style.css');
+    wp_enqueue_style( 'caestus-style',                      THEME_URL . '/assets/css/caestus.css');
+    wp_enqueue_style( 'bootstrap-datepicker3-style',        THEME_URL . '/assets/css/lib/bootstrap-datepicker3.min.css');
+    wp_enqueue_style( 'lightgallery-style',                 THEME_URL . '/assets/css/lib/lightgallery.css');
+    wp_enqueue_style( 'slicknav-min-style',                 THEME_URL . '/assets/css/slicknav.min.css');
+    wp_enqueue_style( 'slicknav-style',                     THEME_URL . '/assets/css/slicknav.css');
+    wp_enqueue_style( 'owl-carousel-style',                 THEME_URL . '/assets/owlcarousel/assets/owl.carousel.min.css');
+    wp_enqueue_style( 'owl-theme-default-style',            THEME_URL . '/assets/owlcarousel/assets/owl.theme.default.min.css');
+    wp_enqueue_style( 'mmenu-style',                        THEME_URL . '/assets/css/mmenu.css');
 }
 
 function theme_register_scripts() {
-    wp_enqueue_script( 'page-script',                       get_template_directory_uri() . '/assets/js/page.min.js', array(), false, true);
-    wp_enqueue_script( 'script-script',                     get_template_directory_uri() . '/assets/js/script.js', array(), false, true);
-    wp_enqueue_script( 'bootstrap-datepicker-script',       get_template_directory_uri() . '/assets/js/lib/bootstrap-datepicker.min.js', array(), false, true);
-    wp_enqueue_script( 'bootstrap-datepicker-fr-script',    get_template_directory_uri() . '/assets/js/lib/bootstrap-datepicker.fr.min.js', array(), false, true);
-    wp_enqueue_script( 'lightgallery-script',               get_template_directory_uri() . '/assets/js/lib/lightgallery.min.js', array(), false, true);
-    wp_enqueue_script( 'mousewheel-script',                 get_template_directory_uri() . '/assets/js/lib/jquery.mousewheel.min.js', array(), false, true);
-    wp_enqueue_script( 'thumbnail-script',                  get_template_directory_uri() . '/assets/js/lib/lg-thumbnail.js', array(), false, true);
-    wp_enqueue_script( 'fullscreen-script',                 get_template_directory_uri() . '/assets/js/lib/lg-fullscreen.js', array(), false, true);
-    wp_enqueue_script( 'slicknav-script',                   get_template_directory_uri() . '/assets/js/jquery.slicknav.min.js', array(), false, true);
-    wp_enqueue_script( 'owl-carousel-script',               get_template_directory_uri() . '/assets/owlcarousel/owl.carousel.min.js', array(), false, true);
-    wp_enqueue_script( 'app-script',                        get_template_directory_uri() . '/assets/js/app.js', array(), false, true);
-    wp_enqueue_script( 'caestus-script',                    get_template_directory_uri() . '/assets/js/caestus.js', false, true );
-    wp_enqueue_script( 'mmenu-script',                      get_template_directory_uri() . '/assets/js/mmenu.js', array(), false, true);
+    wp_enqueue_script( 'page-script',                       THEME_URL . '/assets/js/page.min.js', array(), false, true);
+    wp_enqueue_script( 'script-script',                     THEME_URL . '/assets/js/script.js', array(), false, true);
+    wp_enqueue_script( 'bootstrap-datepicker-script',       THEME_URL . '/assets/js/lib/bootstrap-datepicker.min.js', array(), false, true);
+    wp_enqueue_script( 'bootstrap-datepicker-fr-script',    THEME_URL . '/assets/js/lib/bootstrap-datepicker.fr.min.js', array(), false, true);
+    wp_enqueue_script( 'lightgallery-script',               THEME_URL . '/assets/js/lib/lightgallery.min.js', array(), false, true);
+    wp_enqueue_script( 'mousewheel-script',                 THEME_URL . '/assets/js/lib/jquery.mousewheel.min.js', array(), false, true);
+    wp_enqueue_script( 'thumbnail-script',                  THEME_URL . '/assets/js/lib/lg-thumbnail.js', array(), false, true);
+    wp_enqueue_script( 'fullscreen-script',                 THEME_URL . '/assets/js/lib/lg-fullscreen.js', array(), false, true);
+    wp_enqueue_script( 'slicknav-script',                   THEME_URL . '/assets/js/jquery.slicknav.min.js', array(), false, true);
+    wp_enqueue_script( 'owl-carousel-script',               THEME_URL . '/assets/owlcarousel/owl.carousel.min.js', array(), false, true);
+    wp_enqueue_script( 'app-script',                        THEME_URL . '/assets/js/app.js', array(), false, true);
+    wp_enqueue_script( 'caestus-script',                    THEME_URL . '/assets/js/caestus.js', false, true );
+    wp_enqueue_script( 'mmenu-script',                      THEME_URL . '/assets/js/mmenu.js', array(), false, true);
     wp_localize_script( 'ajax-script', 'varjs', array( 'caestus_ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 function admin_register_scripts(){
-    wp_enqueue_script( 'lightgallery-script',               get_template_directory_uri() . '/assets/js/admin.js', array(), false, false);
+    wp_enqueue_script( 'lightgallery-script',               THEME_URL . '/assets/js/admin.js', array(), false, false);
 }
 
 add_action('admin_head', 'my_custom_fonts');

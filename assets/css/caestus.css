@@ -647,6 +647,7 @@ span.ti-search {
     font-weight: 900;
 }
 
-.carousel-item.carousel-item-next.carousel-item-left{
+.carousel-item.carousel-item-next.carousel-item-left,
+.carousel-item.carousel-item-prev.carousel-item-right{
     height: 100% !important;
 }

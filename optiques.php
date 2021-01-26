@@ -23,10 +23,10 @@
 <body>
     <?php require_once('includes/nav.php') ?>
 
-    <div class="coverHeaderWrapper">
+    <div class="coverHeaderWrapper optiquesHeaderWrapper">
 
         <img src="<?php echo get_template_directory_uri();?>/assets/images/cover/cover-optiques.jpg" class='slmsqfqsqs coverHeaderImg' />
-        <h1 class='under_cover' style="top: 33% !important;">Optiques</h1>
+        <h1 class='under_cover'>Optiques</h1>
     </div>
 
 

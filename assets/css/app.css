@@ -3,9 +3,10 @@ ul.footer_more_ul {
     left: -40px;
 }
 
-h6.contact_title_footer {
+h6.contact_title_footer,
+h6.about-title-footer {
     position: relative;
-    left: -17px;
+    left: -10px;
 }
 
 .footer_more_ul {

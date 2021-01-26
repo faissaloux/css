@@ -20,10 +20,6 @@
         crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<link   rel="stylesheet"
-        href="<?php echo get_template_directory_uri();?>/assets/css/mmenu.css"
-        crossorigin="anonymous" />
-
 <style>
     h1::selection,
     h2::selection,
