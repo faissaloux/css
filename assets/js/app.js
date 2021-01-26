@@ -678,3 +678,24 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
             $(this).show(300);
         });
     };
+
+    $(".ksksks").hover(function(){
+        $(".ksksks span").css('background-color', 'transparent');
+        if($(this).siblings("ul.nav").css('opacity') == 1){
+            $(this).children("span").css('background-color', 'rgb(187, 12, 27)');
+        }else{
+            $(this).children("span").css('background-color', 'transparent');
+        };
+    })
+
+    $("ul.nav").mouseleave(function(){
+        if(!$(this).parent(".nav-item").hasClass('show')){
+            $(".ksksks span").css('background-color', 'transparent');
+        };
+    })
+
+    $("nav.nav").mouseleave(function(){
+        if(!$(this).parent(".nav-item").hasClass('show')){
+            $(".ksksks span").css('background-color', 'transparent');
+        };
+    })
