@@ -108,7 +108,15 @@ $options[]    = array(
   ),
 );
 
+$packsCategories = get_terms( array(
+  'taxonomy'  => 'pack_categories', 
+  'order'     => 'DESC'
+));
 
+$select = [];
+foreach($packsCategories as $item){
+  $select[$item->term_id] = $item->name; 
+}
 
 $options[]    = array(
   'id'        => 'product_settings',
@@ -128,7 +136,19 @@ $options[]    = array(
           'type'      => 'gallery',
         ),
 
+
+
+
+        array(
+          'title'     => 'choisir le pack a afficher ',
+          'id'        => 'pack_products',
+          'type'      => 'select',
+          'options'     => $select
+
+        ),
+
        
+
 
       ),
     ),

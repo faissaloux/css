@@ -1638,3 +1638,23 @@ ul.nav{
     color: #FFF !important;
     transition: all 600ms ease-in-out;
 }
+
+@media(max-width: 650px){
+    .section-pack .section-title .category-title,
+    .suggestions .row:first-child{
+        margin-left: 40px;
+    }
+}
+
+@media(max-width: 770px){
+    .bigsection .text-center{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.description-tab{
+    padding: 10px !important;
+    background-color: whitesmoke !important;
+    font-family: 'Montserrat';
+}

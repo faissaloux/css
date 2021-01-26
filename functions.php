@@ -223,10 +223,11 @@ add_action('admin_head', 'my_custom_fonts');
 function my_custom_fonts() {
   echo '<style>
    li#toplevel_page_cs-framework {
-    display: none;
-}
+        display: none;
+    }
   </style>';
 }
+
 
 add_action( 'wp_ajax_add_to_cart',                      'add_to_cart_php' );
 add_action( 'wp_ajax_nopriv_add_to_cart',               'add_to_cart_php' );
