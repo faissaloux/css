@@ -1255,7 +1255,7 @@ img {
 
 @media(max-width: 779px){
     .show-mobile{
-        display: block !important;
+        display: flex !important;
     }
     .show-desktop{
         display: none !important;
