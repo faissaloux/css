@@ -1,4 +1,6 @@
-<?php global $theme_setting; ?>
+<?php
+   global $theme_setting;
+?>
 
 <section class="product">
    <div class="container">
@@ -88,8 +90,48 @@
             </div>
          </div>
       </div>
-      <hr class="my-8">
-      <div class="row">
+      <div class="d-flex flex-column suggestions">
+         <div class="row">
+            <h3>Suggestions</h3>
+
+            <?php
+               $args = array('cat' => get_the_category()[0]->cat_ID, 'post_type' => 'products_cpt', 'posts_per_page' => 4);
+               query_posts($args);
+            ?>
+
+         </div>
+         <div class="row">
+            <?php if (have_posts()) :  ?>   
+               <?php while (have_posts()) : the_post(); ?>
+                  <div class="col-md-4 col-xl-3 col-lg-3 products-item">
+                     <div class="product-3 mb-3">
+                        <div class="product-media">
+                           <a href="<?php echo the_permalink(); ?>">
+                                 <img src="<?php echo the_post_thumbnail_url(); ?>" alt="product">
+                           </a>
+                        </div>
+                        <div class="product-detail d-flex flex-column justify-content-between">
+                           <div class="product-title">
+                                 <h6>
+                                    <a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a>
+                                 </h6>
+                           </div>
+                           <a  href="javascript:;"
+                                 data-category="<?php echo get_the_category()[0]->name; ?>"
+                                 class="btn caestus_add_to_cart"
+                                 data-image="<?php echo the_post_thumbnail_url(); ?>"
+                                 data-name="<?php the_title(); ?>" 
+                                 data-id="<?php echo the_ID(); ?>"
+                                 style="background-color: red; color: #FFF"
+                           >
+                                 AJOUTER AU DEVIS
+                        </a>
+                        </div>
+                     </div>
+                  </div>
+               <?php endwhile; ?>
+            <?php endif; ?>
+         </div>
       </div>
    </div>
 </section>
