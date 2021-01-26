@@ -21,7 +21,7 @@ class products_listing_widget extends WP_Widget
         if ( isset( $instance[ 'number' ] ) )
             $number = $instance[ 'number' ];
         else
-            $number = 'Default Number';
+            $number = 4;
 
             $categories  = products_categories();
         ?>
@@ -53,7 +53,7 @@ class products_listing_widget extends WP_Widget
          <div class="container products-container">
             <div class="products row">
                     <?php foreach($products as $product):?>
-                        <div class="col-md-4 col-xl-3 col-lg-3 ">
+                        <div class="col-md-4 col-xl-3 col-lg-3 products-item">
                                 <div class="product-3 mb-3">
                                     <div class="product-media">
                                         <a href="<?php echo $product['link']; ?>">
@@ -61,14 +61,18 @@ class products_listing_widget extends WP_Widget
                                         </a>
                                     </div>
                                     <div class="product-detail">
-                                        <h6><a href="<?php echo $product['link']; ?>"><?php echo $product['title']; ?></a>
-                                        </h6>
+                                        <div class="product-title">
+                                            <h6 style="min-height: 75px;">
+                                                <a href="<?php echo $product['link']; ?>"><?php echo $product['title']; ?></a>
+                                            </h6>
+                                        </div>
                                         <a  href="javascript:;"
                                             data-category="<?php echo $product['category']; ?>"
-                                            class="btn caestus_add_to_cart" data-image="<?php echo $product['image']; ?>"
+                                            class="btn caestus_add_to_cart w-100"
+                                            data-image="<?php echo $product['image']; ?>"
                                             data-name="<?php echo $product['title']; ?>" 
                                             data-id="<?php echo $product['id']; ?>"
-                                            style="background-color: #dc3d3d; color: #FFF"
+                                            style="background-color: red; color: #FFF"
                                         >
                                             AJOUTER AU DEVIS
                                         </a>

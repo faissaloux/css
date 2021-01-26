@@ -16,7 +16,7 @@ class page_header_widget extends WP_Widget
         if ( isset( $instance[ 'title' ] ) )
             $title = $instance[ 'title' ];
         else
-            $title = 'Header image';
+            $title = 'Page header';
         
         if ( isset( $instance[ 'height' ] ) )
             $height = $instance[ 'height' ];
@@ -45,7 +45,7 @@ class page_header_widget extends WP_Widget
     public function widget($args, $instance)
     {
         ?>
-        <div class="hero-container" style="height: <?php echo $instance['height'].'px' ?>; overflow: hidden; position: relative;">
+        <div class="hero-container custom-page-hero" style="height: <?php echo $instance['height'].'px' ?>; overflow: hidden; position: relative; margin-top: 80px;">
             <img src="<?php echo esc_url($instance['header_image']); ?>" style="height: 100%; width: 100%; object-fit: cover;" class='hero-image' />
             <h1 class='hero-text'><?php echo $instance['title']; ?></h1>
         </div>

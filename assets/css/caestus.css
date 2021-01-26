@@ -651,3 +651,13 @@ span.ti-search {
 .carousel-item.carousel-item-prev.carousel-item-right{
     height: 100% !important;
 }
+
+@media(max-width: 570px){
+    .custom-page-hero{
+        height: 140px !important;
+    }
+
+    .custom-page-hero .hero-text{
+        font-size: 24px !important;
+    }
+}
