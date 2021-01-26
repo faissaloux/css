@@ -85,9 +85,13 @@
                                                 <td>
                                                     <a class="item-remove remove-from-cart" data-id="<?php echo $itm['id']; ?>" data-category="<?php echo $itm['category']; ?>"><i class="ti-close"></i></a>
                                                 </td>
-                                                <td>
-                                                    <img class="rounded" src="<?php echo $itm['image']; ?>">
-                                                    <?php echo $itm['title']; ?>
+                                                <td class="d-flex align-items-center">
+                                                    <div>
+                                                        <img class="rounded" src="<?php echo $itm['image']; ?>">
+                                                    </div>
+                                                    <div>
+                                                        <?php echo $itm['title']; ?>
+                                                    </div>
                                                 </td>
                                                 <td class="text-left">
                                                     <input type="number" min="1" max="20" id="dldklklll" class="quantityPicker product_quantity form-control" data-id="<?php echo $itm['id']; ?>" data-category="<?php echo $itm['category']; ?>" data-cartitem="7" value="<?php echo $itm['quantity']; ?>">

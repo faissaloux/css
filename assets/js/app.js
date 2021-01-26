@@ -1,13 +1,3 @@
-grecaptcha.ready(function () {
-    // do request for recaptcha token
-    // response is promise with passed token
-    grecaptcha.execute('6LelLcoUAAAAABQsni4zy4zsn3xdOdRAeMsKELmB', {action: 'validate_captcha'})
-        .then(function (token) {
-            // add token value to form
-            document.getElementById('g-recaptcha-response').value = token;
-        });
-});
-
 $.extend($.fn.datepicker.defaults, {language: 'fr'});
 
 $(document).ready(function () {
@@ -699,4 +689,10 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
         if(!$(this).parent(".nav-item").hasClass('show')){
             $(".ksksks span").css('background-color', 'transparent');
         };
+    })
+
+    $(()=>{
+        if($.trim($(".suggestions div:nth-child(2)").text()).length == 0){
+            $(".suggestions").attr('style','display:none !important');
+        }
     })

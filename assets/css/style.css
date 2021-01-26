@@ -849,7 +849,7 @@ img {
 }
 
 table.table.table-cart tr td:last-child {
-    width: 135px;
+    width: 100px;
 }
 
 .remove-from-cart{
@@ -1699,3 +1699,18 @@ section.article {
     }
 }
 
+@media(max-width: 1000px){
+    #checkoutForm{
+        margin-top: 40px;
+    }
+}
+
+.datepicker-dropdown{
+    background-color: #fcfaff;
+}
+
+@media(max-width: 600px){
+    .table-cart tr td:first-child{
+        padding-left: 15px !important;
+    }
+}
