@@ -565,6 +565,7 @@ $(document).ready(function(){
     }else{
         $(".owl-carousel").owlCarousel({
             loop        : true,
+            items       : 6,
             autoplay    : true
         });
     }
