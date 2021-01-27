@@ -62,7 +62,10 @@
                     <span class="icon-document"></span>
                 </a>
             </div>
-            <a class="btn btn-xs show-desktop" href="https://goo.gl/maps/1zkbzfxZeiAUGqCX9">
+            <a  class="btn btn-xs show-desktop"
+                href="https://www.google.com/maps/place/Caestus+Studios/@30.4178535,-9.5778858,18z/data=!3m1!4b1!4m5!3m4!1s0xdb3b7845137f05f:0x8033f371297be0dc!8m2!3d30.4178512!4d-9.5767888"
+                target="_blank"
+            >
                 <span class="ti-location-pin"></span>
             </a>
         </div>

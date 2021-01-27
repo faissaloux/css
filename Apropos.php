@@ -29,7 +29,14 @@
         </div>
         <div class="row map-container">
             <div style="width: 100%">
-                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=R%C3%A9sidence%20Yasmine%20%20Agadir%20,%20Maroc+(Caestus)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <iframe width="100%"
+                        height="600"
+                        frameborder="0"
+                        scrolling="no"
+                        marginheight="0"
+                        marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=8%C3%A8me%20Etage%20N%C2%B095,%20Angle%20avenue%20Moukawama%20et%20avenue%20Kadi%20Ayad%20R%C3%A9sidence%20Yasmine%20Bloc%20A,%20Agadir%2080000+(Caestus%20Studios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
             </div>
         </div>
     </div>
