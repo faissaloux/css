@@ -157,6 +157,29 @@ $options[]    = array(
 );
 
 
+$options[]    = array(
+  'id'        => 'prestation_settings',
+  'title'     => 'prestation elements',
+  'post_type' => 'prestation_cpt',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'section_8',
+      'fields' => array(
+        array(
+          'title'     => 'choisir les images de gallery',
+          'id'        => 'gallery_prestation',
+          'type'      => 'gallery',
+        ),
+
+      ),
+    ),
+
+  ),
+);
+
 
 
 CSFramework_Metabox::instance( $options );
