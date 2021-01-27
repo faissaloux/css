@@ -1751,3 +1751,14 @@ ul.nav .nav-item a .plus{
 a.nav-link.ksksks {
     color: white !important;
 }
+
+@media(max-width: 500px){
+    .search-result-page{
+        margin-top: 70px;    
+    }
+    
+    .search-result-page h2{
+        font-size: 20px;
+        padding: 6px 0 10px;
+    }
+}
