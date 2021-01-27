@@ -1478,4 +1478,13 @@ span.lkqlqlkjsq.active:hover {
         width: 100px !important;
         opacity: 1 !important;
     }
+
+    .les_partenaies{
+        max-width: 100%;
+    }
+
+    .owl-prev span,
+    .owl-next span{
+        color: red;
+    }
 }
