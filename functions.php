@@ -385,6 +385,7 @@ $cart_items     = caestus_cart_items();
 $categries      = products_categories();
 $brands         = brands();
 $accessories    = accessories();
+$prestations    = prestations();
 
 /*
     $brands     = brands();

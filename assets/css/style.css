@@ -1762,3 +1762,17 @@ a.nav-link.ksksks {
         padding: 6px 0 10px;
     }
 }
+
+.prestation-section .card .card-body{
+    height: 133px;
+}
+
+.prestation-section .card .card-body .prestation-title{
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+.prestation-page .big-t-title{
+    font-size: 80px !important;
+    margin: 180px 0;
+}
