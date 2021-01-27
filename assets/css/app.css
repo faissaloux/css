@@ -1467,3 +1467,15 @@ span.lkqlqlkjsq.active:hover {
     max-width: 1170px;
     overflow: hidden;
 }
+
+@media(max-width: 600px){
+    .owl-item{
+        width: 100% !important;
+        margin: 0 130px !important;
+    }
+    
+    .owl-item img{
+        width: 100px !important;
+        opacity: 1 !important;
+    }
+}
