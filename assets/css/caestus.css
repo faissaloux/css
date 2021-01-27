@@ -284,7 +284,6 @@ body {
 }
 
 .boxImageCamera {
-    padding: 5px;
     position: relative;
 }
 
@@ -673,4 +672,8 @@ span.ti-search {
 .trep-supcam-row {
     margin-top: -30px;
     margin-bottom: -82px;
+}
+
+.trep-supcam-row .boxImageCamera {
+    padding: 5px;
 }
