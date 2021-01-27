@@ -134,7 +134,7 @@ function get_mobile_menu($phone_menus){
             $html .= "<ul>";
             foreach($menu['children'] as $child){
                 $html .= "<li>";
-                if(!empty($menu['children'])){
+                if(!empty($child['children'])){
                     $html .= "<span>".$child['title']."</span>";
                     $html .= "<ul>";
                     foreach($child['children'] as $ch){
@@ -155,7 +155,7 @@ function get_mobile_menu($phone_menus){
                     }
                     $html .= "</ul>";
                 }else{
-                    $html .= "<a href=".$menu['url'].">".$menu['title']."</a>";
+                    $html .= "<a href=".$child['url'].">".$child['title']."</a>";
                 }
                 $html .= "</li>";
             }
@@ -180,7 +180,7 @@ function get_desktop_menu($menus){
             $html .= "<ul class='nav'>";
             foreach($menu['children'] as $child){
                 $html .= "<li class='nav-item'>";
-                if(!empty($menu['children'])){
+                if(!empty($child['children'])){
                     $html .= "<a href=".$child['url']." class='nav-link d-flex justify-content-between'>".$child['title']."</a>";
                     $html .= "<nav class='nav'>";
                     foreach($child['children'] as $ch){

@@ -1776,3 +1776,14 @@ a.nav-link.ksksks {
     font-size: 80px !important;
     margin: 180px 0;
 }
+
+@media(max-width: 600px){
+    .prestation-section .card .card-body{
+        height: 100px;
+    }
+    
+    .prestation-page .big-t-title{
+        font-size: 40px !important;
+        margin: 100px 0;
+    }
+}
