@@ -557,7 +557,7 @@ $(document).ready(function(){
     console.log($( window ).width());
     if($( window ).width() > 600){
         $(".owl-carousel").owlCarousel({
-            margin      : 160,
+            margin      : 60,
             loop        : true,
             items       : 6,
             autoplay    : true
