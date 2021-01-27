@@ -184,7 +184,20 @@ function get_desktop_menu($menus){
                     $html .= "<a href=".$child['url']." class='nav-link d-flex justify-content-between'>".$child['title']."</a>";
                     $html .= "<nav class='nav'>";
                     foreach($child['children'] as $ch){
-                        $html .= "<a href=". $ch['url'] ." class='nav-link'>".$ch['title']."</a>";
+                        $html .= "<li class='nav-item'>";
+                            if(!empty($ch['children'])){
+                                $html .= "<a href=".$ch['url']." class='nav-link d-flex justify-content-between'>".$ch['title']."</a>";
+                                $html .= "<nav class='nav'>";
+                                foreach($ch['children'] as $c){
+                                    $html .= "<li class='nav-item'>";
+                                    $html .= "<a href=".$c['url']." class='nav-link d-flex justify-content-between'>".$c['title']."</a>";
+                                    $html .= "</li>";
+                                }
+                                $html .= "</nav>";
+                            }else{
+                                $html .= "<a href=". $ch['url'] ." class='nav-link'>".$ch['title']."</a>";
+                            }
+                        $html .= "</li>";
                     }
                     $html .= "</nav>";
                 }else{
