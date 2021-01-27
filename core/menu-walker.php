@@ -181,7 +181,7 @@ function get_desktop_menu($menus){
             foreach($menu['children'] as $child){
                 $html .= "<li class='nav-item'>";
                 if(!empty($menu['children'])){
-                    $html .= "<a href=".$child['url']." class='nav-link d-flex justify-content-between'>".$child['title']."<span class='plus'>+</span></a>";
+                    $html .= "<a href=".$child['url']." class='nav-link d-flex justify-content-between'>".$child['title']."</a>";
                     $html .= "<nav class='nav'>";
                     foreach($child['children'] as $ch){
                         $html .= "<a href=". $ch['url'] ." class='nav-link'>".$ch['title']."</a>";

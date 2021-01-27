@@ -284,6 +284,7 @@ body {
 }
 
 .boxImageCamera {
+    padding: 5px;
     position: relative;
 }
 
@@ -611,7 +612,7 @@ button.btn.btn-lg.btn-primary.searchBtn {
 
 .accessories-secondRow {
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 28px;
 }
 
 @media(max-width: 550px){
@@ -634,6 +635,8 @@ button.btn.btn-lg.btn-primary.searchBtn {
     top: 0 !important;
     width: 100%;
     font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 @media(max-width: 500px){
@@ -660,4 +663,14 @@ span.ti-search {
     .custom-page-hero .hero-text{
         font-size: 24px !important;
     }
+}
+
+.std-stab-row {
+    margin-top: -15px;
+    margin-bottom: -48px;
+}
+
+.trep-supcam-row {
+    margin-top: -30px;
+    margin-bottom: -82px;
 }

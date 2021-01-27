@@ -70,7 +70,7 @@
                          
                             <div class="form-group col-md-12 row px-0 mx-0">
                               <label for="shoting_days" class="col-md-6 px-0"> Jours de tournage </label>
-                              <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays" disabled>
+                              <input type="number" class="form-control col-md-6 " placeholder="Jours de tournage" min="1" max="400" name="shoting_days" id="restDays">
                             </div>
                             <?php foreach($cart_items as $key => $item): ?>
                                 <table class="table table-cart">

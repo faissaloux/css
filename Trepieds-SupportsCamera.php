@@ -76,9 +76,9 @@
     <!-- Main Content -->
     <main class="main-content">
 
-        <div class="row secondRow">
+        <div class="row secondRow trep-supcam-row">
             <?php if( !empty($theme_setting['supcam-trep-first-category-image']['url']) ): ?>
-                <div class="<?php echo $firstCategoryClass ?>">
+                <div class="<?php echo $firstCategoryClass ?> px-1">
                     <a href="/category/location/supports-camera-trepieds/supports-camera">
                         <div class="boxImageCamera"><img src="<?php echo $theme_setting['supcam-trep-first-category-image']['url']; ?>" />
                             <div class="ghakteb"><?php echo $theme_setting['supcam-trep-first-category-title'];?></div>
@@ -87,7 +87,7 @@
                 </div>
             <?php endif; ?>
             <?php if( !empty($theme_setting['supcam-trep-second-category-image']['url']) ): ?>
-                <div class="<?php echo $secondCategoryClass ?>">
+                <div class="<?php echo $secondCategoryClass ?> px-1">
                     <a href="/category/location/supports-camera-trepieds/trepieds">
                         <div class="boxImageCamera">
                             <img src="<?php echo $theme_setting['supcam-trep-second-category-image']['url']; ?>"

@@ -30,9 +30,9 @@
     <!-- Main Content -->
     <main class="main-content">
 
-        <div class="row secondRow">
+        <div class="row secondRow std-stab-row">
             <?php if( !empty($theme_setting['stab-stead-first-category-image']['url']) ): ?>
-                <div class="<?php echo $firstCategoryClass; ?>">
+                <div class="<?php echo $firstCategoryClass; ?> px-1">
                     <a href="<?php echo $theme_setting['stab-stead-first-category-link']; ?>">
                         <div class="boxImageCamera">
                             <img src="<?php echo $theme_setting['stab-stead-first-category-image']['url']; ?>"
@@ -44,7 +44,7 @@
                 </div>
             <?php endif; ?>
             <?php if( !empty($theme_setting['stab-stead-second-category-image']['url']) ): ?>
-                <div class="<?php echo $secondCategoryClass; ?>">
+                <div class="<?php echo $secondCategoryClass; ?> px-1">
                     <a href="<?php echo $theme_setting['stab-stead-second-category-link']; ?>">
                         <div class="boxImageCamera">
                             <img src="<?php echo $theme_setting['stab-stead-second-category-image']['url']; ?>"

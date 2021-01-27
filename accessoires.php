@@ -30,8 +30,8 @@
         </div>
     <?php endif; ?>
     <!-- Main Content -->
-    <main class="main-content">
-        <div>
+    <main class="main-content accessories-content">
+        <div class="accessories-container">
             <div class="row secondRow accessories-secondRow">
                 <?php foreach($accessories as $accessory): ?>
                     <?php if( !empty( $accessory['image'] ) ): ?>
