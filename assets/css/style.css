@@ -1747,3 +1747,7 @@ ul.nav .nav-item a{
 ul.nav .nav-item a .plus{
     font-size: 18px;
 }
+
+a.nav-link.ksksks {
+    color: white !important;
+}
