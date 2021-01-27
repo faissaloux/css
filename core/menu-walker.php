@@ -75,9 +75,28 @@ function get_childrens($menu){
     return $menus;
 }
 
+function get_mobile_childrens($menu){
+    foreach($menu as $item){
+        $menu           = [];
+        $menu['url']    = $item->url;
+        $menu['title']  = $item->title;
+        if( isset($item->children) && !empty($item->children) ){
+            $childrens = get_mobile_childrens($item->children);
+            $menu['children']     = $childrens;
+        }
+        $phone_menus[]        = $menu;
+    }
+    return $phone_menus;
+}
+
 $nav_menu_items = wp_get_nav_menu_items( $menuLocations['top'] );
 $nav_menu_items = wpse170033_nav_menu_object_tree( $nav_menu_items );
 $menus          = [];
+
+$nav_phone_menu_items = wp_get_nav_menu_items( $menuLocations['phone'] );
+$nav_phone_menu_items = wpse170033_nav_menu_object_tree( $nav_phone_menu_items );
+$phone_menus           = [];
+
 
 function get($nav_menu_items){
     foreach($nav_menu_items as $item){
@@ -91,11 +110,24 @@ function get($nav_menu_items){
     return $menus;
 }
 
-$menus = get($nav_menu_items);
+function getPhone($nav_phone_menu_items){
+    foreach($nav_phone_menu_items as $item){
+        $phone_menu           = [];
+        $phone_menu['url']    = $item->url;
+        $phone_menu['title']  = $item->title;
+        $phone_childs         = get_mobile_childrens($item->children);
+        $phone_menu['children']         = $phone_childs;
+        $phone_menus[]        = $phone_menu;
+    }
+    return $phone_menus;
+}
 
-function get_mobile_menu($menus){
+$menus          = get($nav_menu_items);
+$phone_menus    = getPhone($nav_phone_menu_items);
+
+function get_mobile_menu($phone_menus){
     $html = "<ul>";
-    foreach($menus as $menu){
+    foreach($phone_menus as $menu){
         $html .= "<li>";
         if(!empty($menu['children'])){
             $html .= "<span>".$menu['title']."</span>";
