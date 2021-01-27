@@ -1636,7 +1636,7 @@ ul.nav{
 .nav-item .nav .nav-item .nav-link:hover{
     background-color: #000;
     color: #FFF !important;
-    transition: all 600ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 @media(max-width: 650px){
@@ -1737,4 +1737,13 @@ h6.about-title-footer {
         background-repeat: no-repeat !important;
         background-size: 100% 100px !important;
     }
+}
+
+ul.nav .nav-item a{
+    width: 100%;
+    padding-right: 6px !important;
+}
+
+ul.nav .nav-item a .plus{
+    font-size: 18px;
 }
