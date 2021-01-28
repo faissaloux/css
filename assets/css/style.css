@@ -1653,10 +1653,15 @@ ul.nav{
     }
 }
 
-.description-tab{
+.description-tab,
+.tech-tab{
     padding: 10px !important;
-    background-color: whitesmoke !important;
     font-family: 'Montserrat';
+}
+
+.description-tab.active,
+.tech-tab.active{
+    background-color: whitesmoke !important;
 }
 
 body{

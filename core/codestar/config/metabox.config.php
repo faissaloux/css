@@ -119,6 +119,30 @@ foreach($packsCategories as $item){
 }
 
 $options[]    = array(
+  'id'        => 'product_tech',
+  'title'     => 'fiche technique du produit',
+  'post_type' => 'products_cpt',
+  'context'   => 'normal',
+  'priority'  => 'default',
+  'sections'  => array(
+
+    array(
+      'name'   => 'section_4',
+      'fields' => array(
+
+        array(
+          'title'     => 'La fiche technique du produit',
+          'id'        => 'tech_product',
+          'type'      => 'wysiwyg',
+        ),
+
+      ),
+    ),
+
+  ),
+);
+
+$options[]    = array(
   'id'        => 'product_settings',
   'title'     => 'gallery de produit',
   'post_type' => 'products_cpt',
