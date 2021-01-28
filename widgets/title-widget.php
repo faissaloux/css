@@ -22,11 +22,36 @@ class title_widget extends WP_Widget
             $size = $instance[ 'size' ];
         else
             $size = '20';
+
+        if ( isset( $instance[ 'text-align' ] ) )
+            $text_align = $instance[ 'text-align' ];
+        else
+            $text_align = 'center';
         ?>
 
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo 'Title'; ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+        </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'text-align' ); ?>"><?php echo 'Text align'; ?></label>
+            <div style="display: flex;
+                        align-items: center;
+                        justify-content: space-between;"
+            >
+                <div>
+                    <span>Left</span>
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'left' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="left" />
+                </div>
+                <div>
+                    <span>Center</span>
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'center' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="center" />
+                </div>
+                <div>
+                    <span>Right</span>
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'right' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="right" />
+                </div>
+            </div>
         </p>
         <p>
             <label for="<?php echo $this->get_field_id( 'size' ); ?>"><?php echo 'Size'; ?></label>
@@ -40,7 +65,7 @@ class title_widget extends WP_Widget
     {
         ?>
             <div class="container mt-4">
-                <p style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: left;"><?php echo $instance['title']; ?></p>
+                <p style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: <?php echo $instance[ 'text-align' ] ?>;"><?php echo $instance['title']; ?></p>
             </div>
         <?php
 
