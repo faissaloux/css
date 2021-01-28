@@ -623,6 +623,7 @@ button.btn.btn-lg.btn-primary.searchBtn {
 @media(max-width: 500px){
     .row.qkj .ghakteb{
         width: 100% !important;
+        text-align: left;
     }
 }
 

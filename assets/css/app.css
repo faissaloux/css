@@ -1425,11 +1425,6 @@ span.lkqlqlkjsq.active:hover {
     height: 80px;
 }
 
-.owl-item{
-    width: 109px!important;
-    margin: 0 20px;
-}
-
 .owl-prev span,
 .owl-next span{
     font-size: 60px;
@@ -1468,15 +1463,12 @@ span.lkqlqlkjsq.active:hover {
     overflow: hidden;
 }
 
-@media(max-width: 600px){
-    .owl-item{
-        width: 100% !important;
-        margin: 0 130px !important;
-    }
+@media(max-width: 800px){
     
     .owl-item img{
         width: 100px !important;
         opacity: 1 !important;
+        margin: auto;
     }
 
     .les_partenaies{
