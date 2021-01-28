@@ -678,3 +678,7 @@ span.ti-search {
 .trep-supcam-row .boxImageCamera {
     padding: 5px;
 }
+
+.prestation-section .card-body.px-5.small_box_done{
+    border: 5px solid #CCC;
+}

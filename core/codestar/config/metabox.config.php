@@ -114,6 +114,7 @@ $packsCategories = get_terms( array(
 ));
 
 $select = [];
+$select[null] = 'Pas de pack'; 
 foreach($packsCategories as $item){
   $select[$item->term_id] = $item->name; 
 }

@@ -274,7 +274,8 @@ body{
 	width: auto;
 	display: block;
 	-webkit-transition : all 0.3s ease-out;
-	transition : all 0.3s ease-out;
+    transition : all 0.3s ease-out;
+    object-fit: fill;
 }
 .navbar-toggler {
 	float: right;
