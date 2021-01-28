@@ -1788,7 +1788,7 @@ a.nav-link.ksksks {
     .prestation-section .card .card-body{
         height: 100px;
     }
-    
+
     .prestation-page .big-t-title{
         font-size: 40px !important;
         margin: 100px 0;
@@ -1802,4 +1802,17 @@ a.nav-link.ksksks {
 .caestus-page{
     margin-top: 120px;
     min-height: 314px;
+}
+
+@media(max-width: 1000px){
+    .caestus-page-title{
+        font-size: 35px !important;
+    }
+}
+
+@media(max-width: 770px){
+    .caestus-page-title{
+        font-size: 25px !important;
+        line-height: 30px;
+    }
 }

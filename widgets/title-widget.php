@@ -65,7 +65,7 @@ class title_widget extends WP_Widget
     {
         ?>
             <div class="container mt-4">
-                <p style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: <?php echo $instance[ 'text-align' ] ?>;"><?php echo $instance['title']; ?></p>
+                <p class="caestus-page-title" style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: <?php echo $instance[ 'text-align' ] ?>;"><?php echo $instance['title']; ?></p>
             </div>
         <?php
 
