@@ -1792,3 +1792,7 @@ a.nav-link.ksksks {
         margin: 100px 0;
     }
 }
+
+#my-page{
+    overflow-x: hidden;
+}
