@@ -33,10 +33,11 @@ define( 'HOME_DIR', get_template_directory(). '/templates/home');
 <body>
     <?php require_once 'includes/nav.php' ?>
 
-    <?php if ( is_active_sidebar( $sidebar ) ) : ?>
-        <?php dynamic_sidebar( $sidebar ); ?>
-    <?php endif; ?>
-
+    <div class="caestus-page">
+        <?php if ( is_active_sidebar( $sidebar ) ) : ?>
+            <?php dynamic_sidebar( $sidebar ); ?>
+        <?php endif; ?>
+    </div>
 
     <?php require_once('includes/footer.php') ?>
     <?php require_once('includes/scripts.php') ?>

@@ -153,7 +153,7 @@ function caestus_search($query){
                 var link  = v['link'];
                 let error = v['error'];
                 if ( error ) {
-                    search_result.html('<li style="text-align:center;">Non resultat </li>');
+                    search_result.html('<li style="text-align:center;">Pas de résultat </li>');
                 }else {
                     const result_item = `<li class='d-flex align-items-center'>
                                             <a href="${link}" class="d-flex">

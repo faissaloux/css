@@ -1519,7 +1519,8 @@ span.arrow {
     margin-left: 6px;
 }
 
-div#tab-home-1 {
+div#tab-home-1,
+div#tab-description-1 {
     font-family: "Open Sans",sans-serif;
     font-size: .9375rem;
     font-weight: 300;
@@ -1794,6 +1795,11 @@ a.nav-link.ksksks {
     }
 }
 
-#my-page{
+.index#my-page{
     overflow-x: hidden;
+}
+
+.caestus-page{
+    margin-top: 120px;
+    min-height: 314px;
 }

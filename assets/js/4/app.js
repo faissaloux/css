@@ -367,7 +367,7 @@ $(".search-For-Top-Header ul").html('');
 var returnedData = JSON.parse(response);
 $.each(returnedData, function (k, v) {
 if (k == 'error') {
-$('.search-For-Top-Header ul').html('<li style="text-align:center;">Non resultat </li>');
+$('.search-For-Top-Header ul').html('<li style="text-align:center;">Pas de résultat </li>');
 } else {
 
 
@@ -452,7 +452,7 @@ $(".searchPhoneHeaderResutls").html('');
 var returnedData = JSON.parse(response);
 $.each(returnedData, function (k, v) {
 if (k == 'error') {
-$('.searchPhoneHeaderResutls').html('<li style="text-align:center;">Non resultat </li>');
+$('.searchPhoneHeaderResutls').html('<li style="text-align:center;">Pas de résultat </li>');
 } else {
 if (v['name'] == 'RED HELIUM 8K S35' || v['name'] == 'RED GEMINI 5K S35') {
 $('.searchPhoneHeaderResutls').append('<li data-open="/cameras/' + v['id'] + '" class="list-group-item searchclick" ><img src="' + v['image'] + '" class="searchImg"/><a href="/cameras/' + v['id'] + '">' + v['name'] + '</a></li>');
@@ -517,7 +517,7 @@ $(".searchPhoneSidbarResutls").html('');
 var returnedData = JSON.parse(response);
 $.each(returnedData, function (k, v) {
 if (k == 'error') {
-$('.searchPhoneSidbarResutls').html('<li style="text-align:center;">Non resultat </li>');
+$('.searchPhoneSidbarResutls').html('<li style="text-align:center;">Pas de résultat </li>');
 } else {
 
 
