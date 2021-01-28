@@ -13,7 +13,7 @@
     <body>
         <div id="my-page">
             <?php require_once 'includes/nav.php'; ?>
-            <?php require_once 'includes/product.php'; ?>
+            <?php require_once 'includes/prestation.php'; ?>
             <?php require_once 'includes/footer.php'; ?>
             <?php require_once 'includes/scripts.php'; ?>
         </div>
