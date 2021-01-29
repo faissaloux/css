@@ -1431,18 +1431,20 @@ span.lkqlqlkjsq.active:hover {
     font-size: 60px;
 }
 
-.owl-prev{
+.les_partenaies .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
     height: 100px;
     top: 14px;
     left: 10px;
+    padding-right: 20px !important;
 }
 
-.owl-next{
+.les_partenaies .owl-carousel .owl-nav button.owl-next{
     position: absolute;
     right: 10px;
     top: 14px;
     height: 100px;
+    padding-left: 20px !important;
 }
 
 .images-img{
