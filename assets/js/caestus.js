@@ -145,7 +145,8 @@ function caestus_search($query){
         dataType : 'json',
         data : formdata,
         success: function(response) {
-            $.each( response, function(k, v) {
+            search_result.html('');
+            $.each( response[0], function(k, v) {
                 
                 var title = v['title'];
                 var id    = v['id'];
@@ -166,7 +167,6 @@ function caestus_search($query){
                                             </a>
                                         </li>`;
                     
-                    search_result.html('');
                     search_result.append(result_item);
                 }
             });

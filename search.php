@@ -22,8 +22,8 @@
             <h2>SEARCH RESULTS FOR: <span><?php echo '\''.strtoupper($_GET['q']).'\''; ?></span></h2>
             <div class="row">
                 <?php if( !isset(($search_result[0]['error']))): ?>
-                    <?php foreach($search_result as $result): ?>
-                        <div class="col-md-3 col-sm-12">
+                    <?php foreach($search_result[0] as $result): ?>
+                        <div class="col-md-3 col-sm-12" style="margin-bottom: 40px;">
                             <div class="img-container">
                                 <a href="<?php echo $result['link']; ?>">
                                     <img src="<?php echo $result['image']; ?>"/>

@@ -40,14 +40,14 @@
         <div class="col-md-12 mx-auto text-center">
         </div>
         <div class="col-md-5 mx-auto text-center search-desktop">
-            <form class="rounded ">
+            <form class="rounded" action="/search" method="get">
                 <div class="row justify-content-center">
                     <div class="col-6 col-md-12">
                         <div class="input-group" id="search-input-cont">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ti-search mt-1"></i></span>
                             </div>
-                            <input id='searchInput' name='kerkesni' type="text" class="form-control home_search"
+                            <input id='searchInput' name='q' type="text" class="form-control home_search"
                                 placeholder="Recherche">
                         </div>
                         <div id='ajaxSearch' class="search home_search_results" style='display: none;'>

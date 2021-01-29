@@ -664,17 +664,6 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	.nav-item:after{
 		display: none;
 	}
-	.nav-item::before {
-		position: absolute;
-		display: block;
-		top: 15px;
-		left: 0;
-		width: 11px;
-		height: 1px;
-		content: "";
-		border: none;
-		background-color: #000;
-	}
 	.dropdown-toggle::after {
 		position: absolute;
 		display: block;
