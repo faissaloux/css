@@ -21,7 +21,7 @@ class title_widget extends WP_Widget
         if ( isset( $instance[ 'size' ] ) )
             $size = $instance[ 'size' ];
         else
-            $size = '20';
+            $size = '45';
 
         if ( isset( $instance[ 'text-align' ] ) )
             $text_align = $instance[ 'text-align' ];
@@ -41,15 +41,15 @@ class title_widget extends WP_Widget
             >
                 <div>
                     <span>Left</span>
-                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'left' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="left" />
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $text_align == 'left' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="left" />
                 </div>
                 <div>
                     <span>Center</span>
-                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'center' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="center" />
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $text_align == 'center' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="center" />
                 </div>
                 <div>
                     <span>Right</span>
-                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $instance[ 'text-align' ] == 'right' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="right" />
+                    <input class="widefat" id="<?php echo $this->get_field_id( 'text-align' ); ?>" <?php echo $text_align == 'right' ? 'checked':''; ?> name="<?php echo $this->get_field_name( 'text-align' ); ?>" type="radio" value="right" />
                 </div>
             </div>
         </p>

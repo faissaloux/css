@@ -16,7 +16,7 @@ class divider_widget extends WP_Widget
         if ( isset( $instance[ 'height' ] ) )
             $height = $instance[ 'height' ];
         else
-            $height = 10;
+            $height = 20;
 
         ?>
         <p>
