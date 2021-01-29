@@ -1822,3 +1822,17 @@ a.nav-link.ksksks {
     height: 39px;
     outline: none;
 }
+
+nav .home_search_results{
+    width: 231px !important;    
+}
+
+.home_search_results .search-result .text-cont p{
+    color: #000;
+    text-align: left;
+}
+
+nav #ajaxSearch{
+    top: 35px;
+    right: 155px;
+}

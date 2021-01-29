@@ -43,7 +43,7 @@
             <form class="rounded ">
                 <div class="row justify-content-center">
                     <div class="col-6 col-md-12">
-                        <div class="input-group">
+                        <div class="input-group" id="search-input-cont">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ti-search mt-1"></i></span>
                             </div>

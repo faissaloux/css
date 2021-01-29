@@ -57,8 +57,20 @@
                 data-target="#offcanvas-search">
                 <span class="ti-search"></span>
             </a>
-            <div class="search-input-container">
-                <input type="text" name="" placeholder="Search" id="">
+            <div class="search-input-container" id="search-input-cont">
+                <input type="text" name="" placeholder="Search" class="home_search">
+            </div>
+            <div id='ajaxSearch' class="search home_search_results" style='display: none;'>
+                <div class="search-loading">
+                    <div class="loadingcopong" style='display:none;'>
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/Loading/loading.gif"/> Chargement ...
+                    </div>
+                </div>
+                <div class="search-result">
+                    <div class="no-reuslt" style='display:none;'></div>
+                    <ul>
+                    </ul>
+                </div>
             </div>
             <a class="btn btn-xs d-flex show-desktop" id="show-search-desktop" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">

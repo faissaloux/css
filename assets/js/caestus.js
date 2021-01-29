@@ -156,7 +156,7 @@ function caestus_search($query){
                     search_result.html('<li style="text-align:center;">Pas de résultat </li>');
                 }else {
                     const result_item = `<li class='d-flex align-items-center'>
-                                            <a href="${link}" class="d-flex">
+                                            <a href="${link}" class="d-flex align-items-center">
                                                 <div class="image-cont mr-4">
                                                     <img src="${image}" />
                                                 </div>
@@ -178,8 +178,8 @@ function caestus_search($query){
 6: home header search Logic
 /***********************************************/
 $("body .home_search").bind("keyup", function(e) {
-    var search_query = $(this).val();
-    var search_wrapper = $('.home_search_results');
+    const search_query = $(this).val();
+    const search_wrapper = $(this).parent("#search-input-cont").siblings(".home_search_results");
     
     if( search_query ) {
         var count = search_query.length;
@@ -189,6 +189,13 @@ $("body .home_search").bind("keyup", function(e) {
       }
       return false;
   }
+});
+
+$("body .home_search").bind("blur", function(e) {
+    $(this).val('');
+    const search_wrapper = $(this).parent("#search-input-cont").siblings(".home_search_results");
+    $(".search-input-container").hide(200);
+    search_wrapper.hide(200);
 });
 
 /***********************************************

@@ -568,7 +568,8 @@ input#searchInput {
 
 #ajaxSearch {
     position: absolute;
-    width: 94%;
+    width: 95.4%;
+    top: 52px;
     padding-top: 0;
 }
 
@@ -708,7 +709,7 @@ input#searchInput {
 
 #ajaxSearch {
     position: absolute;
-    width: 94%;
+    width: 95.4%;
     padding-top: 0;
 }
 
