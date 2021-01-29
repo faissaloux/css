@@ -1809,3 +1809,16 @@ a.nav-link.ksksks {
         line-height: 30px;
     }
 }
+
+.search-input-container{
+    display: none;    
+}
+
+.search-input-container input{
+    border: 0;
+    padding-left: 10px;
+    border-radius: 5px !important;
+    width: 231px;
+    height: 39px;
+    outline: none;
+}

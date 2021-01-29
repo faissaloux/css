@@ -55,7 +55,16 @@
 		</div></div></div>
             <a class="btn btn-xs down-search d-flex show-mobile" href='javascript:;' data-toggle="offcanvas"
                 data-target="#offcanvas-search">
-                <span class="ti-search"></span></a>
+                <span class="ti-search"></span>
+            </a>
+            <div class="search-input-container">
+                <input type="text" name="" placeholder="Search" id="">
+            </div>
+            <a class="btn btn-xs d-flex show-desktop" id="show-search-desktop" href='javascript:;' data-toggle="offcanvas"
+                data-target="#offcanvas-search">
+                <span class="ti-search"></span>
+            </a>
+
             <div class="carter">
                 <a class="btn btn-xs" id="cart" style="background-color: <?php echo $theme_setting['header-cart-background'] ?>" href="<?php echo get_home_url().'/cart'; ?>">
                     <span id="products-in-cart">0</span>

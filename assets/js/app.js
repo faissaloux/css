@@ -709,3 +709,8 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
             $(".suggestions").attr('style','display:none !important');
         }
     })
+    
+    $("#show-search-desktop").click(()=>{
+        $(".search-input-container").slideToggle(400);
+        $(".search-input-container input").focus();
+    })
