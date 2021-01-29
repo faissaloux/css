@@ -1641,13 +1641,6 @@ ul.nav{
     transition: all 200ms ease-in-out;
 }
 
-@media(max-width: 650px){
-    .section-pack .section-title .category-title,
-    .suggestions .row:first-child{
-        margin-left: 40px;
-    }
-}
-
 @media(max-width: 770px){
     .bigsection .text-center{
         display: flex;

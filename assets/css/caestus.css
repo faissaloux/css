@@ -438,6 +438,10 @@ nav.navbar.navbar-expand-lg.navbar-dark {
     transition: 1s;
 }
 
+.card-body.px-5.small_box_done:hover{
+    border: 5px #000 solid;
+}
+
 .prestation-section .card-body.px-5.small_box_done:hover {
     border: 5px solid black;
 

@@ -13,7 +13,7 @@
 </style>
 
 <section class="category-items bg-gray">
-    <div class="container">
+    <div class="container pt-0">
         <div class="category-title text-center">
             <h2><?php echo single_cat_title( '', false ); ?></h2>
         </div>
@@ -29,7 +29,7 @@
                     $cat_posts = get_posts($args); 
                 ?>
                 <?php foreach ($cat_posts as $post):
-                    $postID = $post->ID;    
+                    $postID = $post->ID;
                 ?>
                     <div class="col-md-4 col-xl-3 col-lg-3 products-item">
                         <div class="product-3 mb-3">
