@@ -78,7 +78,7 @@
                <div class="container">
                   <div class="row text-center">
                     <a  href="javascript:;"
-                        data-category="prestation"
+                        data-category="<?php echo $theme_setting['prestation-category']; ?>"
                         class="btn caestus_add_to_cart" data-image="<?php echo $gallery[0]; ?>"
                         data-name="<?php the_title(); ?>" 
                         data-id="<?php echo get_the_ID(); ?>"

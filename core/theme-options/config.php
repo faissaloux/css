@@ -717,6 +717,26 @@ Redux::setSection( $opt_name, array(
     ) );
 
     Redux::setSection( $opt_name, array(
+        'title'     => __( 'Cart categories', 'caynoon_text' ),
+        'id'        => 'cart-categories',
+        'icon'      => 'el el-lines',
+        'fields'    => array(
+            array(
+                'id'       => 'pack-production-category',
+                'type'     => 'text',
+                'title'    => __( 'Pack production category', 'caynoon_text' ),
+                'default'  => 'pack'
+            ),
+            array(
+                'id'       => 'prestation-category',
+                'type'     => 'text',
+                'title'    => __( 'Prestation category', 'caynoon_text' ),
+                'default'  => 'prestation'
+            ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
         'title'     => __( 'Footer Section', 'caynoon_text' ),
         'id'        => 'footer-section',
         'icon'      => 'el el-lines',
