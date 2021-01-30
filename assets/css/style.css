@@ -1825,3 +1825,21 @@ nav #ajaxSearch{
     top: 35px;
     right: 155px;
 }
+
+.packs-complets-page {
+    margin-top: 80px;
+    padding-top: 120px;
+    min-height: 399px;
+}
+
+.pack-complet-link{
+    display: inline-block;
+    width: 100%;
+    height: 160px;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.pack-complet-link img{
+    object-fit: contain;
+}
