@@ -57,7 +57,7 @@ class packs_production_listing_widget extends WP_Widget
         ));
 
         ?>
-         <div class="container products-container">
+         <div class="container products-container my-0">
             <div class="products row">
             <?php foreach ($packsCategories as $category): ?>
                 <?php
@@ -74,11 +74,11 @@ class packs_production_listing_widget extends WP_Widget
                 ?>
                 <?php if (have_posts()) : ?>
                     <?php if( $category->term_id == $cat_id ): ?>
-                        <div class="section-pack section bg-gray" style="padding-top:55px;">
+                        <div class="section-pack section py-0">
                             <div class="section-title container">
                                 <h2 class="category-title"><?php echo $category->name; ?></h2>
                             </div>
-                            <div class="container" style="height: fit-content;">
+                            <div class="container">
                                 <div class="row">
                                     <?php while (have_posts()) : the_post(); ?>
                                         <div class="col-md-6">
