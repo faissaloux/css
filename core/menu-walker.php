@@ -176,17 +176,17 @@ function get_desktop_menu($menus){
     foreach($menus as $menu){
         $html .= "<li class='nav-item'>";
         if(!empty($menu['children'])){
-            $html .= "<a class='nav-link ksksks' href=".$menu['url']."><span>".$menu['title']."</span></a>";
+            $html .= "<a class='nav-link ksksks'><span>".$menu['title']."</span></a>";
             $html .= "<ul class='nav'>";
             foreach($menu['children'] as $child){
                 $html .= "<li class='nav-item'>";
                 if(!empty($child['children'])){
-                    $html .= "<a href=".$child['url']." class='nav-link d-flex justify-content-between'>".$child['title']."</a>";
+                    $html .= "<a class='nav-link d-flex justify-content-between'>".$child['title']."</a>";
                     $html .= "<nav class='nav'>";
                     foreach($child['children'] as $ch){
                         $html .= "<li class='nav-item'>";
                             if(!empty($ch['children'])){
-                                $html .= "<a href=".$ch['url']." class='nav-link d-flex justify-content-between'>".$ch['title']."</a>";
+                                $html .= "<a class='nav-link d-flex justify-content-between'>".$ch['title']."</a>";
                                 $html .= "<nav class='nav'>";
                                 foreach($ch['children'] as $c){
                                     $html .= "<li class='nav-item'>";
