@@ -1843,3 +1843,18 @@ nav #ajaxSearch{
 .pack-complet-link img{
     object-fit: contain;
 }
+
+@media(max-width: 770px){
+    .pack{
+        margin-bottom: 10px;
+    }
+
+    .pack-complet-link{
+        height: 120px;
+    }
+
+    .packs-complets-page{
+        padding-top: 50px;
+        padding-bottom: 42px;
+    }
+}
