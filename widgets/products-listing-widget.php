@@ -14,9 +14,9 @@ class products_listing_widget extends WP_Widget
     public function form($instance)
     {
         if ( isset( $instance[ 'category' ] ) )
-            $category = $instance[ 'category' ];
+            $cat = $instance[ 'category' ];
         else
-            $category = 'Default Category';
+            $cat = 'Default Category';
 
         if ( isset( $instance[ 'number' ] ) )
             $number = $instance[ 'number' ];
@@ -29,7 +29,8 @@ class products_listing_widget extends WP_Widget
             <label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php echo 'Products category'; ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>">
                 <?php foreach($categories as $category): ?>
-                    <option  value="<?php echo $category['term_id']; ?>"><?php echo $category['name']; ?></option>
+                    <?php $selected = ($category['term_id'] == $cat) ? 'selected' : ' ';  ?>
+                    <option  value="<?php echo $category['term_id']; ?>"  <?php echo $selected; ?> ><?php echo $category['name']; ?></option>
                 <?php endforeach; ?>
             </select>
         </p>
