@@ -1435,16 +1435,18 @@ span.lkqlqlkjsq.active:hover {
     position: absolute;
     height: 100px;
     top: 14px;
-    left: 10px;
+    left: 0;
     padding-right: 20px !important;
+    padding-left: 10px !important;
 }
 
 .les_partenaies .owl-carousel .owl-nav button.owl-next{
     position: absolute;
-    right: 10px;
+    right: 0;
     top: 14px;
     height: 100px;
     padding-left: 20px !important;
+    padding-right: 10px !important;
 }
 
 .images-img{

@@ -10,7 +10,6 @@
 <meta name="author" content="Caestus Studios">
 <!-- Favicons -->
 <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri();?>/assets/images/Untitled-1-ConvertImage.ico">
-<!-- <link rel="icon" href="<?php echo get_template_directory_uri();?>/assets/images/Untitled-1-ConvertImage.ico"> -->
 <link rel="icon" href="<?php echo $theme_setting['favicon-url']['url']; ?>">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <?php wp_head(); ?>
