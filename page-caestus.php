@@ -8,6 +8,8 @@ $sidebar = '';
 function template_widgetsInit() {
     global $post;
     global $sidebar;
+    global $assets_version;
+
     $sidebar = "wpse-{$post->ID}-aside";
 
     register_sidebar( array(
@@ -26,7 +28,7 @@ define( 'HOME_DIR', get_template_directory(). '/templates/home');
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/app.css?v='.$assets_version;?>">
 </head>
 <a href="javascript:;" id="button" style="background-color: <?php echo $theme_setting['top-arrow-color'] ?>"></a>
 

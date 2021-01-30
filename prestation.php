@@ -1,7 +1,8 @@
 <?php
-/*
-    Template Name: prestation
-*/
+    /*
+        Template Name: prestation
+    */
+    global $assets_version;
 
 ?>
 
@@ -10,7 +11,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/prestation/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/prestation/app.css?v='.$assets_version;?>">
 </head>
 
 

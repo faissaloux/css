@@ -2,7 +2,7 @@
 /*
     Template Name: Apropos
 */
-
+    global $assets_version;
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/apropos/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/apropos/app.css?v='.$assets_version;?>">
 </head>
 <a href="" id="button"></a>
 

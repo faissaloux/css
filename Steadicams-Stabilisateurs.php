@@ -3,6 +3,7 @@
     Template Name: Steadicams-Stabilisateurs
 */
     global $theme_setting;
+    global $assets_version;
     $firstCategoryClass = empty($theme_setting['stab-stead-second-category-image']['url'])
                             ?  'col-md-12' : 'col-md-6';
     $secondCategoryClass = empty($theme_setting['stab-stead-first-category-image']['url'])
@@ -14,7 +15,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/Trepieds-SupportsCamera/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/Trepieds-SupportsCamera/app.css?v='.$assets_version;?>">
 </head>
 <a href="" id="button"></a>
 

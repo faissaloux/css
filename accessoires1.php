@@ -3,6 +3,7 @@
         Template Name: accessoires1
     */
     global $theme_setting;
+    global $assets_version;
 ?>
 <style>
     .products-item .product-title h6:after{
@@ -15,7 +16,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/cameralist/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/cameralist/app.css?v='.$assets_version;?>">
 </head>
 <a href="" id="button"></a>
 

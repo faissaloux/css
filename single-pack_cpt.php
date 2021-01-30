@@ -1,12 +1,13 @@
 <?php
     global $theme_setting;
+    global $assets_version;
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <?php require_once 'includes/head.php'; ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/app.css?v='.$assets_version;?>">
 </head>
 <a href="javascript:;" id="button" style="background-color: <?php echo $theme_setting['top-arrow-color'] ?>"></a>
 

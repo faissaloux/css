@@ -3,6 +3,7 @@
         Template Name: packs-complets
     */
     global $theme_setting;
+    global $assets_version;
     $args = array( 'post_type' => 'pack_cpt', 'posts_per_page' => 10 );
     $the_query = new WP_Query( $args ); 
 
@@ -19,7 +20,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/optiques/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/optiques/app.css?v='.$assets_version;?>">
 </head>
 <a href="" id="button"></a>
 

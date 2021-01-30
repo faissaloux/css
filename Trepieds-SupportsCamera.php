@@ -4,6 +4,7 @@
     */
 
     global $theme_setting;
+    global $assets_version;
     $firstCategoryClass = empty($theme_setting['supcam-trep-second-category-image']['url'])
                             ?  'col-md-12' : 'col-md-6';
     $secondCategoryClass = empty($theme_setting['supcam-trep-first-category-image']['url'])
@@ -15,7 +16,7 @@
 
 <head>
     <?php require_once('includes/head.php') ?>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/optiques/app.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri().'/assets/css/optiques/app.css?v='.$assets_version;?>">
 </head>
 
 
