@@ -13,6 +13,11 @@ class products_listing_widget extends WP_Widget
     
     public function form($instance)
     {
+        if ( isset( $instance[ 'id' ] ) )
+            $id = $instance[ 'id' ];
+        else
+            $id = '';
+
         if ( isset( $instance[ 'category' ] ) )
             $cat = $instance[ 'category' ];
         else
@@ -25,6 +30,10 @@ class products_listing_widget extends WP_Widget
 
             $categories  = products_categories();
         ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php echo 'Category id'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'id' ); ?>" name="<?php echo $this->get_field_name( 'id' ); ?>" type="text" value="<?php echo esc_attr( $id ); ?>" />
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php echo 'Products category'; ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>">
@@ -44,6 +53,7 @@ class products_listing_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
+        $id = $instance['id'];
         $cat_id = $instance['category'];
         $limit = $instance['number'];
         $number = 0;
@@ -51,7 +61,7 @@ class products_listing_widget extends WP_Widget
         $products  = caestus_products($cat_id);
 
         ?>
-         <div class="container products-container">
+         <div class="container products-container" <?php echo !empty($id) ? "id='{$id}'":""; ?>>
             <div class="products row">
                     <?php foreach($products as $product):?>
                         <div class="col-md-4 col-xl-3 col-lg-3 products-item">
