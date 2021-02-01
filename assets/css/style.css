@@ -1858,3 +1858,12 @@ nav #ajaxSearch{
         padding-bottom: 42px;
     }
 }
+
+.caestus-page{
+    font-family: Dosis,sans-serif;
+}
+
+.caestus-page-title{
+    border-bottom: 2px solid #80808026;
+    padding-bottom: 30px;
+}
