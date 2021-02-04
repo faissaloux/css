@@ -13,6 +13,11 @@ class packs_production_listing_widget extends WP_Widget
     
     public function form($instance)
     {
+        if ( isset( $instance[ 'id' ] ) )
+            $id = $instance[ 'id' ];
+        else
+            $id = '';
+
         if ( isset( $instance[ 'category' ] ) )
             $cat = $instance[ 'category' ];
         else
@@ -25,6 +30,11 @@ class packs_production_listing_widget extends WP_Widget
 
             $categories  = packs_production_categories();
         ?>
+
+        <p>     
+            <label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php echo 'Pack id'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'id' ); ?>" name="<?php echo $this->get_field_name( 'id' ); ?>" type="text" value="<?php echo esc_attr( $id ); ?>" />
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php echo 'Products category'; ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>">
@@ -44,6 +54,7 @@ class packs_production_listing_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
+        $id = $instance['id'];
         $cat_id = $instance['category'];
         $limit = $instance['number'];
         $number = 0;
@@ -57,7 +68,7 @@ class packs_production_listing_widget extends WP_Widget
         ));
 
         ?>
-         <div class="container products-container my-0">
+         <div class="container products-container my-0" <?php echo !empty($id) ? "id='{$id}'":""; ?>>
             <div class="products row">
             <?php foreach ($packsCategories as $category): ?>
                 <?php

@@ -554,7 +554,6 @@ function SidbarPhoneSearchFunction(searchQuery) {
 $('#ajaxSearch').css('width', $('#searchInput').closest('.rounded').width());
 
 $(document).ready(function(){
-    console.log($( window ).width());
     if($( window ).width() > 800){
         $(".owl-carousel").owlCarousel({
             margin      : 60,
