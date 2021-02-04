@@ -23,17 +23,17 @@
             <div class="container d-flex justify-content-center">
                <div class="row">
                     <div class="col-md-4 pack">
-                        <a href="/category/location/packs-complets/red" class="pack-complet-link">
+                        <a href="/red-packs" class="pack-complet-link">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/partners/1.jpg">
                         </a>
                     </div>
                     <div class="col-md-4 pack">
-                        <a href="/category/location/packs-complets/sony" class="pack-complet-link">
+                        <a href="/sony-packs" class="pack-complet-link">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/partners/sony.png">
                         </a>
                     </div>
                     <div class="col-md-4 pack">
-                        <a href="/category/location/packs-complets/canon" class="pack-complet-link">
+                        <a href="/canon-packs" class="pack-complet-link">
                             <img src="<?php echo get_template_directory_uri();?>/assets/images/partners/2.png">
                         </a>
                     </div>
