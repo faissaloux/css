@@ -13,6 +13,11 @@ class title_widget extends WP_Widget
     
     public function form($instance)
     {
+        if ( isset( $instance[ 'id' ] ) )
+            $id = $instance[ 'id' ];
+        else
+            $id = '';
+
         if ( isset( $instance[ 'title' ] ) )
             $title = $instance[ 'title' ];
         else
@@ -29,6 +34,10 @@ class title_widget extends WP_Widget
             $text_align = 'center';
         ?>
 
+        <p>
+            <label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php echo 'Title id'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'id' ); ?>" name="<?php echo $this->get_field_name( 'id' ); ?>" type="text" value="<?php echo esc_attr( $id ); ?>" />
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php echo 'Title'; ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
@@ -63,8 +72,9 @@ class title_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
+        $id = $instance['id'];
         ?>
-            <div class="container mt-4">
+            <div class="container mt-4" <?php echo !empty($id) ? "id='{$id}'":""; ?>>
                 <p class="caestus-page-title" style="font-size: <?php echo $instance['size'].'px'; ?>;text-align: <?php echo $instance[ 'text-align' ] ?>;"><?php echo $instance['title']; ?></p>
             </div>
         <?php
