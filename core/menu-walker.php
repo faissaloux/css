@@ -126,6 +126,9 @@ $menus          = get($nav_menu_items);
 $phone_menus    = getPhone($nav_phone_menu_items);
 
 function get_mobile_menu($phone_menus){
+    $french_flag    = get_template_directory_uri()."/assets/images/french-flag.jpg";
+    $british_flag   = get_template_directory_uri()."/assets/images/british-flag.png";
+
     $html = "<ul>";
     foreach($phone_menus as $menu){
         $html .= "<li>";
@@ -166,8 +169,25 @@ function get_mobile_menu($phone_menus){
         
         $html .= "</li>";
     }
+    $html .= "<div class='mobile-menu-langs d-flex'>";
+        $html .= "<a href='/' class='d-flex justify-content-left align-items-center px-0'>";
+            $html .= "<div class='img-container french-img-container'>";
+                $html .= "<img src='";
+                $html .= $french_flag;
+                $html .= "'/>";
+            $html .= "</div>";
+            $html .= "<span>Français</span>";
+        $html .= "</a>";
+        $html .= "<a href='/' class='d-flex justify-content-left align-items-center px-0'>";
+            $html .= "<div class='img-container british-img-container'>";
+                $html .= "<img src='";
+                $html .= $british_flag;
+                $html .= "'/>";
+            $html .= "</div>";
+            $html .= "<span>English</span>";
+        $html .= "</a>";
+    $html .= "</div>";
     $html .= "</ul>";
-
     return $html;
 }
 
