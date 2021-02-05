@@ -15,7 +15,16 @@ class product_logo_widget extends WP_Widget
     
     public function form($instance)
     {
+        if ( isset( $instance[ 'id' ] ) )
+            $id = $instance[ 'id' ];
+        else
+            $id = '';
+
         ?>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'id' ); ?>"><?php echo 'Logo id'; ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'id' ); ?>" name="<?php echo $this->get_field_name( 'id' ); ?>" type="text" value="<?php echo esc_attr( $id ); ?>" />
+        </p>
         <p>
             <label for="<?php echo $this->get_field_id('logo'); ?>">Logo</label><br />
             <img class="logo_image" src="<?php if(!empty($instance['logo'])){echo $instance['logo'];} ?>" style="margin:0;padding:0;max-width:100px;float:left;display:inline-block" />
@@ -28,8 +37,9 @@ class product_logo_widget extends WP_Widget
     
     public function widget($args, $instance)
     {
+        $id = $instance['id'];
         ?>
-            <div class="container">
+            <div class="container" <?php echo !empty($id) ? "id='{$id}'":""; ?>>
                 <img class="logo-dark" src="<?php echo esc_url($instance['logo']); ?>" alt="logo">
             </div>
         <?php
