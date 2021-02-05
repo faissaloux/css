@@ -1867,3 +1867,7 @@ nav #ajaxSearch{
     border-bottom: 2px solid #80808026;
     padding-bottom: 30px;
 }
+
+.owl-carousel{
+    position: initial !important;
+}
