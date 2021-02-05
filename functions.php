@@ -48,7 +48,7 @@ require_once THEME_DIR. '/core/functions.php';
 require_once THEME_DIR. '/core/security.php';
 
 // Load widgets 
-require_once THEME_DIR. '/core/widgets.php';
+// require_once THEME_DIR. '/core/widgets.php';
 
 // Arabic Fonts 
 //require_once THEME_DIR. '/core/arab-font.php';    
