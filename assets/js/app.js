@@ -710,6 +710,6 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
     })
     
     $("#show-search-desktop").click(()=>{
-        $(".search-input-container").slideToggle(400);
+        $(".search-input-container").show();
         $(".search-input-container input").focus();
     })
