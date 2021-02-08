@@ -41,7 +41,7 @@
                         <input id="search" type="text" name="q" value="" class="input-text js-input-focus searchMobile" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" aria-expanded="false">
                         <div class="label animated-text--masked" for="search" data-role="minisearch-label">
                             <div class="wrap">
-                                <span class="inner">Search</span>
+                                <span class="inner"><?php echo $theme_setting['search-title']; ?></span>
                             </div>
                         </div>
                     </div>

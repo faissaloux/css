@@ -780,6 +780,26 @@ Redux::setSection( $opt_name, array(
     ) );
 
     Redux::setSection( $opt_name, array(
+        'title'     => __( 'Search', 'caynoon_text' ),
+        'id'        => 'search',
+        'icon'      => 'el el-lines',
+        'fields'    => array(
+            array(
+                'id'       => 'search-title',
+                'type'     => 'text',
+                'title'    => __( 'Search title', 'caynoon_text' ),
+                'default'  => 'Recherche'
+            ),
+            array(
+                'id'       => 'search-text',
+                'type'     => 'text',
+                'title'    => __( 'Search text', 'caynoon_text' ),
+                'default'  => 'Résultats de recherche pour'
+            ),
+        )
+    ) );
+
+    Redux::setSection( $opt_name, array(
         'title'     => __( 'Footer Section', 'caynoon_text' ),
         'id'        => 'footer-section',
         'icon'      => 'el el-lines',

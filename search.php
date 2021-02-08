@@ -5,7 +5,6 @@
     define( 'HOME_DIR', get_template_directory(). '/templates/home');
     global $theme_setting;
     global $assets_version;
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +19,7 @@
     <?php require_once 'includes/nav.php' ?>
     <div class="container">
         <div class="search-result-page py-5">
-            <h2>SEARCH RESULTS FOR: <span><?php echo '\''.strtoupper($_GET['q']).'\''; ?></span></h2>
+            <h2><?php echo $theme_setting['search-text']; ?>: <span><?php echo '\''.strtoupper($_GET['q']).'\''; ?></span></h2>
             <div class="row">
                 <?php if( !isset(($search_result[0]['error']))): ?>
                     <?php foreach($search_result[0] as $result): ?>
