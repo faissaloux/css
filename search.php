@@ -23,14 +23,30 @@
             <div class="row">
                 <?php if( !isset(($search_result[0]['error']))): ?>
                     <?php foreach($search_result[0] as $result): ?>
-                        <div class="col-md-3 col-sm-12" style="margin-bottom: 40px;">
-                            <div class="img-container">
-                                <a href="<?php echo $result['link']; ?>">
-                                    <img src="<?php echo $result['image']; ?>"/>
-                                </a>
-                            </div>
-                            <div class="title">
-                                <p><?php echo $result['title']; ?></p>
+                        <div class="col-md-4 col-xl-3 col-lg-3 products-item">
+                            <div class="product-3 mb-3">
+                                <div class="product-media">
+                                    <a href="<?php echo $result['link']; ?>">
+                                        <img src="<?php echo esc_url($result['image']); ?>" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-detail">
+                                    <div class="product-title">
+                                        <h6 style="min-height: 75px;">
+                                            <a href="<?php echo $result['link']; ?>"><?php echo $result['title']; ?></a>
+                                        </h6>
+                                    </div>
+                                    <a  href="javascript:;"
+                                        data-category="<?php echo $result['category']; ?>"
+                                        class="btn caestus_add_to_cart w-100"
+                                        data-image="<?php echo $result['image']; ?>"
+                                        data-name="<?php echo $result['title']; ?>" 
+                                        data-id="<?php echo $result['id']; ?>"
+                                        style="background-color: red; color: #FFF"
+                                    >
+                                        AJOUTER AU DEVIS
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
