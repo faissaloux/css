@@ -1426,6 +1426,10 @@ span.lkqlqlkjsq.active:hover {
     height: 80px;
 }
 
+.owl-nav{
+    position: relative;
+}
+
 .owl-prev span,
 .owl-next span{
     font-size: 60px;
@@ -1434,7 +1438,7 @@ span.lkqlqlkjsq.active:hover {
 .les_partenaies .owl-carousel .owl-nav button.owl-prev{
     position: absolute;
     height: 100px;
-    top: 14px;
+    top: -68px;
     left: 0;
     padding-right: 20px !important;
     padding-left: 10px !important;
@@ -1443,7 +1447,7 @@ span.lkqlqlkjsq.active:hover {
 .les_partenaies .owl-carousel .owl-nav button.owl-next{
     position: absolute;
     right: 0;
-    top: 14px;
+    top: -68px;
     height: 100px;
     padding-left: 20px !important;
     padding-right: 10px !important;
