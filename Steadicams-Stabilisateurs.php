@@ -23,13 +23,13 @@
     <?php require_once('includes/nav.php') ?>
 
     <?php if( !empty( $theme_setting['stab-stead-header-image']['url'] ) ): ?>
-        <div class="coverHeaderWrapper mb-5">
+        <div class="coverHeaderWrapper stab-stead-cover-header-wrapper mb-5">
             <img src="<?php echo $theme_setting['stab-stead-header-image']['url']; ?>" class='cover_img coverHeaderImg' />
             <h1 class='under_cover'><?php echo $theme_setting['stab-stead-header-text']; ?></h1>
         </div>
     <?php endif; ?>
     <!-- Main Content -->
-    <main class="main-content">
+    <main class="main-content stab-stead-content">
 
         <div class="row secondRow std-stab-row">
             <?php if( !empty($theme_setting['stab-stead-first-category-image']['url']) ): ?>
@@ -39,7 +39,9 @@
                             <img src="<?php echo $theme_setting['stab-stead-first-category-image']['url']; ?>"
                                 class="d-lg-none d-md-none d-sm-none" />
                             <img src="<?php echo $theme_setting['stab-stead-first-category-image']['url']; ?>" class="d-xs-none" />
-                            <div class="ghakteb"><?php echo $theme_setting['stab-stead-first-category-title']; ?></div>
+                            <?php if( !empty($theme_setting['stab-stead-first-category-title']) ): ?>
+                                <div class="ghakteb"><?php echo $theme_setting['stab-stead-first-category-title']; ?></div>
+                            <?php endif; ?>
                         </div>
                     </a>
                 </div>
@@ -51,7 +53,9 @@
                             <img src="<?php echo $theme_setting['stab-stead-second-category-image']['url']; ?>"
                                 class="d-lg-none d-md-none d-sm-none" />
                             <img src="<?php echo $theme_setting['stab-stead-second-category-image']['url']; ?>" class="d-xs-none" />
-                            <div class="ghakteb"><?php echo $theme_setting['stab-stead-second-category-title']; ?></div>
+                            <?php if( !empty($theme_setting['stab-stead-second-category-title']) ): ?>
+                                <div class="ghakteb"><?php echo $theme_setting['stab-stead-second-category-title']; ?></div>
+                            <?php endif; ?>
                         </div>
                     </a>
                 </div>

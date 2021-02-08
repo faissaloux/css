@@ -445,7 +445,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 1', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/PhoneVersion/Accueil/PacksProduction-PhoneVersion.jpg' ),
             ),
 
             array(
@@ -470,7 +469,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 2', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/PhoneVersion/Accueil/Cameras-PhoneVersion.jpg' ),
             ),
 
             array(
@@ -495,7 +493,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 3', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/Acceuil/optiques.jpg' ),
             ),
 
             array(
@@ -520,7 +517,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 4', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/Acceuil/stabilisateur.jpg' ),
             ),
 
             array(
@@ -545,7 +541,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 5', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/Acceuil/supports.jpg' ),
             ),
 
             array(
@@ -570,7 +565,6 @@ Redux::setSection( $opt_name, array(
                 'url'      => true,
                 'title'    => __( 'Image 6', 'caynoon_text' ),
                 'compiler' => 'true',
-                'default'  => array( 'url' => get_template_directory_uri().'/assets/images/Acceuil/accesoirs.jpg' ),
             ),
 
             array(
@@ -642,7 +636,56 @@ Redux::setSection( $opt_name, array(
                     'default'  => '/category/location/stabilisateurs-steadicam'
                 ),
         )
-    ) );
+) );
+
+Redux::setSection( $opt_name, array(
+    'title'     => __( 'Pack production', 'caynoon_text' ),
+    'id'        => 'pack-production',
+    'icon'      => 'el el-lines',
+    'fields'    => array(
+            array(
+                'id'       => 'pack-prod-header-image',
+                'type'     => 'media',
+                'title'    => __( 'Header image', 'caynoon_text' )
+            ), 
+            array(
+                'id'       => 'pack-prod-header-text',
+                'type'     => 'text',
+                'title'    => __( 'Header text', 'caynoon_text' ),
+                'default'  => 'Pack production'
+            ),
+            array(
+                'id'       => 'pack-prod-first-category-image',
+                'type'     => 'media',
+                'title'    => __( 'First category image', 'caynoon_text' ),
+            ),
+            array(
+                'id'       => 'pack-prod-first-category-title',
+                'type'     => 'text',
+                'title'    => __( 'First category title', 'caynoon_text' ),
+            ),
+            array(
+                'id'       => 'pack-prod-first-category-link',
+                'type'     => 'text',
+                'title'    => __( 'First category link', 'caynoon_text' ),
+            ),
+            array(
+                'id'       => 'pack-prod-second-category-image',
+                'type'     => 'media',
+                'title'    => __( 'second category image', 'caynoon_text' ),
+            ),
+            array(
+                'id'       => 'pack-prod-second-category-title',
+                'type'     => 'text',
+                'title'    => __( 'second category title', 'caynoon_text' ),
+            ),
+            array(
+                'id'       => 'pack-prod-second-category-link',
+                'type'     => 'text',
+                'title'    => __( 'Second category link', 'caynoon_text' ),
+            ),
+    )
+) );
 
     Redux::setSection( $opt_name, array(
         'title'     => __( 'Supports camera - trepieds', 'caynoon_text' ),

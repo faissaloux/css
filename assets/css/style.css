@@ -1574,7 +1574,7 @@ section.pack{
 
 @media(max-width: 770px){
     .secondRow .boxImageCamera{
-        margin-bottom: 20px !important;
+        margin-bottom: 7px !important;
     }
 }
 
@@ -1860,7 +1860,7 @@ nav #ajaxSearch{
 }
 
 .caestus-page{
-    font-family: Dosis,sans-serif;
+    font-family: Dosis,sans-serif !important;
 }
 
 .caestus-page-title{
@@ -1893,4 +1893,17 @@ nav #ajaxSearch{
 
 .british-img-container{
     margin-left: 10px;
+}
+
+.stab-stead-cover-header-wrapper,
+.pack-prod-cover-header-wrapper{
+    height: 400px;
+ }  
+
+@media(max-width: 600px){
+ .stab-stead-content,
+ .pack-prod-content{
+     margin-top: 100px !important;
+     margin-bottom: 13px;
+ }   
 }
