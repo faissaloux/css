@@ -51,7 +51,7 @@
                         </div>
                     <?php endforeach; ?>
                 <?php else: ?>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="error">
                             <p><?php echo $search_result[0]['error']; ?></p>
                         </div>
