@@ -62,6 +62,7 @@ function wpse170033_nav_menu_object_tree( $nav_menu_items_array ) {
 
 
 function get_childrens($menu){
+    $menus = [];
     foreach($menu as $item){
         $menu           = [];
         $menu['url']    = $item->url;
@@ -76,6 +77,7 @@ function get_childrens($menu){
 }
 
 function get_mobile_childrens($menu){
+    $phone_menus = [];
     foreach($menu as $item){
         $menu           = [];
         $menu['url']    = $item->url;

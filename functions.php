@@ -377,7 +377,7 @@ function disable_wp_auto_p( $content ) {
 }
 add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
-if($_GET['q']){
+if(isset($_GET['q'])){
     $search_result = ajax_products_search($_GET['q']);
 }
 
