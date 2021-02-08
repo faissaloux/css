@@ -787,8 +787,14 @@ Redux::setSection( $opt_name, array(
             array(
                 'id'       => 'search-title',
                 'type'     => 'text',
-                'title'    => __( 'Search title', 'caynoon_text' ),
+                'title'    => __( 'Mobile search title', 'caynoon_text' ),
                 'default'  => 'Recherche'
+            ),
+            array(
+                'id'       => 'search-button-text',
+                'type'     => 'text',
+                'title'    => __( 'Search button text', 'caynoon_text' ),
+                'default'  => 'C\'est partie'
             ),
             array(
                 'id'       => 'search-text',
