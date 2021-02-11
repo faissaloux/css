@@ -454,7 +454,6 @@ Redux::setSection( $opt_name, array(
                 'desc'     => __( 'Please insert image title', 'caynoon_text' ),
                 'default'  => 'PACKS PRODUCTION',
             ),
-
             array(
                 'id'       => 'image1-url',
                 'type'     => 'text',
@@ -462,7 +461,27 @@ Redux::setSection( $opt_name, array(
                 'desc'     => __( 'Please insert image url', 'caynoon_text' ),
                 'default'  => 'image URL',
             ),
-
+            array(
+                'id'       => 'image1-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 1 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+            array(
+                'id'       => 'image1-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 1 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'PACKS PRODUCTION',
+            ),
+            array(
+                'id'       => 'image1-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 1 mobile URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ),
             array(
                 'id'       => 'image2',
                 'type'     => 'media',
@@ -483,6 +502,31 @@ Redux::setSection( $opt_name, array(
                 'id'       => 'image2-url',
                 'type'     => 'text',
                 'title'    => __( 'Image 2 URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ), 
+
+
+            array(
+                'id'       => 'image2-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 2 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+
+            array(
+                'id'       => 'image2-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 2 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'CAMERAS',
+            ),
+
+            array(
+                'id'       => 'image2-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 2 mobile URL', 'caynoon_text' ),
                 'desc'     => __( 'Please insert image url', 'caynoon_text' ),
                 'default'  => 'image URL',
             ), 
