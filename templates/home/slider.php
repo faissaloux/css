@@ -14,49 +14,29 @@
     }
 </style>
 
-<div id="carouselExampleIndicators" class="carousel slide desktop-slider show-desktop" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <?php $i = 0; foreach(the_slider() as $slider){ ?>
-                <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="<?php if($i==0): echo 'active'; endif  ?>"></li>
-        <?php
-            $i++;
-        } ?>
-    </ol>
-    <div class="carousel-inner">
-        <?php $i = 0; foreach(the_slider() as $slider){
-            ?>
-                <div class="carousel-item <?php if($i==0): echo 'active'; endif  ?>">
-                    <img class="d-block w-100 d-lg-none d-md-none d-sm-none"
-                        src="<?php echo $slider;?>">
-                    <img class="d-block w-100 d-xs-none" src="<?php echo $slider;?>">
-                </div>
-            <?php
-            $i++;
-        } ?>
-    </div>
-</div>
-
-<div id="carouselExampleIndicators" class="carousel slide mobile-slider show-mobile" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <?php $i = 0; foreach(the_slider() as $slider){ ?>
-                <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="<?php if($i==0): echo 'active'; endif  ?>"></li>
-        <?php
-            $i++;
-        } ?>
-    </ol>
-    <div class="carousel-inner">
-        <?php $i = 0; foreach(the_slider() as $slider){
-            ?>
-                <div class="carousel-item <?php if($i==0): echo 'active'; endif  ?>">
-                    <img class="d-block w-100 d-lg-none d-md-none d-sm-none"
-                        src="<?php echo $slider;?>">
-                    <img class="d-block w-100 d-xs-none" src="<?php echo $slider;?>">
-                </div>
-            <?php
-            $i++;
-        } ?>
-    </div>
-</div>
+    <?php if(!empty(the_slider()[0])): ?>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                    <?php $i = 0; foreach(the_slider() as $slider){ ?>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="<?php if($i==0): echo 'active'; endif  ?>"></li>
+                    <?php
+                        $i++;
+                    } ?>
+            </ol>
+            <div class="carousel-inner">
+                    <?php $i = 0; foreach(the_slider() as $slider){
+                        ?>
+                            <div class="carousel-item <?php if($i==0): echo 'active'; endif  ?>">
+                                <img class="d-block w-100 d-lg-none d-md-none d-sm-none"
+                                    src="<?php echo $slider;?>">
+                                <img class="d-block w-100 d-xs-none" src="<?php echo $slider;?>">
+                            </div>
+                        <?php
+                        $i++;
+                    } ?>
+            </div>
+        </div>
+    <?php endif; ?>
 
 <div class="search-section dnone-xs">
     <div class="row align-items-center h-100">

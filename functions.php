@@ -346,7 +346,8 @@ add_action('widgets_init', 'header_widget');
 
 function the_slider(){
     global $theme_setting;
-    $gallery = Helper::getGallery($theme_setting,'slider');
+    $gallery = wp_is_mobile()   ?  Helper::getGallery($theme_setting,'slider-mobile')
+                                :  Helper::getGallery($theme_setting,'slider');
     return $gallery;
 }
 
@@ -406,3 +407,4 @@ $prestations    = prestations();
 
     $product_by_category = caestus_products($cat_id);
 */
+
