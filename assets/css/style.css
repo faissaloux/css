@@ -1243,7 +1243,7 @@ img {
     }
 }
 
-@media(max-width: 779px){
+@media(min-width: 0px) and (max-width: 779px){
     .show-mobile{
         display: flex !important;
     }
