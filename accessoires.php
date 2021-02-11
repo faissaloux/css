@@ -38,7 +38,7 @@
                     <?php if( !empty( $accessory['image'] ) ): ?>
                         <div class="col-lg-3 col-md-6 col-sm-12 mb-4 products-item">
                             <a href="<?php echo $accessory['url']; ?>">
-                                <div class="boxImageCamera">
+                                <div class="boxImageCamera" style="padding: 5px;">
                                     <img src="<?php echo $accessory['image']; ?>" />
                                     <div class="ghakteb product-title"><?php echo $accessory['title']; ?></div>
                                 </div>

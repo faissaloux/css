@@ -636,8 +636,8 @@ button.btn.btn-lg.btn-primary.searchBtn {
 }
 
 .accessories-secondRow .boxImageCamera .ghakteb{
-    top: 0 !important;
-    width: 100%;
+    top: 91px !important;
+    width: 97%;
     font-size: 16px;
     text-align: left;
     padding-left: 20px;
@@ -685,4 +685,12 @@ span.ti-search {
 
 .prestation-section .card-body.px-5.small_box_done{
     border: 5px solid #CCC;
+}
+
+.accessories-secondRow .boxImageCamera {
+    height: 290px;
+}
+
+.accessories-secondRow .boxImageCamera img {
+    height: 100%;
 }
