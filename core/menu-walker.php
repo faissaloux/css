@@ -7,7 +7,10 @@
 $menuLocations = get_nav_menu_locations();
 
 
+$count = 0;
+
 function wpse170033_nav_menu_object_tree( $nav_menu_items_array ) {
+    global $count;
     foreach ( $nav_menu_items_array as $key => $value ) {
         $value->children = array();
         $nav_menu_items_array[ $key ] = $value;
@@ -16,6 +19,7 @@ function wpse170033_nav_menu_object_tree( $nav_menu_items_array ) {
     $nav_menu_levels = array();
     $index = 0;
     if ( ! empty( $nav_menu_items_array ) ) do {
+        $length_before = count($nav_menu_items_array);
         if ( $index == 0 ) {
             foreach ( $nav_menu_items_array as $key => $obj ) {
                 if ( $obj->menu_item_parent == 0 ) {
@@ -25,20 +29,30 @@ function wpse170033_nav_menu_object_tree( $nav_menu_items_array ) {
             }
         } else {
             foreach ( $nav_menu_items_array as $key => $obj ) {
+                
                 if ( in_array( $obj->menu_item_parent, $last_level_ids ) ) {
                     $nav_menu_levels[ $index ][] = $obj;
                     unset( $nav_menu_items_array[ $key ] );
                 }
             }
         }
-        $last_level_ids = wp_list_pluck( $nav_menu_levels[ $index ], 'db_id' );
-        $index++;
-    } while ( ! empty( $nav_menu_items_array ) );
+        if(isset($nav_menu_levels[ $index ])){
+            
+            $last_level_ids = wp_list_pluck( $nav_menu_levels[ $index ], 'db_id' );
+            $index++;
+        }
+        $length_after = count($nav_menu_items_array);
+        if( $length_before == $length_after ){
+            $count++;
+        }
+    } while ( ! empty( $nav_menu_items_array ) && $count != 2);
+    
 
     $nav_menu_levels_reverse = array_reverse( $nav_menu_levels );
 
     $nav_menu_tree_build = array();
     $index = 0;
+    
     if ( ! empty( $nav_menu_levels_reverse ) ) do {
         if ( count( $nav_menu_levels_reverse ) == 1 ) {
             $nav_menu_tree_build = $nav_menu_levels_reverse;
@@ -54,8 +68,9 @@ function wpse170033_nav_menu_object_tree( $nav_menu_items_array ) {
                 }
             }
         }
+        
     } while ( ! empty( $nav_menu_levels_reverse ) );
-
+    
     $nav_menu_object_tree = $nav_menu_tree_build[ 0 ];
     return $nav_menu_object_tree;
 }
