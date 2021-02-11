@@ -2,12 +2,20 @@ $.extend($.fn.datepicker.defaults, {language: 'fr'});
 
 $(document).ready(function () {
     $.fn.datepicker.defaults.language = 'fr';
+
 });
 
 
-// $("body #searchInput").bind("keyup", function (e) {
-//     checkAndGetChars();
-// })
+document.addEventListener(
+    "DOMContentLoaded", () => {
+        new Mmenu( "#my-menu", {
+            "extensions": [
+               "pagedim-black",
+               "shadow-page",
+            ]
+        });
+    }
+);
 
 
 function checkAndGetChars() {
@@ -558,16 +566,14 @@ $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
             margin      : 60,
             loop        : true,
-            items       : 6,
-            autoplay    : true
+            items       : 6
         });
     }else{
         $(".owl-carousel").owlCarousel({
             loop        : true,
             center      : true,
             nav         : true,
-            items       : 1,
-            autoplay    : true
+            items       : 1
         });
     }
 });
@@ -655,16 +661,7 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
   })
 
 
-    document.addEventListener(
-        "DOMContentLoaded", () => {
-            new Mmenu( "#my-menu", {
-                "extensions": [
-                   "pagedim-black",
-                   "shadow-page",
-                ]
-             });
-        }
-    );
+    
 
     if($(window).width() > 780){
         $("div.dropdown-menu-child").css('display', 'none');
