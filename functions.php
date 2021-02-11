@@ -233,6 +233,18 @@ function my_custom_fonts() {
    li#toplevel_page_cs-framework {
         display: none;
     }
+
+div#widget-6_divider_widget-__i__ .widget-top ,
+div#widget-8_page_header_widget-__i__ .widget-top ,
+div#widget-12_packs_production_listing_widget-__i__ .widget-top ,
+div#widget-15_products_listing_widget-__i__ .widget-top ,
+div#widget-14_product_logo_widget-__i__ .widget-top ,
+#widget-22_title_widget-__i__ .widget-top 
+,
+#widget-14_product_logo_widget-__i__ .widget-top {
+    background: #2196F3;
+    color: white !important;
+}
   </style>';
 }
 
@@ -363,19 +375,11 @@ $packsCategories = get_terms( array(
     'order'     => 'DESC'
 ));
 
-
 $optiques = get_terms( array(
     'taxonomy'  => 'category', 
     'order'     => 'DESC',
     'name'      => 'Optiques'
 )); 
-
-function disable_wp_auto_p( $content ) {
-    remove_filter( 'the_content', 'wpautop' );
-    remove_filter( 'the_excerpt', 'wpautop' );
-    return $content;
-}
-add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
 if(isset($_GET['q'])){
     $search_result = ajax_products_search($_GET['q']);

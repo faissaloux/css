@@ -5,13 +5,13 @@
     <div class="container">
         <div class="row gap-y">
             <div class="col-md-5 col-xl-4">
-                <h6 class="mb-4 about-title-footer"><strong><?php echo $theme_setting['footer-about-title']; ?></strong></h6>
+                <h6 class="about-title-footer"><strong><?php echo $theme_setting['footer-about-title']; ?></strong></h6>
                 <p><?php echo $theme_setting['footer-about']; ?></p>
             </div>
             <div class="col-md-1 col-xl-1"></div>
             <div class=" col-md-4">
                 <h6 class="contact_title_footer"><strong><?php echo $theme_setting['footer-contact-title']; ?></strong></h6>
-                <div class="nav flex-column">
+                <div class="nav flex-column ml-4">
                     <ul class='footer_more_ul'>
                         <li>Tel: <?php echo $theme_setting['footer-phone']; ?></li>
                         <li>Email : <?php echo $theme_setting['footer-email']; ?></li>

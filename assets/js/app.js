@@ -713,3 +713,5 @@ $( ".owl-next").html('<i class="fa fa-chevron-right"></i>');
         $(".search-input-container").show();
         $(".search-input-container input").focus();
     })
+
+    $('p:empty').remove();

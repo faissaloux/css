@@ -169,6 +169,10 @@ input#firstDate, input#secondDate {
     left: -9px;
 }
 
+p{
+    padding-top: 0 !important;
+}
+
 label.from,
 label.to{
     position: absolute;
