@@ -6,7 +6,7 @@ class packs_production_listing_widget extends WP_Widget
     {
         $widget_ops = array(
                 'class'         => 'packs_production_listing_widget',
-                'description'   => 'packs_production_listing_widget',
+                'description'   => 'packs production listing widget',
             );
         parent::__construct('packs_production_listing_widget', 'Packs production listing', $widget_ops);
     }

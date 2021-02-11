@@ -18,44 +18,16 @@ if ( !defined( 'THEME_URL' ) ) {
     define( 'THEME_URL', get_template_directory_uri() );
 }
 
-/*
-*   INITIALIZE FILES DIRECTORY
-*/
-$css                = THEME_URL . '/core/assets/css/';
-$js                 = THEME_URL . '/core/assets/js/';
-$images             = THEME_URL . '/core/assets/images/';
-
 // require Helper class
 require_once 'helpers/Helper.php';
-
-// wordpress theme Setup
-require_once THEME_DIR. '/core/setup.php';
-
-// Functions
-require_once THEME_DIR. '/core/functions.php';
-
-
-// Assets To Load JS and Css files
-// require_once THEME_DIR. '/core/assets.php';
-
-// Load MetaBoxs
-//require_once THEME_DIR. '/core/metabox.php';
-
-// Load Shortcodes
-//require_once THEME_DIR. '/core/shortcodes.php';
 
 // Load security
 require_once THEME_DIR. '/core/security.php';
 
-// Load widgets 
-// require_once THEME_DIR. '/core/widgets.php';
-
-// Arabic Fonts 
-//require_once THEME_DIR. '/core/arab-font.php';    
-
 // AJAX
 require_once THEME_DIR. '/core/ajax.php';
 
+// Widgets
 require_once THEME_DIR .'/widgets.php';
 
 /*
@@ -65,31 +37,7 @@ require_once THEME_DIR .'/widgets.php';
 include_once THEME_DIR . '/core/theme-options/ReduxCore/framework.php';
 require_once THEME_DIR.  '/core/theme-options/config.php';
 
-
-/*
-*   Codestar Framework : theme Settings
-*   For More Help : http://codestarframework.com/documentation 
-*/
-require_once THEME_DIR .'/core/codestar/cs-framework.php';
-
-
-
-// Bootstrap Nav Walker 
-require_once THEME_DIR. '/core/class-wp-bootstrap-navwalker.php';
-
-
-// HTML Compressor 
-require_once THEME_DIR. '/core/html-compressor.php';
-
 require_once THEME_DIR. '/core/menu-walker.php';
-
-
-/*
- To do , if the Theme is not activated , stop all the down stop to apear , the only thing will apear is activation page
-* now i have the extension of metabox , so every thing is fucked , yay baby
-*/
-//require_once THEME_DIR. '/core/libraries/init.php';
-
 
 // REMOVE WP EMOJI
 remove_action('wp_head', 'print_emoji_detection_script', 7);
@@ -113,68 +61,6 @@ add_filter( 'wp_default_scripts', $af = static function( &$scripts) {
     }    
 }, PHP_INT_MAX );
 unset( $af );
-
-
-
-// Disable CSS RTL 
-add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-function wps_deregister_styles() {
-    wp_dequeue_style( 'wp-block-library' );
-}
-
-
-
-
-
-add_action( 'init', function() {
-
-    // Remove the REST API endpoint.
-    remove_action('rest_api_init', 'wp_oembed_register_route');
-
-    // Turn off oEmbed auto discovery.
-    // Don't filter oEmbed results.
-    remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
-
-    // Remove oEmbed discovery links.
-    remove_action('wp_head', 'wp_oembed_add_discovery_links');
-
-    // Remove oEmbed-specific JavaScript from the front-end and back-end.
-    remove_action('wp_head', 'wp_oembed_add_host_js');
-}, PHP_INT_MAX - 1 );
-
-
-
-
-
-
-/**
- * Add iFrame to allowed wp_kses_post tags
- *
- * @param string $tags Allowed tags, attributes, and/or entities.
- * @param string $context Context to judge allowed tags by. Allowed values are 'post',
- *
- * @return mixed
- */
-function custom_wpkses_post_tags( $tags, $context ) {
-	if ( 'post' === $context ) {
-		$tags['iframe'] = array(
-			'src'             => true,
-			'height'          => true,
-			'width'           => true,
-			'frameborder'     => true,
-			'allowfullscreen' => true,
-		);
-	}
-	return $tags;
-}
-add_filter( 'wp_kses_allowed_html', 'custom_wpkses_post_tags', 10, 2 );
-
-
-// [woocommerce_cart] – shows the cart page
-// [woocommerce_checkout] – shows the checkout page
-// [woocommerce_my_account] – shows the user account page
-// [woocommerce_order_tracking] – shows the order tracking form 
-
 
 //Disable the plugin and theme editor
 define( 'DISALLOW_FILE_EDIT', true );
@@ -227,26 +113,30 @@ function admin_register_scripts(){
     wp_enqueue_script( 'lightgallery-script',           THEME_URL . '/assets/js/admin.js?v='                                    . $assets_version, array(), false, false);
 }
 
-add_action('admin_head', 'my_custom_fonts');
-function my_custom_fonts() {
-  echo '<style>
-   li#toplevel_page_cs-framework {
-        display: none;
-    }
+add_action('wp_enqueue_scripts',    'theme_register_styles');
+add_action('wp_enqueue_scripts',    'theme_register_scripts');
+add_action('admin_enqueue_scripts', 'admin_register_scripts');
 
-div#widget-6_divider_widget-__i__ .widget-top ,
-div#widget-8_page_header_widget-__i__ .widget-top ,
-div#widget-12_packs_production_listing_widget-__i__ .widget-top ,
-div#widget-15_products_listing_widget-__i__ .widget-top ,
-div#widget-14_product_logo_widget-__i__ .widget-top ,
-#widget-22_title_widget-__i__ .widget-top 
-,
-#widget-14_product_logo_widget-__i__ .widget-top {
-    background: #2196F3;
-    color: white !important;
+function my_custom_fonts() {
+    $custom_widgets_ids = [ 'order_widget',
+                            'title_widget',
+                            'divider_widget',
+                            'page_header_widget',
+                            'product_logo_widget',
+                            'products_listing_widget',
+                            'packs_production_listing_widget',
+                        ];
+    echo '<style>';
+    echo 'li#toplevel_page_cs-framework {
+                display: none;
+            }';
+    foreach($custom_widgets_ids as $id){
+        echo "div[id*='${id}'].ui-draggable .widget-top{ background: #2196F3; }";
+        echo "div[id*='${id}'].ui-draggable .widget-top h3, div[id*='${id}'].ui-draggable .widget-top button .toggle-indicator{ color: white; }";
+    }
+    echo '</style>';
 }
-  </style>';
-}
+add_action('admin_head', 'my_custom_fonts');
 
 
 add_action( 'wp_ajax_add_to_cart',                      'add_to_cart_php' );
@@ -309,10 +199,6 @@ function search_product_php(){
     echo ajax_products_search($_POST['q'], 'json');
     die();
 }
-
-add_action('wp_enqueue_scripts', 'theme_register_styles');
-add_action('wp_enqueue_scripts', 'theme_register_scripts');
-add_action('admin_enqueue_scripts', 'admin_register_scripts');
  
 function add_my_post_types_to_query( $query ) {
     if ( is_home() && $query->is_main_query() )
@@ -321,6 +207,13 @@ function add_my_post_types_to_query( $query ) {
 }
 
 add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
+
+function the_slider(){
+    global $theme_setting;
+    $gallery = wp_is_mobile()   ?  Helper::getGallery($theme_setting,'slider-mobile')
+                                :  Helper::getGallery($theme_setting,'slider');
+    return $gallery;
+}
 
 function nav_bar()
 {
@@ -332,32 +225,11 @@ function nav_bar()
 
 add_action('widgets_init', 'nav_bar');
 
-/** */
-
-function header_widget()
-{
-    register_sidebar(array(
-        'name'  => 'header widget',
-        'id'    => 'header-widget'
-    ));
-}
-
-add_action('widgets_init', 'header_widget');
-
-function the_slider(){
-    global $theme_setting;
-    $gallery = wp_is_mobile()   ?  Helper::getGallery($theme_setting,'slider-mobile')
-                                :  Helper::getGallery($theme_setting,'slider');
-    return $gallery;
-}
-
 function the_logo()
 {
     global $theme_setting;
     return $theme_setting['logo-url']['url'];
 }
-
-$brands     = brands();
 
 $args = array(
 	'post_type'        => 'post',

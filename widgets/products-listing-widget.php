@@ -6,7 +6,7 @@ class products_listing_widget extends WP_Widget
     {
         $widget_ops = array(
                 'class'         => 'products_listing_widget',
-                'description'   => 'products_listing_widget',
+                'description'   => 'products listing widget',
             );
         parent::__construct('products_listing_widget', 'Products listing', $widget_ops);
     }

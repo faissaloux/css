@@ -6,7 +6,7 @@ class title_widget extends WP_Widget
     {
         $widget_ops = array(
                 'class'         => 'title_widget',
-                'description'   => 'title_widget'
+                'description'   => 'title widget'
             );
         parent::__construct('title_widget', 'Title', $widget_ops);
     }
