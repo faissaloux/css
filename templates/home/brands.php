@@ -1,4 +1,4 @@
-<section class="les_partenaies mx-auto">
+<section class="les_partenaies mx-auto" style="<?php echo empty(the_slider()[0]) ? 'margin-top: 80px !important':''; ?>">
     <div class="owl-carousel" data-dots="false" data-autoplay="true" data-slides-to-show="12">
         <?php foreach($brands as $brand): ?>
             <a href="<?php echo $brand['url']; ?>">
