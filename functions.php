@@ -37,6 +37,12 @@ require_once THEME_DIR .'/widgets.php';
 include_once THEME_DIR . '/core/theme-options/ReduxCore/framework.php';
 require_once THEME_DIR.  '/core/theme-options/config.php';
 
+/*
+*   Codestar Framework : theme Settings
+*   For More Help : http://codestarframework.com/documentation 
+*/
+require_once THEME_DIR .'/core/codestar/cs-framework.php';
+
 require_once THEME_DIR. '/core/menu-walker.php';
 
 // REMOVE WP EMOJI
@@ -125,6 +131,7 @@ function my_custom_fonts() {
                             'product_logo_widget',
                             'products_listing_widget',
                             'packs_production_listing_widget',
+                            'black-studio-tinymce'
                         ];
     echo '<style>';
     echo 'li#toplevel_page_cs-framework {

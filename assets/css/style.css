@@ -1911,3 +1911,10 @@ nav #ajaxSearch{
      margin-bottom: 13px;
  }   
 }
+
+.textwidget {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+}
