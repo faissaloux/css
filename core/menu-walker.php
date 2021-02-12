@@ -213,7 +213,7 @@ function get_desktop_menu($menus){
     foreach($menus as $menu){
         $html .= "<li class='nav-item'>";
         if(!empty($menu['children'])){
-            $html .= "<a class='nav-link ksksks'><span>".$menu['title']."</span></a>";
+            $html .= "<a href=".$menu['url']." class='nav-link ksksks'><span>".$menu['title']."</span></a>";
             $html .= "<ul class='nav'>";
             foreach($menu['children'] as $child){
                 $html .= "<li class='nav-item'>";
