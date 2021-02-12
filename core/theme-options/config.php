@@ -559,6 +559,30 @@ Redux::setSection( $opt_name, array(
                 'desc'     => __( 'Please insert image url', 'caynoon_text' ),
                 'default'  => 'image URL',
             ),
+
+            array(
+                'id'       => 'image3-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 3 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+
+            array(
+                'id'       => 'image3-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 3 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'OPTIQUES',
+            ),
+
+            array(
+                'id'       => 'image3-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 3 mobile URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ), 
             
             array(
                 'id'       => 'image4',
@@ -580,6 +604,30 @@ Redux::setSection( $opt_name, array(
                 'id'       => 'image4-url',
                 'type'     => 'text',
                 'title'    => __( 'Image 4 URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ), 
+
+            array(
+                'id'       => 'image4-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 4 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+
+            array(
+                'id'       => 'image4-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 4 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'STABILISATEURS - STEADICAMS',
+            ),
+
+            array(
+                'id'       => 'image4-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 4 mobile URL', 'caynoon_text' ),
                 'desc'     => __( 'Please insert image url', 'caynoon_text' ),
                 'default'  => 'image URL',
             ), 
@@ -609,6 +657,30 @@ Redux::setSection( $opt_name, array(
             ), 
 
             array(
+                'id'       => 'image5-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 5 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+
+            array(
+                'id'       => 'image5-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 5 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'SUPPORTS CAMERA - TREPIEDS',
+            ),
+
+            array(
+                'id'       => 'image5-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 5 mobile URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ), 
+
+            array(
                 'id'       => 'image6',
                 'type'     => 'media',
                 'url'      => true,
@@ -628,6 +700,30 @@ Redux::setSection( $opt_name, array(
                 'id'       => 'image6-url',
                 'type'     => 'text',
                 'title'    => __( 'Image 6 URL', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image url', 'caynoon_text' ),
+                'default'  => 'image URL',
+            ), 
+
+            array(
+                'id'       => 'image6-mobile',
+                'type'     => 'media',
+                'url'      => true,
+                'title'    => __( 'Image 6 mobile', 'caynoon_text' ),
+                'compiler' => 'true',
+            ),
+
+            array(
+                'id'       => 'image6-mobile-title',
+                'type'     => 'text',
+                'title'    => __( 'Image 6 mobile title', 'caynoon_text' ),
+                'desc'     => __( 'Please insert image title', 'caynoon_text' ),
+                'default'  => 'ACCESSOIRES',
+            ),
+
+            array(
+                'id'       => 'image6-mobile-url',
+                'type'     => 'text',
+                'title'    => __( 'Image 6 mobile URL', 'caynoon_text' ),
                 'desc'     => __( 'Please insert image url', 'caynoon_text' ),
                 'default'  => 'image URL',
             ), 
