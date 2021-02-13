@@ -694,3 +694,9 @@ span.ti-search {
 .accessories-secondRow .boxImageCamera img {
     height: 100%;
 }
+
+@media(max-width: 780px){
+    .trep-supcam-row {
+        margin-bottom: -50px !important;
+    }
+}

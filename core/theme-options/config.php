@@ -862,13 +862,28 @@ Redux::setSection( $opt_name, array(
                 array(
                     'id'       => 'supcam-trep-first-category-link',
                     'type'     => 'text',
-                    'title'    => __( 'First category link', 'caynoon_text' ),
-                    'default'  => '/category/location/supports-camera-trepieds/supports-camera'
+                    'title'    => __( 'First category link', 'caynoon_text' )
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-mobile-image',
+                    'type'     => 'media',
+                    'title'    => __( 'First category mobile image', 'caynoon_text' ),
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-mobile-title',
+                    'type'     => 'text',
+                    'title'    => __( 'First category mobile title', 'caynoon_text' ),
+                    'default'  => 'Supports Caméra'
+                ),
+                array(
+                    'id'       => 'supcam-trep-first-category-mobile-link',
+                    'type'     => 'text',
+                    'title'    => __( 'First category mobile link', 'caynoon_text' ),
                 ),
                 array(
                     'id'       => 'supcam-trep-second-category-image',
                     'type'     => 'media',
-                    'title'    => __( 'second category image', 'caynoon_text' ),
+                    'title'    => __( 'second category image', 'caynoon_text' )
                 ),
                 array(
                     'id'       => 'supcam-trep-second-category-title',
@@ -880,7 +895,22 @@ Redux::setSection( $opt_name, array(
                     'id'       => 'supcam-trep-second-category-link',
                     'type'     => 'text',
                     'title'    => __( 'Second category link', 'caynoon_text' ),
-                    'default'  => '/category/location/supports-camera-trepieds/trepieds'
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-mobile-image',
+                    'type'     => 'media',
+                    'title'    => __( 'second category mobile image', 'caynoon_text' )
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-mobile-title',
+                    'type'     => 'text',
+                    'title'    => __( 'second category mobile title', 'caynoon_text' ),
+                    'default'  => 'Trépieds'
+                ),
+                array(
+                    'id'       => 'supcam-trep-second-category-mobile-link',
+                    'type'     => 'text',
+                    'title'    => __( 'Second category mobile link', 'caynoon_text' )
                 ),
         )
     ) );

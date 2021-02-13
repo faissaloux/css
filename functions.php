@@ -21,6 +21,12 @@ if ( !defined( 'THEME_URL' ) ) {
 // require Helper class
 require_once 'helpers/Helper.php';
 
+// wordpress theme Setup
+require_once THEME_DIR. '/core/setup.php';
+
+// Functions
+require_once THEME_DIR. '/core/functions.php';
+
 // Load security
 require_once THEME_DIR. '/core/security.php';
 

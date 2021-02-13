@@ -79,21 +79,42 @@
 
         <div class="row secondRow trep-supcam-row">
             <?php if( !empty($theme_setting['supcam-trep-first-category-image']['url']) ): ?>
-                <div class="<?php echo $firstCategoryClass ?> px-1">
-                    <a href="/category/location/supports-camera-trepieds/supports-camera">
+                <div class="<?php echo $firstCategoryClass ?> px-1 show-desktop">
+                    <a href="/supports-camera">
                         <div class="boxImageCamera"><img src="<?php echo $theme_setting['supcam-trep-first-category-image']['url']; ?>" />
                             <div class="ghakteb"><?php echo $theme_setting['supcam-trep-first-category-title'];?></div>
                         </div>
                     </a>
                 </div>
             <?php endif; ?>
+            <?php if( !empty($theme_setting['supcam-trep-first-category-mobile-image']['url']) ): ?>
+                <div class="<?php echo $firstCategoryClass ?> px-1 show-mobile">
+                    <a href="/supports-camera">
+                        <div class="boxImageCamera"><img src="<?php echo $theme_setting['supcam-trep-first-category-mobile-image']['url']; ?>" />
+                            <div class="ghakteb"><?php echo $theme_setting['supcam-trep-first-category-title'];?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
             <?php if( !empty($theme_setting['supcam-trep-second-category-image']['url']) ): ?>
-                <div class="<?php echo $secondCategoryClass ?> px-1">
-                    <a href="/category/location/supports-camera-trepieds/trepieds">
+                <div class="<?php echo $secondCategoryClass ?> px-1 show-desktop">
+                    <a href="/trepieds-2">
                         <div class="boxImageCamera">
                             <img src="<?php echo $theme_setting['supcam-trep-second-category-image']['url']; ?>"
                                 class="d-lg-none d-md-none d-sm-none" />
                             <img src="<?php echo $theme_setting['supcam-trep-second-category-image']['url']; ?>" class="d-xs-none" />
+                            <div class="ghakteb"><?php echo $theme_setting['supcam-trep-second-category-title'];?></div>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if( !empty($theme_setting['supcam-trep-second-category-mobile-image']['url']) ): ?>
+                <div class="<?php echo $secondCategoryClass ?> px-1 show-mobile">
+                    <a href="/trepieds-2">
+                        <div class="boxImageCamera">
+                            <img src="<?php echo $theme_setting['supcam-trep-second-category-mobile-image']['url']; ?>"
+                                class="d-lg-none d-md-none d-sm-none" />
+                            <img src="<?php echo $theme_setting['supcam-trep-second-category-mobile-image']['url']; ?>" class="d-xs-none" />
                             <div class="ghakteb"><?php echo $theme_setting['supcam-trep-second-category-title'];?></div>
                         </div>
                     </a>
