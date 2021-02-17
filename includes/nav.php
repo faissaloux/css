@@ -19,7 +19,7 @@
 </style>
 
 <!-- Navbar -->
-<nav class="navbar nav-custom navbar-expand-md" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
+<nav class="navbar nav-custom navbar-expand-md top-nav" style="background-color: <?php echo $theme_setting['header-background'] ?>;">
 
     <div class="container">
         <a href="#my-menu" class="show-mobile show-menu col-3"><i class="fas fa-bars"></i></a>
@@ -88,6 +88,9 @@
                 target="_blank"
             >
                 <span class="ti-location-pin"></span>
+            </a>
+            <a href="/fr">
+                <span class="lang-switcher">FR</span>
             </a>
         </div>
     </div>

@@ -187,7 +187,7 @@ function get_mobile_menu($phone_menus){
         $html .= "</li>";
     }
     $html .= "<div class='mobile-menu-langs d-flex'>";
-        $html .= "<a href='/' class='d-flex justify-content-left align-items-center px-0'>";
+        $html .= "<a href='/fr' class='d-flex justify-content-left align-items-center px-0'>";
             $html .= "<div class='img-container french-img-container'>";
                 $html .= "<img src='";
                 $html .= $french_flag;

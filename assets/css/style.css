@@ -1912,6 +1912,7 @@ nav #ajaxSearch{
  }   
 }
 
+
 .textwidget {
     margin-right: auto;
     margin-left: auto;
@@ -1928,4 +1929,12 @@ nav #ajaxSearch{
 
 #black-studio-tinymce-2 {
     list-style: none;
+}
+
+.lang-switcher{
+    font-size: 18px;
+}
+
+.top-nav{
+    position: fixed;
 }
