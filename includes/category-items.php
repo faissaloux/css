@@ -53,7 +53,7 @@
                                     data-id="<?php echo $postID; ?>"
                                     style="background-color: red; color: #FFF"
                                 >
-                                    AJOUTER AU DEVIS
+                                    Add to quote
                             </a>
                             </div>
                         </div>

@@ -99,7 +99,7 @@
                         data-id="<?php echo get_the_ID(); ?>"
                         style="background-color: red; color: #FFF"
                     >
-                        AJOUTER AU DEVIS
+                     Add to quote
                     </a>
                   </div>
                </div>
@@ -141,7 +141,7 @@
                                     data-id="<?php echo the_ID(); ?>"
                                     style="background-color: red; color: #FFF"
                               >
-                                    AJOUTER AU DEVIS
+                                 Add to quote
                            </a>
                            </div>
                         </div>

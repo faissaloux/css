@@ -85,7 +85,7 @@ class products_listing_widget extends WP_Widget
                                             data-id="<?php echo $product['id']; ?>"
                                             style="background-color: red; color: #FFF"
                                         >
-                                            AJOUTER AU DEVIS
+                                            Add to quote
                                         </a>
                                     </div>
                                 </div>
