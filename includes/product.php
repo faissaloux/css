@@ -73,11 +73,11 @@
          <div class="col-md-6">
             <ul class="nav nav-tabs" role="tablist">
                <li class="nav-item">
-                  <a class="nav-link active mr-4 show description-tab" data-toggle="tab" href="#tab-description-1">Description</a>
+                  <a class="nav-link active mr-4 show description-tab" data-toggle="tab" href="#tab-description-1">OVERVIEW</a>
                </li>
                <?php if( !empty(system::product_tech(get_the_ID())) ): ?>
                   <li class="nav-item">
-                     <a class="nav-link tech-tab" data-toggle="tab" href="#tab-tech-1">Fiche Technique</a>
+                     <a class="nav-link tech-tab" data-toggle="tab" href="#tab-tech-1">SPECS</a>
                   </li>
                <?php endif; ?>
             </ul>
