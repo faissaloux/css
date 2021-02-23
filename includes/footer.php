@@ -13,9 +13,9 @@
                 <h6 class="contact_title_footer"><strong><?php echo $theme_setting['footer-contact-title']; ?></strong></h6>
                 <div class="nav flex-column ml-4">
                     <ul class='footer_more_ul'>
-                        <li>Tel: <?php echo $theme_setting['footer-phone']; ?></li>
-                        <li>Email : <?php echo $theme_setting['footer-email']; ?></li>
-                        <li> Adresse : <?php echo $theme_setting['footer-address']; ?></li>
+                        <li>Phone: <?php echo $theme_setting['footer-phone']; ?></li>
+                        <li>Email: <?php echo $theme_setting['footer-email']; ?></li>
+                        <li>Address: <?php echo $theme_setting['footer-address']; ?></li>
                     </ul>
                 </div>
             </div>

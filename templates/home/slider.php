@@ -50,8 +50,12 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="ti-search mt-1"></i></span>
                             </div>
-                            <input id='searchInput' name='q' type="text" class="form-control home_search"
-                                placeholder="Recherche">
+                            <input  id='searchInput'
+                                    name='q'
+                                    type="text"
+                                    class="form-control home_search"
+                                    placeholder="Search"
+                            >
                         </div>
                         <div id='ajaxSearch' class="search home_search_results" style='display: none;'>
                             <div class="search-loading">
